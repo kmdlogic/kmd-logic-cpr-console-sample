@@ -1,12 +1,17 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using Kmd.Logic.Cpr.ConsoleSample.Client;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Rest;
 using Serilog;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Kmd.Logic.Cpr.ConsoleSample
 {
     internal class Program
     {
+        private const string CprSampleNumber = "0101015084";
+
         private static async Task Main(string[] args)
         {
             InitLogger();
@@ -41,9 +46,35 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 .CreateLogger();
         }
 
-        private static async Task Run(AppConfiguration config)
+        private static async Task Run(AppConfiguration configuration)
         {
+            var configurationValidation = new ConfigurationValidator(configuration).Validate();
+            if (configurationValidation == ConfigurationValidator.Result.Invalid)
+            {
+                return;
+            }
 
+            var environment =
+                configuration.LogicEnvironments.FirstOrDefault(e => e.Name == configuration.LogicEnvironmentName);
+
+            if (environment == null)
+            {
+                Log.Error("Settings for `{LogicEnvironmentName}` are missing in `appsettings.json`.",
+                    configuration.LogicEnvironmentName);
+                return;
+            }
+
+            var client = new CprClient(new TokenCredentials(new TokenProvider(configuration, environment)))
+            {
+                BaseUri = environment.ApiRootUri
+            };
+            
+            var citizen = await client.SubscriptionsBySubscriptionIdCprByCprByCprGetAsync(
+                subscriptionId: configuration.LogicAccount.SubscriptionId.Value,
+                cpr: CprSampleNumber,
+                configurationId: configuration.Cpr.ConfigurationId.Value);
+
+            Log.Information("Citizen data: {@Citizen}", citizen);
         }
     }
 }
