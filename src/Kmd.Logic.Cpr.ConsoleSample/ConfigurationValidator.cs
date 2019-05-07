@@ -20,7 +20,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 || string.IsNullOrWhiteSpace(_configuration.LogicAccount?.ClientSecret)
                 || _configuration.LogicAccount?.SubscriptionId == null)
             {
-                Log.Error("Invalid `LogicAccount` configuration. Please provide proper information to `appsettings.json`. Current data are: {@LogicAccount}",
+                Log.Error("Invalid `LogicAccount` configuration. Please provide proper information to `appsettings.json`. Current data is: {@LogicAccount}",
                     _configuration.LogicAccount);
 
                 return Result.Invalid;

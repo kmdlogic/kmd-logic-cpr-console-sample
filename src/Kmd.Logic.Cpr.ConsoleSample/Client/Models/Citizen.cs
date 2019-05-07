@@ -24,7 +24,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
         /// <summary>
         /// Initializes a new instance of the Citizen class.
         /// </summary>
-        public Citizen(System.Guid? id = default(System.Guid?), string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), string email = default(string), string phoneNumber = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), bool? nameAndAddressProtection = default(bool?), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
+        public Citizen(System.Guid? id = default(System.Guid?), string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), bool? nameAndAddressProtection = default(bool?), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
         {
             Id = id;
             FirstName = firstName;
@@ -32,8 +32,6 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
             Cpr = cpr;
             MaritalStatus = maritalStatus;
             Status = status;
-            Email = email;
-            PhoneNumber = phoneNumber;
             Parents = parents;
             LegalGuardians = legalGuardians;
             NameAndAddressProtection = nameAndAddressProtection;
@@ -76,16 +74,6 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "status")]
         public string Status { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "email")]
-        public string Email { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "phoneNumber")]
-        public string PhoneNumber { get; set; }
 
         /// <summary>
         /// </summary>

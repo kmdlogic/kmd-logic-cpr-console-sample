@@ -1,4 +1,4 @@
-﻿using Kmd.Logic.Cpr.ConsoleSample.Client;
+using Kmd.Logic.Cpr.ConsoleSample.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Rest;
 using Serilog;
@@ -69,7 +69,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 BaseUri = environment.ApiRootUri
             };
             
-            var citizen = await client.SubscriptionsBySubscriptionIdCprByCprByCprGetAsync(
+            var citizen = await client.GetByCprAsync(
                 subscriptionId: configuration.LogicAccount.SubscriptionId.Value,
                 cpr: CprSampleNumber,
                 configurationId: configuration.Cpr.ConfigurationId.Value);

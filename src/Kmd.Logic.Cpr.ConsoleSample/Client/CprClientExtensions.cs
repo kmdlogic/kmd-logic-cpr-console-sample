@@ -7,6 +7,7 @@
 namespace Kmd.Logic.Cpr.ConsoleSample.Client
 {
     using Models;
+    using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -31,9 +32,9 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// Identifier that represents CPR environment and associated configuration
             /// which this request will be sent with.
             /// </param>
-            public static Citizen SubscriptionsBySubscriptionIdCprByCprByCprGet(this ICprClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
+            public static Citizen GetByCpr(this ICprClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
             {
-                return operations.SubscriptionsBySubscriptionIdCprByCprByCprGetAsync(subscriptionId, cpr, configurationId).GetAwaiter().GetResult();
+                return operations.GetByCprAsync(subscriptionId, cpr, configurationId).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -55,9 +56,9 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<Citizen> SubscriptionsBySubscriptionIdCprByCprByCprGetAsync(this ICprClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<Citizen> GetByCprAsync(this ICprClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprByCprByCprGetWithHttpMessagesAsync(subscriptionId, cpr, configurationId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByCprWithHttpMessagesAsync(subscriptionId, cpr, configurationId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -79,9 +80,9 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// Identifier that represents CPR environment and associated configuration
             /// which this request will be sent with.
             /// </param>
-            public static Citizen SubscriptionsBySubscriptionIdCprByIdGet(this ICprClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
+            public static Citizen GetById(this ICprClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
             {
-                return operations.SubscriptionsBySubscriptionIdCprByIdGetAsync(subscriptionId, id, configurationId).GetAwaiter().GetResult();
+                return operations.GetByIdAsync(subscriptionId, id, configurationId).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -103,9 +104,9 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<Citizen> SubscriptionsBySubscriptionIdCprByIdGetAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<Citizen> GetByIdAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprByIdGetWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByIdWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -121,9 +122,9 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// </param>
             /// <param name='configurationId'>
             /// </param>
-            public static CprConfiguration SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdGet(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId)
+            public static CprProviderConfigurationModel GetCprConfiguration(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId)
             {
-                return operations.SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdGetAsync(subscriptionId, configurationId).GetAwaiter().GetResult();
+                return operations.GetCprConfigurationAsync(subscriptionId, configurationId).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -139,9 +140,93 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CprConfiguration> SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdGetAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<CprProviderConfigurationModel> GetCprConfigurationAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdGetWithHttpMessagesAsync(subscriptionId, configurationId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetCprConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Retrieves all Cpr configurations assigned to the logic subscription
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            public static CprProviderConfigurationModel GetAllCprConfigurations(this ICprClient operations, System.Guid subscriptionId)
+            {
+                return operations.GetAllCprConfigurationsAsync(subscriptionId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Retrieves all Cpr configurations assigned to the logic subscription
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<CprProviderConfigurationModel> GetAllCprConfigurationsAsync(this ICprClient operations, System.Guid subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetAllCprConfigurationsWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Adds new CPR configuration and uploads certificate file to the Azure Key
+            /// Vault
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='name'>
+            /// </param>
+            /// <param name='environment'>
+            /// Possible values include: 'production', 'test'
+            /// </param>
+            /// <param name='certificate'>
+            /// </param>
+            /// <param name='certificatePassword'>
+            /// </param>
+            public static CprProviderConfiguration CreateDataDistributorConfiguration(this ICprClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string))
+            {
+                return operations.CreateDataDistributorConfigurationAsync(subscriptionId, name, environment, certificate, certificatePassword).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Adds new CPR configuration and uploads certificate file to the Azure Key
+            /// Vault
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='name'>
+            /// </param>
+            /// <param name='environment'>
+            /// Possible values include: 'production', 'test'
+            /// </param>
+            /// <param name='certificate'>
+            /// </param>
+            /// <param name='certificatePassword'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<CprProviderConfiguration> CreateDataDistributorConfigurationAsync(this ICprClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.CreateDataDistributorConfigurationWithHttpMessagesAsync(subscriptionId, name, environment, certificate, certificatePassword, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -158,12 +243,18 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// </param>
             /// <param name='configurationId'>
             /// </param>
+            /// <param name='name'>
+            /// </param>
             /// <param name='environment'>
             /// Possible values include: 'production', 'test'
             /// </param>
-            public static CprConfiguration SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdPut(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, string environment = default(string))
+            /// <param name='certificate'>
+            /// </param>
+            /// <param name='certificatePassword'>
+            /// </param>
+            public static CprProviderConfiguration UpdateDataDistributorConfiguration(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string))
             {
-                return operations.SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdPutAsync(subscriptionId, configurationId, environment).GetAwaiter().GetResult();
+                return operations.UpdateDataDistributorConfigurationAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -177,87 +268,21 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
             /// </param>
             /// <param name='configurationId'>
             /// </param>
-            /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
-            /// </param>
-            /// <param name='cancellationToken'>
-            /// The cancellation token.
-            /// </param>
-            public static async Task<CprConfiguration> SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdPutAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, string environment = default(string), CancellationToken cancellationToken = default(CancellationToken))
-            {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprConfigurationsByConfigurationIdPutWithHttpMessagesAsync(subscriptionId, configurationId, environment, null, cancellationToken).ConfigureAwait(false))
-                {
-                    return _result.Body;
-                }
-            }
-
-            /// <summary>
-            /// Retrieves all Cpr configurations assigned to the logic subscription
-            /// </summary>
-            /// <param name='operations'>
-            /// The operations group for this extension method.
-            /// </param>
-            /// <param name='subscriptionId'>
-            /// </param>
-            public static CprConfiguration SubscriptionsBySubscriptionIdCprConfigurationsGet(this ICprClient operations, System.Guid subscriptionId)
-            {
-                return operations.SubscriptionsBySubscriptionIdCprConfigurationsGetAsync(subscriptionId).GetAwaiter().GetResult();
-            }
-
-            /// <summary>
-            /// Retrieves all Cpr configurations assigned to the logic subscription
-            /// </summary>
-            /// <param name='operations'>
-            /// The operations group for this extension method.
-            /// </param>
-            /// <param name='subscriptionId'>
-            /// </param>
-            /// <param name='cancellationToken'>
-            /// The cancellation token.
-            /// </param>
-            public static async Task<CprConfiguration> SubscriptionsBySubscriptionIdCprConfigurationsGetAsync(this ICprClient operations, System.Guid subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
-            {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprConfigurationsGetWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
-                {
-                    return _result.Body;
-                }
-            }
-
-            /// <summary>
-            /// Adds new CPR configuration and uploads certificate file to the Azure Key
-            /// Vault
-            /// </summary>
-            /// <param name='operations'>
-            /// The operations group for this extension method.
-            /// </param>
-            /// <param name='subscriptionId'>
+            /// <param name='name'>
             /// </param>
             /// <param name='environment'>
             /// Possible values include: 'production', 'test'
             /// </param>
-            public static CprConfiguration SubscriptionsBySubscriptionIdCprConfigurationsPost(this ICprClient operations, System.Guid subscriptionId, string environment = default(string))
-            {
-                return operations.SubscriptionsBySubscriptionIdCprConfigurationsPostAsync(subscriptionId, environment).GetAwaiter().GetResult();
-            }
-
-            /// <summary>
-            /// Adds new CPR configuration and uploads certificate file to the Azure Key
-            /// Vault
-            /// </summary>
-            /// <param name='operations'>
-            /// The operations group for this extension method.
+            /// <param name='certificate'>
             /// </param>
-            /// <param name='subscriptionId'>
-            /// </param>
-            /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// <param name='certificatePassword'>
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CprConfiguration> SubscriptionsBySubscriptionIdCprConfigurationsPostAsync(this ICprClient operations, System.Guid subscriptionId, string environment = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<CprProviderConfiguration> UpdateDataDistributorConfigurationAsync(this ICprClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SubscriptionsBySubscriptionIdCprConfigurationsPostWithHttpMessagesAsync(subscriptionId, environment, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.UpdateDataDistributorConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
