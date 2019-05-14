@@ -2,6 +2,7 @@ using Kmd.Logic.Cpr.ConsoleSample.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Rest;
 using Serilog;
+using Serilog.Events;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -54,13 +55,11 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 return;
             }
 
-            var environment =
-                configuration.LogicEnvironments.FirstOrDefault(e => e.Name == configuration.LogicEnvironmentName);
+            var environment = configuration.LogicEnvironments.FirstOrDefault(e => e.Name == configuration.LogicEnvironmentName);
 
             if (environment == null)
             {
-                Log.Error("Settings for `{LogicEnvironmentName}` are missing in `appsettings.json`.",
-                    configuration.LogicEnvironmentName);
+                Log.Error("Settings for `{LogicEnvironmentName}` are missing in `appsettings.json`.", configuration.LogicEnvironmentName);
                 return;
             }
 
@@ -68,11 +67,27 @@ namespace Kmd.Logic.Cpr.ConsoleSample
             {
                 BaseUri = environment.ApiRootUri
             };
-            
+
+            if (configuration.Cpr.ConfigurationId == null)
+            {
+                var configs = await client.GetAllCprConfigurationsAsync(configuration.LogicAccount.SubscriptionId.Value);
+
+                if (configs == null || configs.Count == 0)
+                {
+                    Log.Error("There are no CPR configurations defined for this subscription");
+                    return;
+                }
+                else if (configs.Count > 1)
+                {
+                    Log.Error("There is more than one CPR configuration defined for this subscription");
+                    return;
+                }
+            }
+
             var citizen = await client.GetByCprAsync(
                 subscriptionId: configuration.LogicAccount.SubscriptionId.Value,
                 cpr: CprSampleNumber,
-                configurationId: configuration.Cpr.ConfigurationId.Value);
+                configurationId: configuration.Cpr.ConfigurationId);
 
             Log.Information("Citizen data: {@Citizen}", citizen);
         }

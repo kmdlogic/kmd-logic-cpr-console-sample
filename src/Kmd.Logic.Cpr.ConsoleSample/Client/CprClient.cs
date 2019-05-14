@@ -803,7 +803,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<CprProviderConfigurationModel>> GetAllCprConfigurationsWithHttpMessagesAsync(System.Guid subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<CprProviderConfigurationModel>>> GetAllCprConfigurationsWithHttpMessagesAsync(System.Guid subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             string apiVersion = "1.1.1";
             // Tracing
@@ -896,7 +896,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
                 throw ex;
             }
             // Create Result
-            var _result = new HttpOperationResponse<CprProviderConfigurationModel>();
+            var _result = new HttpOperationResponse<IList<CprProviderConfigurationModel>>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             // Deserialize Response
@@ -905,7 +905,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = SafeJsonConvert.DeserializeObject<CprProviderConfigurationModel>(_responseContent, DeserializationSettings);
+                    _result.Body = SafeJsonConvert.DeserializeObject<IList<CprProviderConfigurationModel>>(_responseContent, DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {

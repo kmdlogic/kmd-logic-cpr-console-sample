@@ -47,6 +47,10 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 _expiration = expire.AddSeconds(token.expires_in);
 
                 Log.Debug("Got token {@Token}", token);
+                if (string.IsNullOrEmpty(token.access_token)) 
+                {
+                    throw new Exception("Unable to get a token from the token issuer");
+                }
 
                 _currentToken = token;
             }

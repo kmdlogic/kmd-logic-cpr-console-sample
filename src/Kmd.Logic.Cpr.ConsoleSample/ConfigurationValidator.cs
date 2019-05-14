@@ -26,12 +26,6 @@ namespace Kmd.Logic.Cpr.ConsoleSample
                 return Result.Invalid;
             }
 
-            if (_configuration.Cpr.ConfigurationId == null)
-            {
-                Log.Error("Invalid `CPR Service` configuration. Please provide `configurationId`.");
-                return Result.Invalid;
-            }
-
             return Result.Valid;
         }
     }

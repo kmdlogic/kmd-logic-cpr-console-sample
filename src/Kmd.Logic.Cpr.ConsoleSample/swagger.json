@@ -187,7 +187,11 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/CprProviderConfigurationModel"
+              "uniqueItems": false,
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CprProviderConfigurationModel"
+              }
             }
           },
           "400": {
