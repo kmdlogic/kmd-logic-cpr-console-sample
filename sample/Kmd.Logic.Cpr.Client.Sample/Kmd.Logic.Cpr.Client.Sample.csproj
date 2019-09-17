@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="SerilogTimings" Version="2.2.0" />
+    <PackageReference Include="Kmd.Logic.Authentication" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup>

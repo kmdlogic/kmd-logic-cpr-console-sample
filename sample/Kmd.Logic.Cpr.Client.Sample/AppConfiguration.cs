@@ -1,4 +1,6 @@
-﻿namespace Kmd.Logic.Cpr.Client.Sample
+﻿using Kmd.Logic.Authentication;
+
+namespace Kmd.Logic.Cpr.Client.Sample
 {
     internal class AppConfiguration
     {
