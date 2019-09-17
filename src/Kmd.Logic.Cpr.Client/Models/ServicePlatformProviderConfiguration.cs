@@ -4,28 +4,31 @@
 // regenerated.
 // </auto-generated>
 
-namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
+namespace Kmd.Logic.Cpr.Client.Models
 {
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class CprProviderConfiguration
+    public partial class ServicePlatformProviderConfiguration
     {
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the
+        /// ServicePlatformProviderConfiguration class.
         /// </summary>
-        public CprProviderConfiguration()
+        public ServicePlatformProviderConfiguration()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the
+        /// ServicePlatformProviderConfiguration class.
         /// </summary>
         /// <param name="environment">Possible values include: 'production',
         /// 'test'</param>
-        public CprProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
+        public ServicePlatformProviderConfiguration(string municipalityCvr = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
         {
+            MunicipalityCvr = municipalityCvr;
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
@@ -38,6 +41,11 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "municipalityCvr")]
+        public string MunicipalityCvr { get; private set; }
 
         /// <summary>
         /// </summary>

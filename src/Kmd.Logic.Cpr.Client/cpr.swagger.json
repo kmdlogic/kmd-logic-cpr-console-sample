@@ -48,6 +48,18 @@
             "schema": {
               "$ref": "#/definitions/Citizen"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "security": [
@@ -103,7 +115,16 @@
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "security": [
@@ -148,11 +169,11 @@
               "$ref": "#/definitions/CprProviderConfigurationModel"
             }
           },
-          "400": {
-            "description": "Bad Request"
-          },
           "404": {
-            "description": "Not Found"
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "security": [
@@ -193,12 +214,6 @@
                 "$ref": "#/definitions/CprProviderConfigurationModel"
               }
             }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
           }
         },
         "security": [
@@ -347,6 +362,260 @@
           },
           "404": {
             "description": "Not Found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/fake-provider": {
+      "post": {
+        "tags": [
+          "FakeProviderConfiguration"
+        ],
+        "operationId": "CreateFakeProviderConfiguration",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CprFakeProviderConfiguration"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/fake-provider/{configurationId}": {
+      "put": {
+        "tags": [
+          "FakeProviderConfiguration"
+        ],
+        "operationId": "UpdateFakeProviderConfiguration",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CprFakeProviderConfiguration"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/service-platform": {
+      "post": {
+        "tags": [
+          "ServicePlatformConfiguration"
+        ],
+        "operationId": "CreateServicePlatformConfiguration",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "environment",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "enum": [
+              "production",
+              "test"
+            ]
+          },
+          {
+            "name": "certificate",
+            "in": "formData",
+            "required": false,
+            "type": "file"
+          },
+          {
+            "name": "certificatePassword",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "municipalityCvr",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ServicePlatformProviderConfiguration"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/service-platform/{configurationId}": {
+      "put": {
+        "tags": [
+          "ServicePlatformConfiguration"
+        ],
+        "operationId": "UpdateServicePlatformConfiguration",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "environment",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "enum": [
+              "production",
+              "test"
+            ]
+          },
+          {
+            "name": "certificate",
+            "in": "formData",
+            "required": false,
+            "type": "file"
+          },
+          {
+            "name": "certificatePassword",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "municipalityCvr",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ServicePlatformProviderConfiguration"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
           }
         },
         "security": [
@@ -517,6 +786,54 @@
     "CprProviderConfiguration": {
       "type": "object",
       "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "subscriptionId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "certificateFileName": {
+          "type": "string"
+        },
+        "environment": {
+          "$ref": "#/definitions/CprEnvironment"
+        }
+      }
+    },
+    "CprFakeProviderConfiguration": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "subscriptionId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "certificateFileName": {
+          "type": "string"
+        },
+        "environment": {
+          "$ref": "#/definitions/CprEnvironment"
+        }
+      }
+    },
+    "ServicePlatformProviderConfiguration": {
+      "type": "object",
+      "properties": {
+        "municipalityCvr": {
+          "type": "string",
+          "readOnly": true
+        },
         "id": {
           "format": "uuid",
           "type": "string"

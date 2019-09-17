@@ -1,1 +1,0 @@
-﻿autorest --input-file=swagger.json --csharp --output-folder=Client --override-client-name=CprClient --namespace=Kmd.Logic.Cpr.ConsoleSample.Client --clear-output-folder --add-credentials

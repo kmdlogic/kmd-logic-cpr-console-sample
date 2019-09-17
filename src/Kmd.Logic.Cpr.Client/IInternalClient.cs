@@ -4,7 +4,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Kmd.Logic.Cpr.ConsoleSample.Client
+namespace Kmd.Logic.Cpr.Client
 {
     using Microsoft.Rest;
     using Models;
@@ -17,7 +17,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
 
     /// <summary>
     /// </summary>
-    public partial interface ICprClient : System.IDisposable
+    internal partial interface IInternalClient : System.IDisposable
     {
         /// <summary>
         /// The base URI of the service.
@@ -33,11 +33,6 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// Gets or sets json deserialization settings.
         /// </summary>
         JsonSerializerSettings DeserializationSettings { get; }
-
-        /// <summary>
-        /// Client API version.
-        /// </summary>
-        string ApiVersion { get; }
 
         /// <summary>
         /// Subscription credentials which uniquely identify client
@@ -65,7 +60,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<Citizen>> GetByCprWithHttpMessagesAsync(System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetByCprWithHttpMessagesAsync(System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Gets citizen data by ID
@@ -86,7 +81,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<Citizen>> GetByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieves Cpr configuration assigned to the logic subscription
@@ -101,7 +96,7 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<CprProviderConfigurationModel>> GetCprConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetCprConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieves all Cpr configurations assigned to the logic subscription
@@ -163,6 +158,76 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client
         /// The cancellation token.
         /// </param>
         Task<HttpOperationResponse<CprProviderConfiguration>> UpdateDataDistributorConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='name'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<CprFakeProviderConfiguration>> CreateFakeProviderConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='configurationId'>
+        /// </param>
+        /// <param name='name'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<CprFakeProviderConfiguration>> UpdateFakeProviderConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='name'>
+        /// </param>
+        /// <param name='environment'>
+        /// Possible values include: 'production', 'test'
+        /// </param>
+        /// <param name='certificate'>
+        /// </param>
+        /// <param name='certificatePassword'>
+        /// </param>
+        /// <param name='municipalityCvr'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> CreateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='configurationId'>
+        /// </param>
+        /// <param name='name'>
+        /// </param>
+        /// <param name='environment'>
+        /// Possible values include: 'production', 'test'
+        /// </param>
+        /// <param name='certificate'>
+        /// </param>
+        /// <param name='certificatePassword'>
+        /// </param>
+        /// <param name='municipalityCvr'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> UpdateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
     }
 }

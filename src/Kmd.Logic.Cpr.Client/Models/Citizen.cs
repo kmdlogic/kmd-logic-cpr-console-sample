@@ -4,7 +4,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
+namespace Kmd.Logic.Cpr.Client.Models
 {
     using Newtonsoft.Json;
     using System.Collections;

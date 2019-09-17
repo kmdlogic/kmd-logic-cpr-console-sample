@@ -4,34 +4,33 @@
 // regenerated.
 // </auto-generated>
 
-namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
+namespace Kmd.Logic.Cpr.Client.Models
 {
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class CprProviderConfigurationModel
+    public partial class CprProviderConfiguration
     {
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfigurationModel
-        /// class.
+        /// Initializes a new instance of the CprProviderConfiguration class.
         /// </summary>
-        public CprProviderConfigurationModel()
+        public CprProviderConfiguration()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfigurationModel
-        /// class.
+        /// Initializes a new instance of the CprProviderConfiguration class.
         /// </summary>
-        public CprProviderConfigurationModel(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string provider = default(string))
+        /// <param name="environment">Possible values include: 'production',
+        /// 'test'</param>
+        public CprProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
         {
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
             CertificateFileName = certificateFileName;
             Environment = environment;
-            Provider = provider;
             CustomInit();
         }
 
@@ -61,14 +60,10 @@ namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
         public string CertificateFileName { get; set; }
 
         /// <summary>
+        /// Gets or sets possible values include: 'production', 'test'
         /// </summary>
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "provider")]
-        public string Provider { get; set; }
 
     }
 }
