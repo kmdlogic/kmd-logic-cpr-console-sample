@@ -4,25 +4,25 @@
 // regenerated.
 // </auto-generated>
 
-namespace Kmd.Logic.Cpr.ConsoleSample.Client.Models
+namespace Kmd.Logic.Cpr.Client.Models
 {
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class Parent
+    public partial class LegalGuardian
     {
         /// <summary>
-        /// Initializes a new instance of the Parent class.
+        /// Initializes a new instance of the LegalGuardian class.
         /// </summary>
-        public Parent()
+        public LegalGuardian()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the Parent class.
+        /// Initializes a new instance of the LegalGuardian class.
         /// </summary>
-        public Parent(string id = default(string), string cpr = default(string), string relation = default(string))
+        public LegalGuardian(string id = default(string), string cpr = default(string), string relation = default(string))
         {
             Id = id;
             Cpr = cpr;
