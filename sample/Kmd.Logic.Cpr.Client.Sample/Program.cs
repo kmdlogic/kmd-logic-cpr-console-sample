@@ -2,8 +2,8 @@
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kmd.Logic.Identity.Authorization;
 using Kmd.Logic.Cpr.Client.Models;
+using Kmd.Logic.Identity.Authorization;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 

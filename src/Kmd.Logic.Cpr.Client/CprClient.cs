@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kmd.Logic.Identity.Authorization;
 using Kmd.Logic.Cpr.Client.Models;
+using Kmd.Logic.Identity.Authorization;
 using Microsoft.Rest;
 
 namespace Kmd.Logic.Cpr.Client
