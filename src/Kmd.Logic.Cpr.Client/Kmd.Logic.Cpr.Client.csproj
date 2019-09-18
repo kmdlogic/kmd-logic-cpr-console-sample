@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.20" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Kmd.Logic.Authentication" Version="0.1.0" />
+    <PackageReference Include="Kmd.Logic.Identity.Authorization" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
