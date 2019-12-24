@@ -1,0 +1,44 @@
+{
+  "Id": "16719145-0156-4de4-a399-0a393886f7b6",
+  "FirstName": "Jørgen",
+  "LastName": "Laustsen",
+  "Cpr": "1510950069",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "004",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "008",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

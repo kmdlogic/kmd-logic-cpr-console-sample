@@ -1,0 +1,36 @@
+{
+    "Id": "fdf7ea99-6966-4f2a-994d-0e161d255356",
+    "FirstName": "Tim Demo",
+    "LastName": "Nielsen",
+    "Cpr": "1209026399",
+    "MaritalStatus": "Married",
+    "Status": "Departed",
+    "Parents": [
+        {
+            "Id": "540e0344-fb99-488d-a743-22057316c419",
+            "Cpr": "1502881015",
+            "Relation": "FatherOrCousin"
+        }
+    ],
+    "LegalGuardians": [],
+    "NameAndAddressProtection": false,
+    "Addresses": [
+        {
+          "BuildingNo": null,
+          "City": "Kongens Lyngby",
+          "MunicipalityCode": "0718",
+          "MunicipalityName": "Lyngby-Taarbæk",
+          "RoadCode": "0534",
+          "DarAddress": null,
+          "Floor": "2",
+          "HouseNo": "63",
+          "PostDistrict": "Kongens Lyngby",
+          "PostCode": "2800",
+          "DoorNo": "tv",
+          "RoadAddressingName": "Lyngbygårdsvej"
+        }
+    ],
+    "Citizenships": [
+        "Danmark"
+    ]
+}

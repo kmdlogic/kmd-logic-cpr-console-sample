@@ -1,0 +1,30 @@
+{
+  "Id": "1d8ca3fe-75f8-4700-91bb-ad56f864e2c9",
+  "FirstName": "Lars",
+  "LastName": "Mikkelsen",
+  "Cpr": "1112801029",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2174",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "004",
+      "PostDistrict": "Hornbæk",
+      "PostCode": "3100",
+      "DoorNo": null,
+      "RoadAddressingName": "Gillelejevej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

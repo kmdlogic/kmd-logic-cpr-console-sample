@@ -1,0 +1,30 @@
+{
+  "Id": "f47a4f90-cc4c-4f3d-9680-918a69a2dc10",
+  "FirstName": "Jan",
+  "LastName": "Andersen",
+  "Cpr": "0710610029",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0004",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001",
+      "PostDistrict": "København V",
+      "PostCode": "1654",
+      "DoorNo": null,
+      "RoadAddressingName": "Abel Catrines Gade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

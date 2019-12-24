@@ -1,0 +1,30 @@
+{
+  "Id": "a5473a1b-e2f7-4e1d-abcc-b29a5cbdc5c5",
+  "FirstName": "Vinnie",
+  "LastName": "Madsen",
+  "Cpr": "0101600068",
+  "MaritalStatus": "Divorced",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "093",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Sverige"
+  ]
+}

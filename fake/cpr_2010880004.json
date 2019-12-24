@@ -1,0 +1,30 @@
+{
+  "Id": "667311e7-4bc3-48a8-a82f-5b34f584d025",
+  "FirstName": "Anja",
+  "LastName": "Christensen",
+  "Cpr": "2010880004",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hillerød",
+      "MunicipalityCode": "0219",
+      "MunicipalityName": "Hillerød",
+      "RoadCode": "2193",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001",
+      "PostDistrict": "Hillerød",
+      "PostCode": "3400",
+      "DoorNo": null,
+      "RoadAddressingName": "Gl. Kongevej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

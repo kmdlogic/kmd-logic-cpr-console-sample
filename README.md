@@ -48,23 +48,20 @@ To get started:
 
 A simple console application is included to demonstrate how to call Logic CPR API. You will need to provide the settings described above in `appsettings.json`.
 
-When run you should see the details of the _Citizen_ for the nominated CPR number printed to the console.
+When run you should see the details of the _Citizen_ for the nominated CPR number is printed to the console.
 
 ## CPR Fake Provider
 
-The following citizens are known by the Fake Provider:
+The Fake Provider is a great solution for use in Demo or Test environments and also allows you to begin development immediately whilst you wait for your formal credentials.
 
-- Case #1 _(will generate real data taken from Datafolderer test environment)_:
-  - CPR: 0101015084
-  - ID: 5e3d9df6-d082-467a-88bd-dca56edc7328
-- Case #2 _(will generate random data)_:
-  - CPR: 1802860028
-  - ID: 9eb934ac-3680-465a-96ce-40f3f24f9514
-- Case #3 _(will generate random data)_:
-  - CPR: 0101774481
-  - ID: cf1b281d-2fb6-4ee2-b602-e3468f90f5b6
-- Case #4 _(will generate random data)_:
-  - CPR: 2712990093
-  - ID: e6478bde-1c0a-4d1a-91a0-ceb6bea709f6
+The Fake Provider will return well-described test data for a large number of CPR numbers and identifiers. These can be viewed in the [fake](./fake) folder of this repository. This includes the [CPR test data set](https://cprservicedesk.atlassian.net/wiki/spaces/CPR/pages/11436127/Testdata) plus additional examples that have been requested by developers.
 
-Any other CPR or ID provided to the Fake Provider will give you `404 NotFound` if the Logic service is called directly or `null` from the CprClient.
+If not one of the well-described tests, the Fake Provider exhibits the following behaviour:
+
+- The CPR number must be 10 digits long, with the first 6 digits being a valid `ddMMyy` formatted date
+- If the CPR number ends in `000`, `001` or `002` it returns NotFound
+- The Fake provider returns random data, using the CPR number as the seed. This ensures recurring calls return the same response
+
+NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
+
+When requesting CPR details by id, the same process applies. If it is not one of the well-described test identifiers then the id must be in the format "fa4e2c`<CPR number>`fa4e2c`<CPR number>`". For example, the CPR `0301821005` has a corresponding id of `fa4e2c03-0182-1005-fa4e-2c0301821005`. All other identifiers will return NotFound.

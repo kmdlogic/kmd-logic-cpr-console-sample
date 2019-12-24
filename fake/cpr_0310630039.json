@@ -1,0 +1,30 @@
+{
+  "Id": "e0aa5a84-23b3-4c96-b4ec-1584deff270e",
+  "FirstName": "Jeff",
+  "LastName": "Jensen",
+  "Cpr": "0310630039",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0751",
+      "MunicipalityName": "Århus",
+      "RoadCode": "7515",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "018",
+      "PostDistrict": "Århus C",
+      "PostCode": "8000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Bruunsgade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

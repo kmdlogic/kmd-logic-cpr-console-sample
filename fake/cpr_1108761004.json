@@ -1,0 +1,30 @@
+{
+  "Id": "ddcee3ab-9e3d-4e05-90e2-4c861c6ffc38",
+  "FirstName": "Michael",
+  "LastName": "Jensen",
+  "Cpr": "1108761004",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2172",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "016",
+      "PostDistrict": "Helsingør",
+      "PostCode": "3000",
+      "DoorNo": null,
+      "RoadAddressingName": "Hornbækvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

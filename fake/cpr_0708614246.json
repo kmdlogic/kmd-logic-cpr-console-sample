@@ -1,0 +1,30 @@
+{
+  "Id": "91d0a263-901c-42db-8b2c-518d4f125385",
+  "FirstName": "Monika",
+  "LastName": "Eliasen",
+  "Cpr": "0708614246",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "004",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

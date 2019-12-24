@@ -1,0 +1,30 @@
+{
+  "Id": "4683a0f6-edc1-4428-b0be-ce7f513d0bac",
+  "FirstName": "Jens",
+  "LastName": "Petersen",
+  "Cpr": "2005610001",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hillerød",
+      "MunicipalityCode": "0219",
+      "MunicipalityName": "Hillerød",
+      "RoadCode": "2191",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001",
+      "PostDistrict": "Hillerød",
+      "PostCode": "3400",
+      "DoorNo": null,
+      "RoadAddressingName": "Chr. Jensens Vej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

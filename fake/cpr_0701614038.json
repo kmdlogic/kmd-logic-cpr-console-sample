@@ -1,0 +1,58 @@
+{
+  "Id": "f0bc9c66-c814-49a4-a96e-e6dc1060ccc7",
+  "FirstName": "Asta",
+  "LastName": "Jakobsen",
+  "Cpr": "0701614038",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Ribe",
+      "MunicipalityCode": "0571",
+      "MunicipalityName": "Ribe",
+      "RoadCode": "5711",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "005",
+      "PostDistrict": "Ribe",
+      "PostCode": "6760",
+      "DoorNo": null,
+      "RoadAddressingName": "Hovedgaden"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Ålborg",
+      "MunicipalityCode": "0751",
+      "MunicipalityName": "Århus",
+      "RoadCode": "7512",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "051",
+      "PostDistrict": "Århus C",
+      "PostCode": "8000",
+      "DoorNo": null,
+      "RoadAddressingName": "Nørrevej"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Risskov",
+      "MunicipalityCode": "0751",
+      "MunicipalityName": "Århus",
+      "RoadCode": "7511",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "010",
+      "PostDistrict": "Århus C",
+      "PostCode": "8000",
+      "DoorNo": null,
+      "RoadAddressingName": "Byvænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+    "Id": "d40b0d34-670a-46cf-a77e-0d732ca8112e",
+    "FirstName": "Klaus Demo",
+    "LastName": "Nielsen",
+    "Cpr": "0110692579",
+    "MaritalStatus": "Married",
+    "Status": "Departed",
+    "Parents": [
+        {
+            "Id": "540e0344-fb99-488d-a743-22057316c419",
+            "Cpr": "1502881015",
+            "Relation": "FatherOrCousin"
+        }
+    ],
+    "LegalGuardians": [],
+    "NameAndAddressProtection": false,
+    "Addresses": [
+        {
+          "BuildingNo": null,
+          "City": "Kongens Lyngby",
+          "MunicipalityCode": "0718",
+          "MunicipalityName": "Lyngby-Taarbæk",
+          "RoadCode": "0189",
+          "DarAddress": null,
+          "Floor": null,
+          "HouseNo": "9",
+          "PostDistrict": "Kongens Lyngby",
+          "PostCode": "2800",
+          "DoorNo": null,
+          "RoadAddressingName": "Skolevænget"
+        }
+    ],
+    "Citizenships": [
+        "Danmark"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "Id": "e88d26b3-467f-4fe4-af2e-dcfdcc1a23cc",
+  "FirstName": "Bent",
+  "LastName": "Thorsen",
+  "Cpr": "2009693133",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "100",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "101A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0002",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Sverige"
+  ]
+}

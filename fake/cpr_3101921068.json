@@ -1,0 +1,36 @@
+{
+  "Id": "051b0b5b-143b-44d5-99ca-f48915c3889a",
+  "FirstName": "Agnete",
+  "LastName": "Svendsen",
+  "Cpr": "3101921068",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "af7b847e-4b71-4de2-bcdd-b56ea2df82f5",
+      "Cpr": "3008711010",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "03",
+      "HouseNo": "010",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

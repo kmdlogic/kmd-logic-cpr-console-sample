@@ -1,0 +1,30 @@
+{
+  "Id": "bb2844ae-13f8-432a-95c8-f2f52067092f",
+  "FirstName": "Hans",
+  "LastName": "Hansen",
+  "Cpr": "1103713745",
+  "MaritalStatus": "Divorced",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": true,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "032",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

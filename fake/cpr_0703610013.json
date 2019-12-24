@@ -1,0 +1,55 @@
+{
+  "Id": "b69a5a15-45ba-4b26-8bba-70cdf23c8e42",
+  "FirstName": "Sven",
+  "LastName": "Holst",
+  "Cpr": "0703610013",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "30b6fc08-1a32-4af5-8ae5-79a578367473",
+      "Cpr": "0904410039",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "4063866c-5563-418f-bb04-75f0cee6d3ad",
+      "Cpr": "0902410058",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "6176",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "København NV",
+      "PostCode": "2400",
+      "DoorNo": "th",
+      "RoadAddressingName": "Sadelmagervej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "3742",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "006",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Jellingvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "Id": "adbe7e74-04a4-4caa-a6fe-85c95bc04a68",
+  "FirstName": "Arne",
+  "LastName": "Henriksen",
+  "Cpr": "0901414025",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Varde",
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5732",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "077A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Skovvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

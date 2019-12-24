@@ -1,0 +1,111 @@
+{
+  "Id": "4063866c-5563-418f-bb04-75f0cee6d3ad",
+  "FirstName": "Hilda",
+  "LastName": "Holst",
+  "Cpr": "0902410058",
+  "MaritalStatus": "RegisteredPartnership",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": null,
+      "Cpr": null,
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": null,
+      "Cpr": null,
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0004",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "København V",
+      "PostCode": "1654",
+      "DoorNo": "th",
+      "RoadAddressingName": "Abel Catrines Gade"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0312",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "København N",
+      "PostCode": "2200",
+      "DoorNo": "th",
+      "RoadAddressingName": "Baggesensgade"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0296",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "København S",
+      "PostCode": "2300",
+      "DoorNo": "th",
+      "RoadAddressingName": "Backersvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "1012",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "Tåstrup",
+      "PostCode": "2630",
+      "DoorNo": "th",
+      "RoadAddressingName": "Ceresvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "1012",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "001",
+      "PostDistrict": "Tåstrup",
+      "PostCode": "2630",
+      "DoorNo": "th",
+      "RoadAddressingName": "Ceresvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "3742",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "006",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Jellingvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

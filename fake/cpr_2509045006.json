@@ -1,0 +1,36 @@
+{
+  "Id": "e173d3f2-1c6e-48e4-8c30-ff6dd8ed31cf",
+  "FirstName": "Pernille",
+  "LastName": "Petersen",
+  "Cpr": "2509045006",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "1fa95798-47d7-413b-8e6f-4b91de8fc706",
+      "Cpr": "0506650038",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "098",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

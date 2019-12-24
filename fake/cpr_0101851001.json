@@ -1,0 +1,41 @@
+{
+  "Id": "ebcd2a04-0e96-422b-96bc-f7be05c9e2d9",
+  "FirstName": "Hans",
+  "LastName": "Hansen",
+  "Cpr": "0101851001",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
+      "Cpr": "0707650079",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "058ef677-d66e-490e-a318-865c78a5818c",
+      "Cpr": "0701650018",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "012",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

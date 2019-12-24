@@ -1,0 +1,30 @@
+{
+  "Id": "88a044e5-ece1-4707-8b8b-170d5596b984",
+  "FirstName": "Jørgen",
+  "LastName": "Jensen",
+  "Cpr": "0101650049",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Gevninge",
+      "MunicipalityCode": "0265",
+      "MunicipalityName": "Roskilde",
+      "RoadCode": "2650",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Roskilde",
+      "PostCode": "4000",
+      "DoorNo": null,
+      "RoadAddressingName": "Apotekerstræde"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

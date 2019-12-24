@@ -1,0 +1,30 @@
+{
+  "Id": "7d713ee2-b7e8-44fe-bdcd-d1af32946caf",
+  "FirstName": "Søren",
+  "LastName": "Hansen",
+  "Cpr": "0702811007",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0040",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "København S",
+      "PostCode": "2300",
+      "DoorNo": null,
+      "RoadAddressingName": "Agerlandsvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

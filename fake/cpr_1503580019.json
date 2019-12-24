@@ -1,0 +1,58 @@
+{
+  "Id": "025ecb8b-0a19-4019-baf0-a09d68ad5b81",
+  "FirstName": "Kaj",
+  "LastName": "Olesen",
+  "Cpr": "1503580019",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "012",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "008",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "032",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

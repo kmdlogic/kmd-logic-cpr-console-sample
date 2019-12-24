@@ -1,0 +1,55 @@
+{
+  "Id": "e86456b0-3670-4fc9-aa8b-fa7532333868",
+  "FirstName": "Niels",
+  "LastName": "Holm",
+  "Cpr": "1312814435",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "7d7aed36-0d31-46c7-a175-7f68e1ac60c2",
+      "Cpr": "0707614307",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "8a31a5cf-8f9e-4511-b91d-7eb66f1c9641",
+      "Cpr": "0706614206",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Industrivænget"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

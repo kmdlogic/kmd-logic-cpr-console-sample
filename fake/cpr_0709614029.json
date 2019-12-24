@@ -1,0 +1,30 @@
+{
+  "Id": "57890f00-3e60-46f2-bcc3-484a41a14a48",
+  "FirstName": "Adam",
+  "LastName": "Jakobsen",
+  "Cpr": "0709614029",
+  "MaritalStatus": "Married",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Ålborg",
+      "MunicipalityCode": "0751",
+      "MunicipalityName": "Århus",
+      "RoadCode": "7512",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "051",
+      "PostDistrict": "Århus C",
+      "PostCode": "8000",
+      "DoorNo": null,
+      "RoadAddressingName": "Nørrevej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

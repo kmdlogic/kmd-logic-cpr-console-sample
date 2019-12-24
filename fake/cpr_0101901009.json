@@ -1,0 +1,36 @@
+{
+  "Id": "c3f7a946-ef91-480b-b02e-d34053348b67",
+  "FirstName": "Mogens",
+  "LastName": "Svensson",
+  "Cpr": "0101901009",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "6e426083-198b-47cf-adfd-87d5c8feff02",
+      "Cpr": "0508610017",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "008A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0001",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Tyskland,Forb.Rep"
+  ]
+}

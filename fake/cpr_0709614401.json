@@ -1,0 +1,44 @@
+{
+  "Id": "83c43551-e2d4-4b13-8177-f3931a344185",
+  "FirstName": "Ove",
+  "LastName": "Brammer",
+  "Cpr": "0709614401",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "001",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "mf",
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8520",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": null,
+      "RoadAddressingName": "Pr Caroline Amlg"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

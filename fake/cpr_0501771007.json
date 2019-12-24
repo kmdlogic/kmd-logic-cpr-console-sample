@@ -1,0 +1,30 @@
+{
+  "Id": "693f751f-95d7-445d-a6d8-8eb37005fcdc",
+  "FirstName": "Michael",
+  "LastName": "Pedersen",
+  "Cpr": "0501771007",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0040",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "006",
+      "PostDistrict": "København S",
+      "PostCode": "2300",
+      "DoorNo": null,
+      "RoadAddressingName": "Agerlandsvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

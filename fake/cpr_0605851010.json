@@ -1,0 +1,36 @@
+{
+  "Id": "b5e5f970-7bd0-4457-8771-79a9609961ba",
+  "FirstName": "Pia",
+  "LastName": "Petersen",
+  "Cpr": "0605851010",
+  "MaritalStatus": "Death",
+  "Status": "Death",
+  "Parents": [
+    {
+      "Id": "1fa95798-47d7-413b-8e6f-4b91de8fc706",
+      "Cpr": "0506650038",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "098",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

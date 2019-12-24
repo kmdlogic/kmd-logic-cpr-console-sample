@@ -1,0 +1,30 @@
+{
+  "Id": "03e997d1-8e29-4a03-b078-38c92ab81ffc",
+  "FirstName": "Bodil",
+  "LastName": "Jensen",
+  "Cpr": "0512801048",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0461",
+      "MunicipalityName": "Odense",
+      "RoadCode": "4611",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "016",
+      "PostDistrict": "Odense N",
+      "PostCode": "5270",
+      "DoorNo": null,
+      "RoadAddressingName": "Odensevej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

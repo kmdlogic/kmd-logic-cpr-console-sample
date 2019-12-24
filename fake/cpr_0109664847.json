@@ -1,0 +1,45 @@
+{
+  "Id": "fca04d57-35cd-4456-ab05-390cc3d2767f",
+  "FirstName": "Karl Peter",
+  "LastName": "Billeskov",
+  "Cpr": "0109664847",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInGreenland",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": "0015",
+      "City": "Udstedet",
+      "MunicipalityCode": "0925",
+      "MunicipalityName": "Manitsoq-Sukkertop",
+      "RoadCode": "0975",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": null,
+      "PostDistrict": "Sukkertoppen",
+      "PostCode": "3912",
+      "DoorNo": null,
+      "RoadAddressingName": "Rypevej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0185",
+      "MunicipalityName": "Tårnby",
+      "RoadCode": "1856",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002A",
+      "PostDistrict": "Sorø",
+      "PostCode": "4180",
+      "DoorNo": null,
+      "RoadAddressingName": "Fasanvænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark",
+    "Nepal"
+  ]
+}

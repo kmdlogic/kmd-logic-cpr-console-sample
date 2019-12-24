@@ -1,0 +1,30 @@
+{
+  "Id": "e2b2b385-02b4-4304-a246-d5171ad05911",
+  "FirstName": "Lise",
+  "LastName": "Overgaard",
+  "Cpr": "0303704728",
+  "MaritalStatus": "Divorced",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": true,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Fraugde",
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "204",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

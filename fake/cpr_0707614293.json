@@ -1,0 +1,69 @@
+{
+  "Id": "bd350589-5182-429f-80cc-6aa9ba713d74",
+  "FirstName": "Lars",
+  "LastName": "Henriksen",
+  "Cpr": "0707614293",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "adbe7e74-04a4-4caa-a6fe-85c95bc04a68",
+      "Cpr": "0901414025",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "7a6932ab-346e-439f-a734-84b2ba22e246",
+      "Cpr": "0912414426",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Industrivænget"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Vodskov",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8511",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "050",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": null,
+      "RoadAddressingName": "Søgade"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Lindholm",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8513",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "050",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": null,
+      "RoadAddressingName": "Svinget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

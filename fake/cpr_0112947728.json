@@ -1,0 +1,30 @@
+{
+  "Id": "f9d816a3-8c63-4e94-a153-429c2e3ba915",
+  "FirstName": "Lissen Viola",
+  "LastName": "Larsson",
+  "Cpr": "0112947728",
+  "MaritalStatus": "Widow",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0173",
+      "MunicipalityName": "Lyngby-Taarbæk",
+      "RoadCode": "1730",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "011",
+      "PostDistrict": "Hillerød",
+      "PostCode": "3400",
+      "DoorNo": "th",
+      "RoadAddressingName": "C.V.Jørgensens Alle"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

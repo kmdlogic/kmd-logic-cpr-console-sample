@@ -1,0 +1,30 @@
+{
+  "Id": "707b7f41-c115-4285-a0d0-d53a4c25a222",
+  "FirstName": "Kamilla",
+  "LastName": "Petersen",
+  "Cpr": "0511821002",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2174",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "012",
+      "PostDistrict": "Hornbæk",
+      "PostCode": "3100",
+      "DoorNo": null,
+      "RoadAddressingName": "Gillelejevej"
+    }
+  ],
+  "Citizenships": [
+    "Frankrig"
+  ]
+}

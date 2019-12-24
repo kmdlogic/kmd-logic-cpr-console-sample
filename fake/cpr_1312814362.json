@@ -1,0 +1,41 @@
+{
+  "Id": "dd9c3d0b-950d-49bb-8a71-5ff6f2bb8821",
+  "FirstName": "Janne",
+  "LastName": "Mortensen",
+  "Cpr": "1312814362",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "9198bd0a-0f9e-4b2b-ae81-000c7e7fbac1",
+      "Cpr": "0701614054",
+      "Relation": "Mother"
+    },
+    {
+      "Id": "7ea95f31-3a10-4f0f-8ad7-770030bf447b",
+      "Cpr": "0707614285",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "Id": "57de6e08-1caa-49c6-a47c-29a163173593",
+  "FirstName": "Elisabeth",
+  "LastName": "Ærenskov-Rasmussen",
+  "Cpr": "0709614266",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Risskov",
+      "MunicipalityCode": "0751",
+      "MunicipalityName": "Århus",
+      "RoadCode": "7511",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "010",
+      "PostDistrict": "Århus C",
+      "PostCode": "8000",
+      "DoorNo": "mf",
+      "RoadAddressingName": "Byvænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

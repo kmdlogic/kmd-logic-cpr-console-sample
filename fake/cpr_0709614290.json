@@ -1,0 +1,41 @@
+{
+  "Id": "e8cc2e70-7ee6-4663-a008-4a369a9f182f",
+  "FirstName": "Grethe",
+  "LastName": "Roland",
+  "Cpr": "0709614290",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "99d2c3f8-3a8e-403a-ab87-ad523d77a280",
+      "Cpr": "0905414143",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "5f0a6f0b-d0dd-4624-9e1a-b473014c6da8",
+      "Cpr": "0901414084",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "010",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

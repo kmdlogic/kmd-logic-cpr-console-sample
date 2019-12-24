@@ -1,0 +1,30 @@
+{
+  "Id": "bda78394-9aca-48e5-a91c-4358afd34551",
+  "FirstName": "Maria",
+  "LastName": "Bendtsen",
+  "Cpr": "1811781068",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2174",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "006",
+      "PostDistrict": "Hornbæk",
+      "PostCode": "3100",
+      "DoorNo": null,
+      "RoadAddressingName": "Gillelejevej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

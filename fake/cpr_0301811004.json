@@ -1,0 +1,30 @@
+{
+  "Id": "836632b6-4d44-4d8b-8ec5-e06d0050eef1",
+  "FirstName": "Tina",
+  "LastName": "Hansen",
+  "Cpr": "0301811004",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2173",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Helsingør",
+      "PostCode": "3000",
+      "DoorNo": null,
+      "RoadAddressingName": "Hillerødvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

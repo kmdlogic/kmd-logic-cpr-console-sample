@@ -1,0 +1,44 @@
+{
+  "Id": "ebe5b4a6-41ff-4801-9bab-19506450899a",
+  "FirstName": "Christian",
+  "LastName": "Svanholm-Nielsen",
+  "Cpr": "0708614319",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8513",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "065",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": null,
+      "RoadAddressingName": "Svinget"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

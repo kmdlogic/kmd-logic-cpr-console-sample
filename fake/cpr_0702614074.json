@@ -1,0 +1,30 @@
+{
+  "Id": "4f179d74-f744-4b0f-bc1d-d9ffd58299d0",
+  "FirstName": "Tove",
+  "LastName": "Andreasen",
+  "Cpr": "0702614074",
+  "MaritalStatus": "Married",
+  "Status": "Disappeared",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8511",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "033",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Søgade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

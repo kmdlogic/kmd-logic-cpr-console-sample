@@ -1,0 +1,65 @@
+{
+  "Id": "2d15a7d1-2c54-4283-8828-1398785e2738",
+  "FirstName": "Gert",
+  "LastName": "Svensson",
+  "Cpr": "0705921059",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "5ff198e8-18d3-4c31-aac2-645d9cea1103",
+      "Cpr": "0706610049",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [
+    {
+      "Id": null,
+      "Cpr": null,
+      "Relation": "Mother"
+    },
+    {
+      "Id": "5ff198e8-18d3-4c31-aac2-645d9cea1103",
+      "Cpr": "0706610049",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "100",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "101A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0002",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark",
+    "Sverige",
+    "Danmark",
+    "Sverige",
+    "Sverige"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "Id": "7ea95f31-3a10-4f0f-8ad7-770030bf447b",
+  "FirstName": "Jens",
+  "LastName": "Mortensen",
+  "Cpr": "0707614285",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "844bd74b-1826-49be-b23f-deec4351f45e",
+      "Cpr": "0909414385",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "4e1c795f-435a-4afc-bb9d-53e9f40e5681",
+      "Cpr": "0912414434",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "034",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "101",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "mf",
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": "Lindholm",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8513",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "006",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Svinget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

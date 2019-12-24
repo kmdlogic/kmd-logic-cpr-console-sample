@@ -1,0 +1,44 @@
+{
+  "Id": "e48cc504-abec-458d-b123-dbc25d237297",
+  "FirstName": "Tusnilda Kamma",
+  "LastName": "Olsen",
+  "Cpr": "2507847776",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0208",
+      "MunicipalityName": "Fredensborg-Humlebæk",
+      "RoadCode": "2080",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "025B",
+      "PostDistrict": "Valby",
+      "PostCode": "2500",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Allegade"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0173",
+      "MunicipalityName": "Lyngby-Taarbæk",
+      "RoadCode": "1732",
+      "DarAddress": null,
+      "Floor": "03",
+      "HouseNo": "001",
+      "PostDistrict": "Hillerød",
+      "PostCode": "3400",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Grusgraven"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "Id": "8da7a777-1577-4ac8-897b-fbed77724c59",
+  "FirstName": "Signe",
+  "LastName": "Petersen",
+  "Cpr": "0607941068",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "cef111de-e0f4-479a-a300-70648ed0ae81",
+      "Cpr": "0607620059",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "1fa95798-47d7-413b-8e6f-4b91de8fc706",
+      "Cpr": "0506650038",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [
+    {
+      "Id": "cef111de-e0f4-479a-a300-70648ed0ae81",
+      "Cpr": "0607620059",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "1fa95798-47d7-413b-8e6f-4b91de8fc706",
+      "Cpr": "0506650038",
+      "Relation": "Mother"
+    }
+  ],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Gevninge",
+      "MunicipalityCode": "0265",
+      "MunicipalityName": "Roskilde",
+      "RoadCode": "2650",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Roskilde",
+      "PostCode": "4000",
+      "DoorNo": null,
+      "RoadAddressingName": "Apotekerstræde"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "098B",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "th",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

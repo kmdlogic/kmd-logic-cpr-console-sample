@@ -1,0 +1,44 @@
+{
+  "Id": "cef111de-e0f4-479a-a300-70648ed0ae81",
+  "FirstName": "Mads",
+  "LastName": "Petersen",
+  "Cpr": "0607620059",
+  "MaritalStatus": "Death",
+  "Status": "Death",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "098B",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "th",
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "02",
+      "HouseNo": "098B",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "th",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Tyskland,Forb.Rep"
+  ]
+}

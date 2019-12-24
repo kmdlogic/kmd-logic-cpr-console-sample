@@ -1,0 +1,58 @@
+{
+  "Id": "03ad19bc-8e84-4b70-a9e5-9108cf4b5f28",
+  "FirstName": "Hans",
+  "LastName": "Larsen",
+  "Cpr": "3012680049",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "012",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "008",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "032",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

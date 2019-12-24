@@ -1,0 +1,66 @@
+{
+  "Id": "d8128ec7-7eb4-4fa3-a99a-7920814c1975",
+  "FirstName": "Mia",
+  "LastName": "Kristensen",
+  "Cpr": "0107038302",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "e88d26b3-467f-4fe4-af2e-dcfdcc1a23cc",
+      "Cpr": "2009693133",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "ccfd6998-cd76-499e-83d4-509d211edd82",
+      "Cpr": "0308684954",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [
+    {
+      "Id": "e88d26b3-467f-4fe4-af2e-dcfdcc1a23cc",
+      "Cpr": "2009693133",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "ccfd6998-cd76-499e-83d4-509d211edd82",
+      "Cpr": "0308684954",
+      "Relation": "Mother"
+    }
+  ],
+  "NameAndAddressProtection": true,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "100",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "101A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0002",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Sverige"
+  ]
+}

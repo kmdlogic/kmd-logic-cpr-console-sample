@@ -1,0 +1,30 @@
+{
+  "Id": "ff37ce25-8c45-43f1-8336-303377404f14",
+  "FirstName": "Tina",
+  "LastName": "Mikkelsen",
+  "Cpr": "0811811068",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2172",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Helsingør",
+      "PostCode": "3000",
+      "DoorNo": null,
+      "RoadAddressingName": "Hornbækvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

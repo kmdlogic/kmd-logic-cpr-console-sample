@@ -1,0 +1,30 @@
+{
+  "Id": "0100e444-dccd-4ceb-880f-c489bf7ba6a0",
+  "FirstName": "Pia",
+  "LastName": "Hansen",
+  "Cpr": "0308811018",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmarkHighwayCode",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "9901",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": null,
+      "PostDistrict": "Ukendt",
+      "PostCode": "9999",
+      "DoorNo": null,
+      "RoadAddressingName": "Uden Fast Bopæl"
+    }
+  ],
+  "Citizenships": [
+    "Italien"
+  ]
+}

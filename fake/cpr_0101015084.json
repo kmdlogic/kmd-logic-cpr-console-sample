@@ -1,0 +1,42 @@
+{
+    "Id": "5e3d9df6-d082-467a-88bd-dca56edc7328",
+    "FirstName": "Tut",
+    "LastName": "Tuttersen",
+    "Cpr": "0101015084",
+    "MaritalStatus": "Married",
+    "Status": "Departed",
+    "Parents": [
+        {
+            "Id": "540e0344-fb99-488d-a743-22057316c419",
+            "Cpr": "1502881015",
+            "Relation": "FatherOrCousin"
+        }
+    ],
+    "LegalGuardians": [],
+    "NameAndAddressProtection": false,
+    "Addresses": [
+        {
+            "BuildingNo": null,
+            "City": "Hove",
+            "MunicipalityCode": "0173",
+            "MunicipalityName": "Lyngby-Taarbæk",
+            "RoadCode": "7007",
+            "DarAddress": null,
+            "Floor": null,
+            "HouseNo": "333",
+            "PostDistrict": "Smørum",
+            "PostCode": "2765",
+            "DoorNo": null,
+            "RoadAddressingName": "A Pedersens Blvd"
+        }
+    ],
+    "Citizenships": [
+        "Indien",
+        "Danmark",
+        "Laos",
+        "Danmark",
+        "Indien",
+        "Danmark",
+        "Danmark"
+    ]
+}

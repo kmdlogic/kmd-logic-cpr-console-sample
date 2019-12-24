@@ -1,0 +1,30 @@
+{
+  "Id": "05d1d693-b24c-4b90-bb40-0932cd344446",
+  "FirstName": "Britt",
+  "LastName": "Madsen",
+  "Cpr": "3004700138",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "7021",
+      "DarAddress": null,
+      "Floor": "03",
+      "HouseNo": "019",
+      "PostDistrict": "Odense C",
+      "PostCode": "5000",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Opus Bp Allé"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

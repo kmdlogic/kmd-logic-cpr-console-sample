@@ -1,0 +1,30 @@
+{
+  "Id": "8e9baa6f-2cde-438a-b67b-6e24d4b0668a",
+  "FirstName": "Lars",
+  "LastName": "Andersen",
+  "Cpr": "2903801029",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0416",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "001",
+      "PostDistrict": "København Ø",
+      "PostCode": "2100",
+      "DoorNo": "th",
+      "RoadAddressingName": "Bechgaardsgade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

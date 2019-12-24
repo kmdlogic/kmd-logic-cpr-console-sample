@@ -1,0 +1,52 @@
+{
+  "Id": "bc62ce0f-92fd-4320-abb0-a242346cd6cd",
+  "FirstName": "Pernille",
+  "LastName": "Andersen",
+  "Cpr": "0706015000",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "f47a4f90-cc4c-4f3d-9680-918a69a2dc10",
+      "Cpr": "0710610029",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "4fe8e2c9-9309-4a10-ba5c-5aa6aa8aafc8",
+      "Cpr": "0701590058",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [
+    {
+      "Id": "f47a4f90-cc4c-4f3d-9680-918a69a2dc10",
+      "Cpr": "0710610029",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "4fe8e2c9-9309-4a10-ba5c-5aa6aa8aafc8",
+      "Cpr": "0701590058",
+      "Relation": "Mother"
+    }
+  ],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0004",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001",
+      "PostDistrict": "København V",
+      "PostCode": "1654",
+      "DoorNo": null,
+      "RoadAddressingName": "Abel Catrines Gade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

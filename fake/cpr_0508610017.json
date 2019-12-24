@@ -1,0 +1,46 @@
+{
+  "Id": "6e426083-198b-47cf-adfd-87d5c8feff02",
+  "FirstName": "Carsten",
+  "LastName": "Svensson",
+  "Cpr": "0508610017",
+  "MaritalStatus": "RegisteredPartnership",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "008",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "008A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0001",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark",
+    "Tyskland,Forb.Rep",
+    "Tyskland,Forb.Rep"
+  ]
+}

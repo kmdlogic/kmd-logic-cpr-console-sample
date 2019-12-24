@@ -1,0 +1,36 @@
+{
+    "Id": "7ea46ed7-732e-4270-a079-92358800a245",
+    "FirstName": "Klaus Test",
+    "LastName": "Nielsen",
+    "Cpr": "0110692439",
+    "MaritalStatus": "Married",
+    "Status": "Departed",
+    "Parents": [
+        {
+            "Id": "540e0344-fb99-488d-a743-22057316c419",
+            "Cpr": "1502881015",
+            "Relation": "FatherOrCousin"
+        }
+    ],
+    "LegalGuardians": [],
+    "NameAndAddressProtection": false,
+    "Addresses": [
+        {
+          "BuildingNo": null,
+          "City": "Kongens Lyngby",
+          "MunicipalityCode": "0718",
+          "MunicipalityName": "Lyngby-Taarbæk",
+          "RoadCode": "0189",
+          "DarAddress": null,
+          "Floor": null,
+          "HouseNo": "9",
+          "PostDistrict": "Kongens Lyngby",
+          "PostCode": "2800",
+          "DoorNo": null,
+          "RoadAddressingName": "Skolevænget"
+        }
+    ],
+    "Citizenships": [
+        "Danmark"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "Id": "58a235d6-8bf4-453d-be2a-c34836f2b1d0",
+  "FirstName": "Lars",
+  "LastName": "Pedersen",
+  "Cpr": "1111791003",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": true,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001B",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

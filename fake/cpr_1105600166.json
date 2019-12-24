@@ -1,0 +1,44 @@
+{
+  "Id": "39e02fca-be27-45b7-b695-25ad0eb2320f",
+  "FirstName": "Sofia",
+  "LastName": "Gomez",
+  "Cpr": "1105600166",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": true,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "007",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "012D",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    }
+  ],
+  "Citizenships": [
+    "Argentina"
+  ]
+}

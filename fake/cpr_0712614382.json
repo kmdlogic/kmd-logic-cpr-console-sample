@@ -1,0 +1,41 @@
+{
+  "Id": "71844f1f-11df-48c4-aee5-11bfe6693b9b",
+  "FirstName": "Karin",
+  "LastName": "Henriksen",
+  "Cpr": "0712610018",
+  "MaritalStatus": "Married",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "689e6fea-3c77-4e20-a642-f32704eb986f",
+      "Cpr": "0912414507",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "a05cac81-e750-45e2-8052-c64d3e26bf3e",
+      "Cpr": "0904414174",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Hasseris",
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8512",
+      "DarAddress": null,
+      "Floor": "st",
+      "HouseNo": "002",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": "th",
+      "RoadAddressingName": "Industrivænget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

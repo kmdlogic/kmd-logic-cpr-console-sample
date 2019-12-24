@@ -1,0 +1,58 @@
+{
+  "Id": "6122c957-3f95-44a7-aed1-16ed1e5f0e3e",
+  "FirstName": "Hans",
+  "LastName": "Hansen",
+  "Cpr": "0503600021",
+  "MaritalStatus": "RegisteredPartnership",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001B",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "012",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    },
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0217",
+      "MunicipalityName": "Helsingør",
+      "RoadCode": "2171",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "001",
+      "PostDistrict": "Kvistgård",
+      "PostCode": "3490",
+      "DoorNo": null,
+      "RoadAddressingName": "Helsingørsvej"
+    }
+  ],
+  "Citizenships": [
+    "Tyrkiet"
+  ]
+}

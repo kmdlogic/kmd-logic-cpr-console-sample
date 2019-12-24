@@ -1,0 +1,36 @@
+{
+    "Id": "46c5a50f-bdd2-4164-a46d-c2a2ec551400",
+    "FirstName": "Anne Demo",
+    "LastName": "Nielsen",
+    "Cpr": "0203924410",
+    "MaritalStatus": "Married",
+    "Status": "Departed",
+    "Parents": [
+        {
+            "Id": "540e0344-fb99-488d-a743-22057316c419",
+            "Cpr": "1502881015",
+            "Relation": "FatherOrCousin"
+        }
+    ],
+    "LegalGuardians": [],
+    "NameAndAddressProtection": false,
+    "Addresses": [
+        {
+          "BuildingNo": null,
+          "City": "Kongens Lyngby",
+          "MunicipalityCode": "0173",
+          "MunicipalityName": "Lyngby-Taarbæk",
+          "RoadCode": "0189",
+          "DarAddress": null,
+          "Floor": null,
+          "HouseNo": "3",
+          "PostDistrict": "Kongens Lyngby",
+          "PostCode": "2800",
+          "DoorNo": null,
+          "RoadAddressingName": "Ellehøjvej"
+        }
+    ],
+    "Citizenships": [
+        "Danmark"
+    ]
+}

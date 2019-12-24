@@ -1,0 +1,52 @@
+{
+  "Id": "a168c3e8-415c-42c1-a23c-f53324896efa",
+  "FirstName": "Carsten",
+  "LastName": "Hansen",
+  "Cpr": "0808055015",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
+      "Cpr": "0707650079",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "058ef677-d66e-490e-a318-865c78a5818c",
+      "Cpr": "0701650018",
+      "Relation": "Mother"
+    }
+  ],
+  "LegalGuardians": [
+    {
+      "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
+      "Cpr": "0707650079",
+      "Relation": "FatherOrCousin"
+    },
+    {
+      "Id": "058ef677-d66e-490e-a318-865c78a5818c",
+      "Cpr": "0701650018",
+      "Relation": "Mother"
+    }
+  ],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "004",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": null,
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

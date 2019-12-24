@@ -1,0 +1,36 @@
+{
+  "Id": "b949d54f-f6cb-45ba-be64-1c03de53f6fb",
+  "FirstName": "Karen",
+  "LastName": "Svensson",
+  "Cpr": "0801931006",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [
+    {
+      "Id": "6e426083-198b-47cf-adfd-87d5c8feff02",
+      "Cpr": "0508610017",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0573",
+      "MunicipalityName": "Varde",
+      "RoadCode": "5731",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "008A",
+      "PostDistrict": "Varde",
+      "PostCode": "6800",
+      "DoorNo": "0001",
+      "RoadAddressingName": "Boulevarden"
+    }
+  ],
+  "Citizenships": [
+    "Tyskland,Forb.Rep"
+  ]
+}

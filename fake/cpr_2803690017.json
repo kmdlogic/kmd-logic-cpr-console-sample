@@ -1,0 +1,30 @@
+{
+  "Id": "773d5a91-c362-42e1-a9ff-9e0de37cafed",
+  "FirstName": "Ib",
+  "LastName": "Petersen",
+  "Cpr": "2803690017",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Gevninge",
+      "MunicipalityCode": "0265",
+      "MunicipalityName": "Roskilde",
+      "RoadCode": "2650",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "002",
+      "PostDistrict": "Roskilde",
+      "PostCode": "4000",
+      "DoorNo": null,
+      "RoadAddressingName": "Apotekerstræde"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

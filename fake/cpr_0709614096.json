@@ -1,0 +1,30 @@
+{
+  "Id": "660f5ce0-f5be-4834-aebd-b6cd1f17afdb",
+  "FirstName": "Bettina",
+  "LastName": "Christiansen",
+  "Cpr": "0709614096",
+  "MaritalStatus": "Single",
+  "Status": "ResidenceInDenmark",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0851",
+      "MunicipalityName": "Aalborg",
+      "RoadCode": "8513",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "017",
+      "PostDistrict": "Aalborg",
+      "PostCode": "9000",
+      "DoorNo": null,
+      "RoadAddressingName": "Svinget"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}

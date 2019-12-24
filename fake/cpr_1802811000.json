@@ -1,0 +1,30 @@
+{
+  "Id": "0f1e4c6d-3556-4012-a758-f7de3d708425",
+  "FirstName": "Tanja",
+  "LastName": "Poulsen",
+  "Cpr": "1802811000",
+  "MaritalStatus": "Single",
+  "Status": "Departed",
+  "Parents": [],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": null,
+      "MunicipalityCode": "0101",
+      "MunicipalityName": "København",
+      "RoadCode": "0416",
+      "DarAddress": null,
+      "Floor": "01",
+      "HouseNo": "008",
+      "PostDistrict": "København Ø",
+      "PostCode": "2100",
+      "DoorNo": "th",
+      "RoadAddressingName": "Bechgaardsgade"
+    }
+  ],
+  "Citizenships": [
+    "Danmark"
+  ]
+}
