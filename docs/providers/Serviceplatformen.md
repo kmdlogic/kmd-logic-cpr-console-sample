@@ -5,7 +5,7 @@ for a specific IT system.
 
 For CPR purposes Logic connects to 'PersonBaseDataExtended' service [(LINK)](https://www.serviceplatformen.dk/administration/serviceOverview/show?uuid=e6be2436-bf35-4df2-83fe-925142825dc2). 
 Before Logic connection, client must firstly send the request for service agreement at STS Administration portal at specific environment (Test or Production). 
-It must be done by person who has MOCES certificate within KMD. When service agreement is approved, the client must create the configuration at Logic Console.
+It must be done by person who has MOCES certificate. When service agreement is approved, the client must create the configuration at Logic Console.
 
 Logic CPR configuration parameters for Serviceplatform:
 - Name - your custom name, that identifies specific configuration within all resources
