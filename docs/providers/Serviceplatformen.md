@@ -14,5 +14,6 @@ Logic CPR configuration parameters for Serviceplatform:
 - Municipality CVR - CVR of the danish municipality that you request Serviceplatform via Logic on behalf of
 
 Useful links:
-1. General technical documentation - https://www.serviceplatformen.dk/administration/help/faq
-2. More specific documentation files - https://share-komm.kombit.dk/P133/Ibrugtagning%20og%20test/Delte%20dokumenter/Forms/Vejledninger%20%20Serviceplatformen.aspx
+1. Serviceplatformen page - https://www.serviceplatformen.dk
+2. General technical documentation - https://www.serviceplatformen.dk/administration/help/faq
+3. More specific documentation files - https://share-komm.kombit.dk/P133/Ibrugtagning%20og%20test/Delte%20dokumenter/Forms/Vejledninger%20%20Serviceplatformen.aspx
