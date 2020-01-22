@@ -59,7 +59,7 @@ To gain access, you must:
 1. Create a user in the Self Service Portal
 2. Add a Service User by supplying a FOCES certificate
 3. Request access to the CPR Service `CprPersonFullComplete`
-4. Optionally, request access to CPR Events `CprHaendelse` and a matching Event subscription (Hændelser). 
+4. Optionally, request access to CPR Events `CprHaendelse` and configure a corresponding Event subscription (Hændelser). 
 
 Useful links:
 
