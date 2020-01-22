@@ -124,7 +124,7 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='configurationId'>
             /// </param>
-            public static object GetCprConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId)
+            public static CprProviderConfigurationModel GetCprConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId)
             {
                 return operations.GetCprConfigurationAsync(subscriptionId, configurationId).GetAwaiter().GetResult();
             }
@@ -142,7 +142,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetCprConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<CprProviderConfigurationModel> GetCprConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.GetCprConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, null, cancellationToken).ConfigureAwait(false))
                 {

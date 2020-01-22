@@ -50,6 +50,50 @@ A simple console application is included to demonstrate how to call Logic CPR AP
 
 When run you should see the details of the _Citizen_ for the nominated CPR number is printed to the console.
 
+## Datafordeler Provider
+
+The Datafordeler service is available to any organisation which require access to the CPR register.
+
+To gain access, you must:
+
+1. Create a user in the Self Service Portal
+2. Add a Service User by supplying a FOCES certificate
+3. Request access to the CPR Service `CprPersonFullComplete`
+4. Optionally, request access to CPR Events `CprHaendelse` and a matching Event subscription (Hændelser). 
+
+Useful links:
+
+1. [Datafordeler Website](https://datafordeler.dk)
+2. [Self Service Portal (Production)](https://selfservice.datafordeler.dk)
+3. [Self Service Portal (Test)](https://test04-selfservice.datafordeler.dk)
+4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
+5. [CPR Service Details](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprpersonfullcomplete/)
+
+## Service Platform Provider
+
+The Service Platform provider is for exclusive use by municipalities.
+
+For CPR purposes Logic connects to [PersonBaseDataExtended](https://www.serviceplatformen.dk/administration/serviceOverview/show?uuid=e6be2436-bf35-4df2-83fe-925142825dc2) service.
+
+To gain access, a user with a MOCES certificate must send the request for a Service Agreement in the STS Administration portal for the required environment (Test or Production).
+
+The process of Service Agreement approval can be sometimes accelerated up by sending e-mail to the Service Platform Help-desk, including service agreement UUID. When service agreement is approved, the client must create the configuration at Logic Console.
+
+Logic CPR configuration parameters for Service Platform:
+
+- Name: your customer name in Service Platform which identifies specific configuration within all resources
+- Certificate: The `p12` certificate which has been uploaded during configuration of IT-Service at STS Administration portal
+- Municipality CVR: The CVR of the municipality that you will be requesting access to Service Platform on behalf of
+
+Useful links:
+
+1. [Service Platform (Production)](https://www.serviceplatformen.dk)
+2. [Service Platform (Test)](https://exttestwww.serviceplatformen.dk)
+3. [STS Administration Portal](https://www.serviceplatformen.dk/administration/dashboard/outerpage?page=sts)
+4. [General technical documentation](https://www.serviceplatformen.dk/administration/help/faq)
+5. [More specific documentation files](https://share-komm.kombit.dk/P133/Ibrugtagning%20og%20test/Delte%20dokumenter/Forms/Vejledninger%20%20Serviceplatformen.aspx)
+6. [Service Platform Help-desk](mailto:helpdesk@serviceplatformen.dk)
+
 ## CPR Fake Provider
 
 The Fake Provider is a great solution for use in Demo or Test environments and also allows you to begin development immediately whilst you wait for your formal credentials.

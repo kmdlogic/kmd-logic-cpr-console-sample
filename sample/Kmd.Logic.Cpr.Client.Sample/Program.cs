@@ -57,8 +57,8 @@ namespace Kmd.Logic.Cpr.Client.Sample
             }
 
             using (var httpClient = new HttpClient())
+            using (var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider))
             {
-                var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider);
                 var cprClient = new CprClient(httpClient, tokenProviderFactory, configuration.Cpr);
 
                 var configs = await cprClient.GetAllCprConfigurationsAsync().ConfigureAwait(false);

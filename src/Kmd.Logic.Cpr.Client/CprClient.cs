@@ -53,21 +53,22 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            var response = await client.GetByCprWithHttpMessagesAsync(
+            using (var response = await client.GetByCprWithHttpMessagesAsync(
                                 subscriptionId: this.options.SubscriptionId,
                                 cpr: cpr,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
-
-            switch (response.Response.StatusCode)
+                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
             {
-                case System.Net.HttpStatusCode.OK:
-                    return (Citizen)response.Body;
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return (Citizen)response.Body;
 
-                case System.Net.HttpStatusCode.NotFound:
-                    return null;
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
 
-                default:
-                    throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                    default:
+                        throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                }
             }
         }
 
@@ -83,21 +84,22 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            var response = await client.GetByIdWithHttpMessagesAsync(
+            using (var response = await client.GetByIdWithHttpMessagesAsync(
                                 subscriptionId: this.options.SubscriptionId,
                                 id: id,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
-
-            switch (response.Response.StatusCode)
+                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
             {
-                case System.Net.HttpStatusCode.OK:
-                    return (Citizen)response.Body;
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return (Citizen)response.Body;
 
-                case System.Net.HttpStatusCode.NotFound:
-                    return null;
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
 
-                default:
-                    throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                    default:
+                        throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                }
             }
         }
 
