@@ -67,7 +67,7 @@ namespace Kmd.Logic.Cpr.Client
                         return null;
 
                     default:
-                        throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
                 }
             }
         }
@@ -98,7 +98,7 @@ namespace Kmd.Logic.Cpr.Client
                         return null;
 
                     default:
-                        throw new CprConfigurationException("Invalid configuration provided to access CPR service", response.Body as string);
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
                 }
             }
         }

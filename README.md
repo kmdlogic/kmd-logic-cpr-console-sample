@@ -10,8 +10,8 @@ The simplest example to get a citizens details is:
 
 ```csharp
 using (var httpClient = new HttpClient())
+using (var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider))
 {
-    var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider);
     var cprClient = new CprClient(httpClient, tokenProviderFactory, configuration.Cpr);
     var citizen = await cprClient.GetCitizenByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 }
@@ -29,7 +29,8 @@ Perhaps the easiest way to configure the CPR client is from Application Settings
 {
   "TokenProvider": {
     "ClientId": "",
-    "ClientSecret": ""
+    "ClientSecret": "",
+    "AuthorizationScope": ""
   },
   "Cpr": {
     "SubscriptionId": "",
@@ -41,7 +42,7 @@ Perhaps the easiest way to configure the CPR client is from Application Settings
 To get started:
 
 1. Create a subscription in [Logic Console](https://console.kmdlogic.io). This will provide you the `SubscriptionId`.
-2. Request a client credential. Once issued you can view the `ClientId` and `ClientSecret` in [Logic Console](https://console.kmdlogic.io).
+2. Request a client credential. Once issued you can view the `ClientId`, `ClientSecret` and `AuthorizationScope` in [Logic Console](https://console.kmdlogic.io).
 3. Create a CPR configuration. Select the CPR provider you have an agreement with and upload the access certificate. If you haven't done this already, you can begin testing with the Fake CPR Provider. This will give you the `CprConfigurationId`.
 
 ## Sample application

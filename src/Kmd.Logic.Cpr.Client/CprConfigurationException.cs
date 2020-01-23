@@ -6,7 +6,14 @@ namespace Kmd.Logic.Cpr.Client
     [Serializable]
     public class CprConfigurationException : Exception
     {
-        public string InnerMessage { get; }
+        [Obsolete("This is no longer used and returns the Message.")]
+        public string InnerMessage
+        {
+            get
+            {
+                return this.Message;
+            }
+        }
 
         public CprConfigurationException()
         {
@@ -15,12 +22,6 @@ namespace Kmd.Logic.Cpr.Client
         public CprConfigurationException(string message)
             : base(message)
         {
-        }
-
-        public CprConfigurationException(string message, string innerMessage)
-            : base(message)
-        {
-            this.InnerMessage = innerMessage;
         }
 
         public CprConfigurationException(string message, Exception innerException)
