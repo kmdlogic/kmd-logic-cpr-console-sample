@@ -15,6 +15,7 @@ namespace Kmd.Logic.Cpr.Client.Sample
         {
             if (string.IsNullOrWhiteSpace(this.configuration.TokenProvider?.ClientId)
                 || string.IsNullOrWhiteSpace(this.configuration.TokenProvider?.ClientSecret)
+                || string.IsNullOrWhiteSpace(this.configuration.TokenProvider?.AuthorizationScope)
                 || this.configuration.Cpr?.SubscriptionId == null)
             {
                 Log.Error(

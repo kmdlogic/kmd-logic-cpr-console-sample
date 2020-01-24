@@ -1,3 +1,6 @@
+1.1.0
+* Updated the Kmd.Logic.Identity.Authorization dependency
+
 1.0.2
 * Updated CprConfigurationException to return the underlying error message. The InnerMessage property is now obsolete.
 
