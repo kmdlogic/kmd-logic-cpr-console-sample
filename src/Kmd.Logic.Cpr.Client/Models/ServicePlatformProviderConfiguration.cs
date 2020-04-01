@@ -24,8 +24,8 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// Initializes a new instance of the
         /// ServicePlatformProviderConfiguration class.
         /// </summary>
-        /// <param name="environment">Possible values include: 'production',
-        /// 'test'</param>
+        /// <param name="environment">Possible values include: 'Production',
+        /// 'Test'</param>
         public ServicePlatformProviderConfiguration(string municipalityCvr = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
         {
             MunicipalityCvr = municipalityCvr;
@@ -68,7 +68,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         public string CertificateFileName { get; set; }
 
         /// <summary>
-        /// Gets or sets possible values include: 'production', 'test'
+        /// Gets or sets possible values include: 'Production', 'Test'
         /// </summary>
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }

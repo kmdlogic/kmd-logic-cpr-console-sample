@@ -1,3 +1,6 @@
+1.2.0
+* Updated CprSubscription to subscribe and unsubscribe for CPR events.
+
 1.1.0
 * Updated the Kmd.Logic.Identity.Authorization dependency
 

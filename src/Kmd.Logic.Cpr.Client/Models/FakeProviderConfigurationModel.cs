@@ -9,28 +9,30 @@ namespace Kmd.Logic.Cpr.Client.Models
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class CprProviderConfiguration
+    public partial class FakeProviderConfigurationModel
     {
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the FakeProviderConfigurationModel
+        /// class.
         /// </summary>
-        public CprProviderConfiguration()
+        public FakeProviderConfigurationModel()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the FakeProviderConfigurationModel
+        /// class.
         /// </summary>
-        /// <param name="environment">Possible values include: 'Production',
-        /// 'Test'</param>
-        public CprProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
+        public FakeProviderConfigurationModel(string dataFileName = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string provider = default(string))
         {
+            DataFileName = dataFileName;
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
             CertificateFileName = certificateFileName;
             Environment = environment;
+            Provider = provider;
             CustomInit();
         }
 
@@ -38,6 +40,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "dataFileName")]
+        public string DataFileName { get; set; }
 
         /// <summary>
         /// </summary>
@@ -60,10 +67,14 @@ namespace Kmd.Logic.Cpr.Client.Models
         public string CertificateFileName { get; set; }
 
         /// <summary>
-        /// Gets or sets possible values include: 'Production', 'Test'
         /// </summary>
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "provider")]
+        public string Provider { get; set; }
 
     }
 }

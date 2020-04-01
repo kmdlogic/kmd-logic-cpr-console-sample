@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "title": "KMD Logic CPR Service Service API"
   },
   "paths": {
@@ -12,7 +12,6 @@
         ],
         "summary": "Gets citizen data by CPR",
         "operationId": "GetByCpr",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json"
@@ -37,7 +36,6 @@
             "name": "configurationId",
             "in": "query",
             "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
-            "required": false,
             "type": "string",
             "format": "uuid"
           }
@@ -76,7 +74,6 @@
         ],
         "summary": "Gets citizen data by ID",
         "operationId": "GetById",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json"
@@ -102,7 +99,6 @@
             "name": "configurationId",
             "in": "query",
             "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
-            "required": false,
             "type": "string",
             "format": "uuid"
           }
@@ -113,15 +109,89 @@
             "schema": {
               "$ref": "#/definitions/Citizen"
             }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/events": {
+      "get": {
+        "tags": [
+          "Cpr"
+        ],
+        "summary": "Gets citizen events for the nominated period",
+        "operationId": "GetEvents",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "dateFrom",
+            "in": "query",
+            "description": "Query events from this date and time",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "dateTo",
+            "in": "query",
+            "description": "Query events to this date and time",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "pageNo",
+            "in": "query",
+            "description": "The page number to query",
+            "type": "integer",
+            "format": "int32",
+            "maximum": 2147483647,
+            "minimum": 1
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "The maximum number of results to return",
+            "type": "integer",
+            "format": "int32",
+            "maximum": 100000,
+            "minimum": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CitizenEvent"
+              }
+            }
           },
           "400": {
             "description": "Bad Request",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "schema": {
               "type": "string"
             }
@@ -141,7 +211,6 @@
         ],
         "summary": "Retrieves Cpr configuration assigned to the logic subscription",
         "operationId": "GetCprConfiguration",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json"
@@ -190,7 +259,6 @@
         ],
         "summary": "Retrieves all Cpr configurations assigned to the logic subscription",
         "operationId": "GetAllCprConfigurations",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json"
@@ -208,7 +276,6 @@
           "200": {
             "description": "Success",
             "schema": {
-              "uniqueItems": false,
               "type": "array",
               "items": {
                 "$ref": "#/definitions/CprProviderConfigurationModel"
@@ -220,6 +287,250 @@
           },
           "404": {
             "description": "Not Found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/subscribe/by-cpr/{cpr}": {
+      "post": {
+        "tags": [
+          "CprSubscription"
+        ],
+        "summary": "Subscribes for CPR events by CPR number",
+        "operationId": "SubscribeByCpr",
+        "consumes": [
+          "application/json",
+          "text/json"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "cpr",
+            "in": "path",
+            "description": "Cpr Number",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "description": "cpr Subscription Request",
+            "schema": {
+              "$ref": "#/definitions/CprSubscriptionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/subscribe/{id}": {
+      "post": {
+        "tags": [
+          "CprSubscription"
+        ],
+        "summary": "Subscribes for CPR events by PersonId",
+        "operationId": "SubscribeById",
+        "consumes": [
+          "application/json",
+          "text/json"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Cpr PersonId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "description": "cpr Subscription Request",
+            "schema": {
+              "$ref": "#/definitions/CprSubscriptionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/unsubscribe/by-cpr/{cpr}": {
+      "delete": {
+        "tags": [
+          "CprSubscription"
+        ],
+        "summary": "Unsubscribes for CPR events by CPR number",
+        "operationId": "UnsubscribeByCpr",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "cpr",
+            "in": "path",
+            "description": "Cpr Number",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Configuration ID",
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/unsubscribe/{id}": {
+      "delete": {
+        "tags": [
+          "CprSubscription"
+        ],
+        "summary": "Unsubscribes for CPR events by PersonId",
+        "operationId": "UnsubscribeById",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Cpr PersonId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Configuration ID",
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
           }
         },
         "security": [
@@ -254,29 +565,25 @@
           {
             "name": "name",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "environment",
             "in": "formData",
-            "required": false,
             "type": "string",
             "enum": [
-              "production",
-              "test"
+              "Production",
+              "Test"
             ]
           },
           {
             "name": "certificate",
             "in": "formData",
-            "required": false,
             "type": "file"
           },
           {
             "name": "certificatePassword",
             "in": "formData",
-            "required": false,
             "type": "string"
           }
         ],
@@ -330,29 +637,25 @@
           {
             "name": "name",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "environment",
             "in": "formData",
-            "required": false,
             "type": "string",
             "enum": [
-              "production",
-              "test"
+              "Production",
+              "Test"
             ]
           },
           {
             "name": "certificate",
             "in": "formData",
-            "required": false,
             "type": "file"
           },
           {
             "name": "certificatePassword",
             "in": "formData",
-            "required": false,
             "type": "string"
           }
         ],
@@ -409,7 +712,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/CprFakeProviderConfiguration"
+              "$ref": "#/definitions/FakeProviderConfigurationModel"
             }
           },
           "400": {
@@ -462,7 +765,59 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/CprFakeProviderConfiguration"
+              "$ref": "#/definitions/FakeProviderConfigurationModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/fake-provider/{configurationId}/data": {
+      "put": {
+        "tags": [
+          "FakeProviderConfiguration"
+        ],
+        "operationId": "SaveData",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "data",
+            "in": "formData",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/FakeProviderConfigurationModel"
             }
           },
           "400": {
@@ -500,35 +855,30 @@
           {
             "name": "name",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "environment",
             "in": "formData",
-            "required": false,
             "type": "string",
             "enum": [
-              "production",
-              "test"
+              "Production",
+              "Test"
             ]
           },
           {
             "name": "certificate",
             "in": "formData",
-            "required": false,
             "type": "file"
           },
           {
             "name": "certificatePassword",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "municipalityCvr",
             "in": "formData",
-            "required": false,
             "type": "string"
           }
         ],
@@ -581,35 +931,30 @@
           {
             "name": "name",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "environment",
             "in": "formData",
-            "required": false,
             "type": "string",
             "enum": [
-              "production",
-              "test"
+              "Production",
+              "Test"
             ]
           },
           {
             "name": "certificate",
             "in": "formData",
-            "required": false,
             "type": "file"
           },
           {
             "name": "certificatePassword",
             "in": "formData",
-            "required": false,
             "type": "string"
           },
           {
             "name": "municipalityCvr",
             "in": "formData",
-            "required": false,
             "type": "string"
           }
         ],
@@ -633,61 +978,6 @@
     }
   },
   "definitions": {
-    "Citizen": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "firstName": {
-          "type": "string"
-        },
-        "lastName": {
-          "type": "string"
-        },
-        "cpr": {
-          "type": "string"
-        },
-        "maritalStatus": {
-          "type": "string"
-        },
-        "status": {
-          "type": "string"
-        },
-        "parents": {
-          "uniqueItems": false,
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Parent"
-          }
-        },
-        "legalGuardians": {
-          "uniqueItems": false,
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/LegalGuardian"
-          }
-        },
-        "nameAndAddressProtection": {
-          "type": "boolean"
-        },
-        "addresses": {
-          "uniqueItems": false,
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Address"
-          }
-        },
-        "citizenships": {
-          "uniqueItems": false,
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
-    },
     "Parent": {
       "type": "object",
       "properties": {
@@ -757,6 +1047,77 @@
         }
       }
     },
+    "Citizen": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "cpr": {
+          "type": "string"
+        },
+        "maritalStatus": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "parents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Parent"
+          }
+        },
+        "legalGuardians": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LegalGuardian"
+          }
+        },
+        "nameAndAddressProtection": {
+          "type": "boolean"
+        },
+        "addresses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "citizenships": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "CitizenEvent": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "description": "The CPR identifier",
+          "type": "string"
+        },
+        "action": {
+          "description": "A description of the action that occurred. This may differ between providers.",
+          "type": "string"
+        },
+        "actionDateTime": {
+          "format": "date-time",
+          "description": "The date and time the action occurred",
+          "type": "string",
+          "readOnly": true
+        }
+      }
+    },
     "CprProviderConfigurationModel": {
       "type": "object",
       "properties": {
@@ -782,12 +1143,14 @@
         }
       }
     },
-    "CprEnvironment": {
-      "enum": [
-        "production",
-        "test"
-      ],
-      "type": "string"
+    "CprSubscriptionRequest": {
+      "type": "object",
+      "properties": {
+        "configurationId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
     },
     "CprProviderConfiguration": {
       "type": "object",
@@ -807,13 +1170,20 @@
           "type": "string"
         },
         "environment": {
-          "$ref": "#/definitions/CprEnvironment"
+          "type": "string",
+          "enum": [
+            "Production",
+            "Test"
+          ]
         }
       }
     },
-    "CprFakeProviderConfiguration": {
+    "FakeProviderConfigurationModel": {
       "type": "object",
       "properties": {
+        "dataFileName": {
+          "type": "string"
+        },
         "id": {
           "format": "uuid",
           "type": "string"
@@ -829,7 +1199,10 @@
           "type": "string"
         },
         "environment": {
-          "$ref": "#/definitions/CprEnvironment"
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
         }
       }
     },
@@ -855,7 +1228,11 @@
           "type": "string"
         },
         "environment": {
-          "$ref": "#/definitions/CprEnvironment"
+          "type": "string",
+          "enum": [
+            "Production",
+            "Test"
+          ]
         }
       }
     }
@@ -867,6 +1244,5 @@
       "type": "apiKey",
       "description": "Standard Authorization header using the Bearer scheme. <b>Example: \"bearer {token}\".</b> You can obtain that value from your browser Developer tools"
     }
-  },
-  "tags": []
+  }
 }

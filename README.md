@@ -107,6 +107,9 @@ If not one of the well-described tests, the Fake Provider exhibits the following
 - If the CPR number ends in `000`, `001` or `002` it returns NotFound
 - The Fake provider returns random data, using the CPR number as the seed. This ensures recurring calls return the same response
 
+## CPR Subscription
+
+
 NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
 
 When requesting CPR details by id, the same process applies. If it is not one of the well-described test identifiers then the id must be in the format "fa4e2c`<CPR number>`fa4e2c`<CPR number>`". For example, the CPR `0301821005` has a corresponding id of `fa4e2c03-0182-1005-fa4e-2c0301821005`. All other identifiers will return NotFound.
