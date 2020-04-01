@@ -109,6 +109,22 @@ If not one of the well-described tests, the Fake Provider exhibits the following
 
 ## CPR Subscription
 
+When ever there is a change in Data of Citizen, The respsective provider will raise events.
+ 
+Example -
+ [Datafordeler (Events)](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834#H%C3%A6ndelserp%C3%A5Datafordeleren-Brugsscenarier)
+ 
+- Subscribe To The Events By CPR number
+In Order to recieve events, you must subscribe with the `SubscriptionId` and `ConfigurationId` and the `CPR number` for which the events needs to be received.
+ 
+- Subscribe To The Events By PersonId
+To recieve events, you must subscribe with the `SubscriptionId` and `ConfigurationId` and the `CPR Person ID` for which the events needs to be received.
+ 
+- Unsubscribe By CPR number
+To Stop receiveing the events, you must unsubscribe the previously created subscription either with `CPR number` or `CPR Person ID`.
+ 
+- Get Events
+To generate these events for which you have subscibed, use `Get Events` along with your `SubscriptionId` and `ConfigurationId` along with the desired time period.
 
 NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
 

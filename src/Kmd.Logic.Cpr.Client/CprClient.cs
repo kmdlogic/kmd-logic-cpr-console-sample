@@ -27,6 +27,8 @@ namespace Kmd.Logic.Cpr.Client
 
         private InternalClient internalClient;
 
+        public CprSubscriptionRequest CprSubscription { get; set; } = new CprSubscriptionRequest(Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328"));
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CprClient"/> class.
         /// </summary>
@@ -87,7 +89,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
         /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
-        public async Task<Citizen> GetCitizenByIdAsync(Guid id)
+        public async Task<object> GetCitizenByIdAsync(Guid id)
         {
             var client = this.CreateClient();
 
@@ -99,7 +101,7 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return (Citizen)response.Body;
+                        return (object)response.Body;
 
                     case System.Net.HttpStatusCode.NotFound:
                         return null;
@@ -124,22 +126,20 @@ namespace Kmd.Logic.Cpr.Client
         }
 
          /// <summary>
-        /// Subscribes for CPR events by CPR number
+        /// Subscribes for CPR events by CPR number.
         /// </summary>
         /// <param name="cpr">The CPR number.</param>
         /// <returns>The Saved CprPersonId.</returns>
-        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null</exception>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         public async Task<Guid> SubscribeByCprAsync(string cpr)
         {
            var client = this.CreateClient();
 
            using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
-                 subscriptionId: this.options.SubscriptionId,  
-                 cpr: cpr, 
-                 configurationId: this.options.CprConfigurationId)
-                 )
-          
+                  subscriptionId: this.options.SubscriptionId,
+                  cpr: cpr,
+                  request: this.CprSubscription).ConfigureAwait(false))
              {
                 switch (response.Response.StatusCode)
                 {
@@ -147,62 +147,58 @@ namespace Kmd.Logic.Cpr.Client
                         return (Guid)response.Body;
 
                     case System.Net.HttpStatusCode.BadRequest:
-                        return null;
+                        return Guid.Empty;
 
                     default:
                         throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
                 }
-             } 
+            }
         }
 
          /// <summary>
-        /// Subscribes for CPR events by PersonId
+        /// Subscribes for CPR events by PersonId.
         /// </summary>
-        /// <param name="cpr">The CPR PersonID.</param>
+        /// <param name="id">The CPR PersonID.</param>
         /// <returns>The Saved CprPersonId.</returns>
-        /// <exception cref="ValidationException"> When subscriptionId or CPR PersonID is null</exception>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR PersonID is null.</exception>
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         public async Task<Guid> SubscribeByIdAsync(Guid id)
         {
              var client = this.CreateClient();
 
              using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
-                 subscriptionId: this.options.SubscriptionId,  
-                 id: id, 
-                 configurationId: this.options.CprConfigurationId)
-                 )
-          
-             {
+                subscriptionId: this.options.SubscriptionId,
+                id: id,
+                request: this.CprSubscription).ConfigureAwait(false))
+            {
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
                         return (Guid)response.Body;
 
                     case System.Net.HttpStatusCode.BadRequest:
-                        return null;
+                        return Guid.Empty;
 
                     default:
                         throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
                 }
-             } 
+            }
         }
 
          /// <summary>
-        /// UnSubscribe for CPR events by CPR number
+        /// UnSubscribe for CPR events by CPR number.
         /// </summary>
         /// <param name="cpr">The CPR number.</param>
-        /// <returns>True in case of unsubscribe</returns>
-        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null</exception>
+        /// <returns>True in case of unsubscribe.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
         public async Task<bool> UnsubscribeByCprAsync(string cpr)
         {
             var client = this.CreateClient();
 
-             using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
-                 subscriptionId: this.options.SubscriptionId,  
-                 cpr: cpr, 
-                 configurationId: this.options.CprConfigurationId)
-                 )
-          
+            using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
+                 subscriptionId: this.options.SubscriptionId,
+                 cpr: cpr,
+                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
              {
                 switch (response.Response.StatusCode)
                 {
@@ -213,26 +209,25 @@ namespace Kmd.Logic.Cpr.Client
                         return false;
 
                     default:
-                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                        throw new CprConfigurationException(response.Body.ToString() as string ?? "Invalid configuration provided to access CPR service");
                 }
-             }             
+            }
         }
 
         /// <summary>
-        /// Unsubscribes for CPR events by PersonId
+        /// Unsubscribes for CPR events by PersonId.
         /// </summary>
-        /// <param name="cpr">The CPR number.</param>
-        /// <returns>True in case of unsubscribe</returns>
-        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null</exception>
-        public async Task<bool> UnsubscribeByIdAsync(Guid guid)
+        /// <param name="id">The CPR number.</param>
+        /// <returns>True in case of unsubscribe.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
+        public async Task<bool> UnsubscribeByIdAsync(Guid id)
         {
             var client = this.CreateClient();
 
-             using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
+            using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
                  subscriptionId: this.options.SubscriptionId,
-                 id: id, 
-                 configurationId: this.options.CprConfigurationId))
-          
+                 id: id,
+                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
              {
                 switch (response.Response.StatusCode)
                 {
@@ -243,9 +238,26 @@ namespace Kmd.Logic.Cpr.Client
                         return false;
 
                     default:
-                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                        throw new CprConfigurationException(response.Body.ToString() as string ?? "Invalid configuration provided to access CPR service");
                 }
-             }             
+            }
+        }
+
+        /// <summary>
+        /// Gets citizen events for the nominated period.
+        /// </summary>
+        /// <returns>List of citizen records</returns>
+        public async Task<object> GetAllCprEvents()
+        {
+            var client = this.CreateClient();
+
+            return await client.GetEventsWithHttpMessagesAsync(
+                subscriptionId: this.options.SubscriptionId,
+                dateFrom: DateTime.Today.AddMonths(-2),
+                dateTo: DateTime.Today,
+                configurationId: this.options.CprConfigurationId,
+                pageNo: 1,
+                pageSize: 1).ConfigureAwait(false);
         }
 
         private InternalClient CreateClient()

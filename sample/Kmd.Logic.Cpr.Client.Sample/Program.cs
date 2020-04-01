@@ -97,7 +97,7 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
-                var personIdByCpr = await cprClient.SubscribeByCprAsync(configuration.CprNumber);
+                var personIdByCpr = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
                 if (personIdByCpr == null)
                 {
@@ -106,29 +106,35 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
-                var personId = await cprClient.SubscribeByIdAsync(configuration.CprPersonId);
+                var personId = await cprClient.SubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
 
-                 if (personId == null)
+                if (personId == null)
                  {
                     Log.Error("Invalid CPR PersonId {personId}", configuration.CprPersonId);
                  }
 
-                 Log.Information("Subscribed successfully for personId {personId}", configuration.CprPersonId);
+                Log.Information("Subscribed successfully for personId {personId}", configuration.CprPersonId);
 
-                var isUnsubscribeByCprSuccessful = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber);
-                 
+                var isUnsubscribeByCprSuccessful = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+
                 if (isUnsubscribeByCprSuccessful)
                 {
                    Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
                 }
 
-                var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(configuration.CprPersonId);
+                var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
 
                 if (isUnsubscribeByIdSuccessful)
                 {
                    Log.Information("Unsubscribed successfully for personId {personId}", configuration.CprPersonId);
                 }
-              
+
+                var citizenList = await cprClient.GetAllCprEvents().ConfigureAwait(false);
+
+                if (citizenList == null)
+                {
+                    Log.Error("Error in retriving citizen list");
+                }
             }
         }
     }

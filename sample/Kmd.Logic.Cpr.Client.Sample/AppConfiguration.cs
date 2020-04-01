@@ -1,4 +1,5 @@
-﻿using Kmd.Logic.Identity.Authorization;
+﻿using System;
+using Kmd.Logic.Identity.Authorization;
 
 namespace Kmd.Logic.Cpr.Client.Sample
 {
@@ -10,6 +11,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
         public CprOptions Cpr { get; set; } = new CprOptions();
 
-        public Guid CprPersonId { get; set;} = Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328");
+        public Guid CprPersonId { get; set; } = Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328");
     }
 }
