@@ -246,18 +246,22 @@ namespace Kmd.Logic.Cpr.Client
         /// <summary>
         /// Gets citizen events for the nominated period.
         /// </summary>
-        /// <returns>List of citizen records</returns>
-        public async Task<object> GetAllCprEvents()
+        /// <param name="dateFom">Date from which events are required.</param>
+        /// <param name="dateTo">Date till which events are required.</param>
+        /// <param name="pageNo">Page number.</param>
+        /// <param name="pageSize">Page size.</param>
+        /// <returns>List of citizen records.</returns>
+        public async Task<object> GetAllCprEvents(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
             var client = this.CreateClient();
 
             return await client.GetEventsWithHttpMessagesAsync(
                 subscriptionId: this.options.SubscriptionId,
-                dateFrom: DateTime.Today.AddMonths(-2),
-                dateTo: DateTime.Today,
+                dateFrom: dateFom,
+                dateTo: dateTo,
                 configurationId: this.options.CprConfigurationId,
-                pageNo: 1,
-                pageSize: 1).ConfigureAwait(false);
+                pageNo: pageNo,
+                pageSize: pageSize).ConfigureAwait(false);
         }
 
         private InternalClient CreateClient()

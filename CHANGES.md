@@ -1,5 +1,10 @@
 1.2.0
-* Updated CprSubscription to subscribe and unsubscribe for CPR events.
+* Updated CprSubscription to subscribe and unsubscribe for CPR events,it includes these methods
+ - Subscribe To The Events By CPR number
+ - Subscribe To The Events By PersonId
+ - Unsubscribe By CPR number
+ - Unsubscribe By PersonId
+ -Get Events
 
 1.1.0
 * Updated the Kmd.Logic.Identity.Authorization dependency

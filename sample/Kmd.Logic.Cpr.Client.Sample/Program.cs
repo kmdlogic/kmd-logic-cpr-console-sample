@@ -59,8 +59,16 @@ namespace Kmd.Logic.Cpr.Client.Sample
             using (var httpClient = new HttpClient())
             using (var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider))
             {
+                Console.WriteLine("Please make your choice, choose '1' to test regarding CprConfiguration and '2' to test regarding CprSubscription");
+#pragma warning disable CA1305 // Specify IFormatProvider
+                int choice = int.Parse(Console.ReadLine());
+#pragma warning restore CA1305 // Specify IFormatProvider
+
                 var cprClient = new CprClient(httpClient, tokenProviderFactory, configuration.Cpr);
 
+                switch (choice)
+                {
+                case 1:
                 var configs = await cprClient.GetAllCprConfigurationsAsync().ConfigureAwait(false);
                 if (configs == null || configs.Count == 0)
                 {
@@ -97,11 +105,14 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
+                break;
+
+                case 2:
                 var personIdByCpr = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
                 if (personIdByCpr == null)
                 {
-                   Log.Error("Invalid CPR Number {@CprNumber}", configuration.CprNumber);
+                    Log.Error("Invalid CPR Number {@CprNumber}", configuration.CprNumber);
                 }
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
@@ -109,9 +120,9 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 var personId = await cprClient.SubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
 
                 if (personId == null)
-                 {
+                {
                     Log.Error("Invalid CPR PersonId {personId}", configuration.CprPersonId);
-                 }
+                }
 
                 Log.Information("Subscribed successfully for personId {personId}", configuration.CprPersonId);
 
@@ -119,21 +130,28 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 if (isUnsubscribeByCprSuccessful)
                 {
-                   Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
+                    Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
                 }
 
                 var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
 
                 if (isUnsubscribeByIdSuccessful)
                 {
-                   Log.Information("Unsubscribed successfully for personId {personId}", configuration.CprPersonId);
+                    Log.Information("Unsubscribed successfully for personId {personId}", configuration.CprPersonId);
                 }
 
-                var citizenList = await cprClient.GetAllCprEvents().ConfigureAwait(false);
+                var citizenList = await cprClient.GetAllCprEvents(configuration.DateFrom, configuration.DateTo, configuration.PageNo, configuration.PageSize).ConfigureAwait(false);
 
                 if (citizenList == null)
                 {
                     Log.Error("Error in retriving citizen list");
+                }
+
+                break;
+
+                default:
+                Console.WriteLine("Unknown choice");
+                break;
                 }
             }
         }
