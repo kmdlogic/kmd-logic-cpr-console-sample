@@ -27,8 +27,6 @@ namespace Kmd.Logic.Cpr.Client
 
         private InternalClient internalClient;
 
-        public CprSubscriptionRequest CprSubscription { get; set; } = new CprSubscriptionRequest(Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328"));
-
         /// <summary>
         /// Initializes a new instance of the <see cref="CprClient"/> class.
         /// </summary>
@@ -139,7 +137,7 @@ namespace Kmd.Logic.Cpr.Client
            using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
                   subscriptionId: this.options.SubscriptionId,
                   cpr: cpr,
-                  request: this.CprSubscription).ConfigureAwait(false))
+                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
              {
                 switch (response.Response.StatusCode)
                 {
@@ -169,7 +167,7 @@ namespace Kmd.Logic.Cpr.Client
              using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
                 subscriptionId: this.options.SubscriptionId,
                 id: id,
-                request: this.CprSubscription).ConfigureAwait(false))
+                request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
             {
                 switch (response.Response.StatusCode)
                 {
