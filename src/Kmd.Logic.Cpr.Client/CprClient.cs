@@ -123,7 +123,7 @@ namespace Kmd.Logic.Cpr.Client
             return await client.GetAllCprConfigurationsAsync(subscriptionId: this.options.SubscriptionId).ConfigureAwait(false);
         }
 
-         /// <summary>
+        /// <summary>
         /// Subscribes for CPR events by CPR number.
         /// </summary>
         /// <param name="cpr">The CPR number.</param>
@@ -139,18 +139,8 @@ namespace Kmd.Logic.Cpr.Client
                   cpr: cpr,
                   request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
              {
-                switch (response.Response.StatusCode)
-                {
-                    case System.Net.HttpStatusCode.OK:
-                        return true;
-
-                    case System.Net.HttpStatusCode.BadRequest:
-                        return false;
-
-                    default:
-                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
-                }
-            }
+                return response.Response.IsSuccessStatusCode;
+             }
         }
 
          /// <summary>
@@ -164,12 +154,13 @@ namespace Kmd.Logic.Cpr.Client
         {
              var client = this.CreateClient();
 
-             var response = await client.SubscribeByIdWithHttpMessagesAsync(
-               subscriptionId: this.options.SubscriptionId,
-               id: id,
-               request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false);
-
-             return response.Response.IsSuccessStatusCode;
+             using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
+                  subscriptionId: this.options.SubscriptionId,
+                  id: id,
+                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
+             {
+                return response.Response.IsSuccessStatusCode;
+             }
         }
 
          /// <summary>
@@ -182,12 +173,13 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
-                 subscriptionId: this.options.SubscriptionId,
-                 cpr: cpr,
-                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
-
-            return response.Response.IsSuccessStatusCode;
+            using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
+                  subscriptionId: this.options.SubscriptionId,
+                  cpr: cpr,
+                  configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                return response.Response.IsSuccessStatusCode;
+            }
         }
 
         /// <summary>
@@ -200,12 +192,13 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
-                 subscriptionId: this.options.SubscriptionId,
-                 id: id,
-                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
-
-            return response.Response.IsSuccessStatusCode;
+            using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
+                   subscriptionId: this.options.SubscriptionId,
+                   id: id,
+                   configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                return response.Response.IsSuccessStatusCode;
+            }
         }
 
         /// <summary>
