@@ -50,6 +50,12 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
         private static async Task Run(AppConfiguration configuration)
         {
+            var cprPersonId = Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328");
+            var datefrom = DateTime.Today.AddMonths(-2);
+            var dateTo = DateTime.Today;
+            var pageNo = 1;
+            var pageSize = 1;
+
             var validator = new ConfigurationValidator(configuration);
             if (!validator.Validate())
             {
@@ -59,16 +65,8 @@ namespace Kmd.Logic.Cpr.Client.Sample
             using (var httpClient = new HttpClient())
             using (var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider))
             {
-                Console.WriteLine("Please make your choice, choose '1' to test regarding CprConfiguration and '2' to test regarding CprSubscription");
-#pragma warning disable CA1305 // Specify IFormatProvider
-                int choice = int.Parse(Console.ReadLine());
-#pragma warning restore CA1305 // Specify IFormatProvider
-
                 var cprClient = new CprClient(httpClient, tokenProviderFactory, configuration.Cpr);
 
-                switch (choice)
-                {
-                case 1:
                 var configs = await cprClient.GetAllCprConfigurationsAsync().ConfigureAwait(false);
                 if (configs == null || configs.Count == 0)
                 {
@@ -105,9 +103,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
-                break;
-
-                case 2:
                 var isSubscribeByCprSuccess = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
                 if (!isSubscribeByCprSuccess)
@@ -117,14 +112,14 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
-                var isSubscribeByIdSuccess = await cprClient.SubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
+                var isSubscribeByIdSuccess = await cprClient.SubscribeByIdAsync(cprPersonId).ConfigureAwait(false);
 
                 if (!isSubscribeByIdSuccess)
                 {
-                    Log.Error("Invalid CPR PersonId {personId}", configuration.CprPersonId);
+                    Log.Error("Invalid CPR PersonId {personId}", cprPersonId);
                 }
 
-                Log.Information("Subscribed successfully for personId {personId}", configuration.CprPersonId);
+                Log.Information("Subscribed successfully for personId {personId}", cprPersonId);
 
                 var isUnsubscribeByCprSuccessful = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
@@ -133,25 +128,18 @@ namespace Kmd.Logic.Cpr.Client.Sample
                     Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
                 }
 
-                var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(configuration.CprPersonId).ConfigureAwait(false);
+                var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(cprPersonId).ConfigureAwait(false);
 
                 if (isUnsubscribeByIdSuccessful)
                 {
-                    Log.Information("Unsubscribed successfully for personId {personId}", configuration.CprPersonId);
+                    Log.Information("Unsubscribed successfully for personId {personId}", cprPersonId);
                 }
 
-                var citizenList = await cprClient.GetAllCprEvents(configuration.DateFrom, configuration.DateTo, configuration.PageNo, configuration.PageSize).ConfigureAwait(false);
+                var citizenList = await cprClient.GetAllCprEvents(datefrom, dateTo, pageNo, pageSize).ConfigureAwait(false);
 
                 if (citizenList == null)
                 {
                     Log.Error("Error in retriving citizen list");
-                }
-
-                break;
-
-                default:
-                Console.WriteLine("Unknown choice");
-                break;
                 }
             }
         }
