@@ -323,14 +323,14 @@
           {
             "name": "cpr",
             "in": "path",
-            "description": "Cpr Number",
+            "description": "CPR Number",
             "required": true,
             "type": "string"
           },
           {
             "name": "request",
             "in": "body",
-            "description": "cpr Subscription Request",
+            "description": "CPR Subscription Request",
             "schema": {
               "$ref": "#/definitions/CprSubscriptionRequest"
             }
@@ -388,7 +388,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Cpr PersonId",
+            "description": "CPR Person ID",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -396,7 +396,7 @@
           {
             "name": "request",
             "in": "body",
-            "description": "cpr Subscription Request",
+            "description": "CPR Subscription Request",
             "schema": {
               "$ref": "#/definitions/CprSubscriptionRequest"
             }
@@ -450,14 +450,14 @@
           {
             "name": "cpr",
             "in": "path",
-            "description": "Cpr Number",
+            "description": "CPR Number",
             "required": true,
             "type": "string"
           },
           {
             "name": "configurationId",
             "in": "query",
-            "description": "Configuration ID",
+            "description": "CPR Configuration ID",
             "type": "string",
             "format": "uuid"
           }
@@ -466,8 +466,8 @@
           "200": {
             "description": "Success"
           },
-          "404": {
-            "description": "Not Found",
+          "400": {
+            "description": "Bad Request",
             "schema": {
               "type": "object",
               "additionalProperties": {
@@ -506,7 +506,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Cpr PersonId",
+            "description": "CPR Person ID",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -514,7 +514,7 @@
           {
             "name": "configurationId",
             "in": "query",
-            "description": "Configuration ID",
+            "description": "CPR Configuration ID",
             "type": "string",
             "format": "uuid"
           }
@@ -523,8 +523,8 @@
           "200": {
             "description": "Success"
           },
-          "404": {
-            "description": "Not Found",
+          "400": {
+            "description": "Bad Request",
             "schema": {
               "type": "object",
               "additionalProperties": {

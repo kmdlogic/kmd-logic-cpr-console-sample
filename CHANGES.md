@@ -4,7 +4,7 @@
  - Subscribe To The Events By PersonId
  - Unsubscribe By CPR number
  - Unsubscribe By PersonId
- -Get Events
+ - Get Events
 
 1.1.0
 * Updated the Kmd.Logic.Identity.Authorization dependency

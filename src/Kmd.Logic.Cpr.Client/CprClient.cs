@@ -87,7 +87,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
         /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
-        public async Task<object> GetCitizenByIdAsync(Guid id)
+        public async Task<Citizen> GetCitizenByIdAsync(Guid id)
         {
             var client = this.CreateClient();
 
@@ -99,7 +99,7 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return (object)response.Body;
+                        return (Citizen)response.Body;
 
                     case System.Net.HttpStatusCode.NotFound:
                         return null;
@@ -130,7 +130,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <returns>The Saved CprPersonId.</returns>
         /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
         /// <exception cref="SerializationException">Unable process the service response.</exception>
-        public async Task<Guid> SubscribeByCprAsync(string cpr)
+        public async Task<bool> SubscribeByCprAsync(string cpr)
         {
            var client = this.CreateClient();
 
@@ -142,10 +142,10 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return (Guid)response.Body;
+                        return true;
 
                     case System.Net.HttpStatusCode.BadRequest:
-                        return Guid.Empty;
+                        return false;
 
                     default:
                         throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
@@ -160,27 +160,16 @@ namespace Kmd.Logic.Cpr.Client
         /// <returns>The Saved CprPersonId.</returns>
         /// <exception cref="ValidationException"> When subscriptionId or CPR PersonID is null.</exception>
         /// <exception cref="SerializationException">Unable process the service response.</exception>
-        public async Task<Guid> SubscribeByIdAsync(Guid id)
+        public async Task<bool> SubscribeByIdAsync(Guid id)
         {
              var client = this.CreateClient();
 
-             using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
-                subscriptionId: this.options.SubscriptionId,
-                id: id,
-                request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
-            {
-                switch (response.Response.StatusCode)
-                {
-                    case System.Net.HttpStatusCode.OK:
-                        return (Guid)response.Body;
+             var response = await client.SubscribeByIdWithHttpMessagesAsync(
+               subscriptionId: this.options.SubscriptionId,
+               id: id,
+               request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false);
 
-                    case System.Net.HttpStatusCode.BadRequest:
-                        return Guid.Empty;
-
-                    default:
-                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
-                }
-            }
+             return response.Response.IsSuccessStatusCode;
         }
 
          /// <summary>
@@ -193,23 +182,12 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
+            var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
                  subscriptionId: this.options.SubscriptionId,
                  cpr: cpr,
-                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
-             {
-                switch (response.Response.StatusCode)
-                {
-                    case System.Net.HttpStatusCode.OK:
-                        return true;
+                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
 
-                    case System.Net.HttpStatusCode.NotFound:
-                        return false;
-
-                    default:
-                        throw new CprConfigurationException(response.Body.ToString() as string ?? "Invalid configuration provided to access CPR service");
-                }
-            }
+            return response.Response.IsSuccessStatusCode;
         }
 
         /// <summary>
@@ -222,32 +200,21 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
+            var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
                  subscriptionId: this.options.SubscriptionId,
                  id: id,
-                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
-             {
-                switch (response.Response.StatusCode)
-                {
-                    case System.Net.HttpStatusCode.OK:
-                        return true;
+                 configurationId: this.options.CprConfigurationId).ConfigureAwait(false);
 
-                    case System.Net.HttpStatusCode.NotFound:
-                        return false;
-
-                    default:
-                        throw new CprConfigurationException(response.Body.ToString() as string ?? "Invalid configuration provided to access CPR service");
-                }
-            }
+            return response.Response.IsSuccessStatusCode;
         }
 
         /// <summary>
         /// Gets citizen events for the nominated period.
         /// </summary>
-        /// <param name="dateFom">Date from which events are required.</param>
-        /// <param name="dateTo">Date till which events are required.</param>
-        /// <param name="pageNo">Page number.</param>
-        /// <param name="pageSize">Page size.</param>
+        /// <param name="dateFom">Query events from this date and time.</param>
+        /// <param name="dateTo">Query events to this date and time.</param>
+        /// <param name="pageNo">The page number to query.</param>
+        /// <param name="pageSize">The maximum number of results to return.</param>
         /// <returns>List of citizen records.</returns>
         public async Task<object> GetAllCprEvents(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
