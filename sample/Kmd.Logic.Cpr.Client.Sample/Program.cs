@@ -102,6 +102,7 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 if (citizenList == null)
                 {
                     Log.Error("Error in retriving citizen list");
+                    return;
                 }
 
                 var isSubscribeSuccess = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
