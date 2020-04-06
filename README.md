@@ -114,14 +114,14 @@ Whenever there is a change in information about a Citizen the CPR provider will 
 Example -
  [Datafordeler (Events)](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834#H%C3%A6ndelserp%C3%A5Datafordeleren-Brugsscenarier)
  
-- Subscribe To The Events By CPR number or by PersonId
-In Order to recieve events, you must subscribe with the `SubscriptionId` and `ConfigurationId` and the `CPR number` or by `CPR Person ID`  for which the events needs to be received.
+- Subscribe to the events by CPR Number or by Person Id
+In order to receive events you must subscribe using the CPR number or CPR Person ID of the individual.
  
-- Unsubscribe By CPR number or by PersonId
-To Stop receiveing the events, you must unsubscribe the previously created subscription either with `CPR number` or `CPR Person ID`.
+- Unsubscribe by CPR Number or by Person Id
+To stop receiving the events you must unsubscribe the previously created subscription using the CPR number or CPR Person ID of the individual.
  
-- Get Events
-To fetch the events for which you have subscribed, use Get Events along with your SubscriptionId and ConfigurationId and the desired time period.
+- Get filtered events
+To fetch the events for which you have subscribed, use Get filtered Events along with your SubscriptionId and ConfigurationId and the desired time period.
 
 NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
 

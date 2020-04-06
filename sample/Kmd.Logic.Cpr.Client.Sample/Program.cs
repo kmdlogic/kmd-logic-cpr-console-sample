@@ -50,12 +50,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
         private static async Task Run(AppConfiguration configuration)
         {
-            var cprPersonId = Guid.Parse("5e3d9df6-d082-467a-88bd-dca56edc7328");
-            var datefrom = DateTime.Today.AddMonths(-2);
-            var dateTo = DateTime.Today;
-            var pageNo = 1;
-            var pageSize = 1;
-
             var validator = new ConfigurationValidator(configuration);
             if (!validator.Validate())
             {
@@ -103,43 +97,45 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
+                var citizenList = await cprClient.GetAllCprEvents(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
+
+                if (citizenList == null)
+                {
+                    Log.Error("Error in retriving citizen list");
+                }
+
                 var isSubscribeByCprSuccess = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
                 if (!isSubscribeByCprSuccess)
                 {
                     Log.Error("Invalid CPR Number {@CprNumber}", configuration.CprNumber);
+                    return;
                 }
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
-                var isSubscribeByIdSuccess = await cprClient.SubscribeByIdAsync(cprPersonId).ConfigureAwait(false);
+                var isSubscribeByIdSuccess = await cprClient.SubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
 
                 if (!isSubscribeByIdSuccess)
                 {
-                    Log.Error("Invalid CPR PersonId {personId}", cprPersonId);
+                    Log.Error("Invalid CPR PersonId {personId}", citizen.Id.Value);
+                    return;
                 }
 
-                Log.Information("Subscribed successfully for personId {personId}", cprPersonId);
+                Log.Information("Subscribed successfully for personId {personId}", citizen.Id.Value);
 
-                var isUnsubscribeByCprSuccessful = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+                var success = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
-                if (isUnsubscribeByCprSuccessful)
+                if (success)
                 {
                     Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
                 }
 
-                var isUnsubscribeByIdSuccessful = await cprClient.UnsubscribeByIdAsync(cprPersonId).ConfigureAwait(false);
+                success = await cprClient.UnsubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
 
-                if (isUnsubscribeByIdSuccessful)
+                if (success)
                 {
-                    Log.Information("Unsubscribed successfully for personId {personId}", cprPersonId);
-                }
-
-                var citizenList = await cprClient.GetAllCprEvents(datefrom, dateTo, pageNo, pageSize).ConfigureAwait(false);
-
-                if (citizenList == null)
-                {
-                    Log.Error("Error in retriving citizen list");
+                    Log.Information("Unsubscribed successfully for personId {personId}", citizen.Id.Value);
                 }
             }
         }
