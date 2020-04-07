@@ -60,7 +60,7 @@ To gain access, you must:
 1. Create a user in the Self Service Portal
 2. Add a Service User by supplying a FOCES certificate
 3. Request access to the CPR Service `CprPersonFullComplete`
-4. Optionally, request access to CPR Events `CprHaendelse` and configure a corresponding Event subscription (Hændelser). 
+4. Optionally, request access to CPR Events `CprHaendelse` using a subscription in `PULL` mode and `JSON` format.
 
 Useful links:
 
@@ -107,26 +107,37 @@ If not one of the well-described tests, the Fake Provider exhibits the following
 - If the CPR number ends in `000`, `001` or `002` it returns NotFound
 - The Fake provider returns random data, using the CPR number as the seed. This ensures recurring calls return the same response
 
-## CPR Subscription
-
-Whenever there is a change in information about a Citizen the CPR provider will raise events.
-The events raised will include citizens you have no records for.
-You can either:
-a. Call GetAllCprEvents and determine the relevant events yourself
-b. Subscribe for events about specific citizens then call GetSubscribedCprEvents to return just those you are interested in
- 
-Example -
- [Datafordeler (Events)](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834#H%C3%A6ndelserp%C3%A5Datafordeleren-Brugsscenarier)
- 
-- Subscribe to the events by CPR Number or by Person Id
-In order to receive events you must subscribe using the CPR number or CPR Person ID of the individual.
- 
-- Unsubscribe by CPR Number or by Person Id
-To stop receiving the events you must unsubscribe the previously created subscription using the CPR number or CPR Person ID of the individual.
- 
-- Get filtered events
-To fetch the events for which you have subscribed, use Get filtered Events along with your SubscriptionId and ConfigurationId and the desired time period.
-
 NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
 
 When requesting CPR details by id, the same process applies. If it is not one of the well-described test identifiers then the id must be in the format "fa4e2c`<CPR number>`fa4e2c`<CPR number>`". For example, the CPR `0301821005` has a corresponding id of `fa4e2c03-0182-1005-fa4e-2c0301821005`. All other identifiers will return NotFound.
+
+## Handling CPR Changes
+
+CPR change notification events are supported by the Datafordeler and Fake Providers. Service Platform is not supported as it only provides CPR delta files.
+
+In the case of Datafordeler we recommend you read:
+
+- [Guide to Registering for Events in the Self Service Portal](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137809)
+- [How Events are handled by Datafordeler](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834)
+- [CPR Event Details](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17138949)
+
+> NOTE: When registering to receive events in Datafordeler, please ensure your subscription is in `PULL` mode and `JSON` format.
+
+You may apply any appropriate restrictions at this point to limit the stream of events being received. Please be aware that you will only receive events that occur after the Datafordeler subscription has been created.
+
+Whenever there is a change in information about a citizen the provider will raise an event.
+
+Each event includes:
+
+- The Person ID of the citizen
+- Broad details of what was changed
+- When the changed occurred
+
+> NOTE: The event does **not** include the CPR number or any other personally identifiable information.
+
+To fetch the details of CPR changes, you may call `GetAllCprEvents` or `GetSubscribedCprEvents`. The correct option will depend on how you wish to filter the stream to find the events you are interested in.
+
+1. Call `GetAllCprEvents` and determine the applicable events yourself
+2. Use the event subscribe/unsubscribe feature in Logic to specify the citizens you care about and then call `GetSubscribedCprEvents`
+
+On receiving the change notification you will then need to fetch the updated details of the citizen from the register by calling `GetCitizenByIdAsync`.
