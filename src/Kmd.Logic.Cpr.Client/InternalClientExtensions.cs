@@ -115,6 +115,72 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Gets citizen events for the nominated period
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='dateFrom'>
+            /// Query events from this date and time
+            /// </param>
+            /// <param name='dateTo'>
+            /// Query events to this date and time
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='pageNo'>
+            /// The page number to query
+            /// </param>
+            /// <param name='pageSize'>
+            /// The maximum number of results to return
+            /// </param>
+            public static object GetEvents(this IInternalClient operations, System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?))
+            {
+                return operations.GetEventsAsync(subscriptionId, dateFrom, dateTo, configurationId, pageNo, pageSize).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets citizen events for the nominated period
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='dateFrom'>
+            /// Query events from this date and time
+            /// </param>
+            /// <param name='dateTo'>
+            /// Query events to this date and time
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='pageNo'>
+            /// The page number to query
+            /// </param>
+            /// <param name='pageSize'>
+            /// The maximum number of results to return
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> GetEventsAsync(this IInternalClient operations, System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetEventsWithHttpMessagesAsync(subscriptionId, dateFrom, dateTo, configurationId, pageNo, pageSize, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Retrieves Cpr configuration assigned to the logic subscription
             /// </summary>
             /// <param name='operations'>
@@ -183,6 +249,190 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Subscribes for CPR events by CPR number
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Cpr Number
+            /// </param>
+            /// <param name='request'>
+            /// cpr Subscription Request
+            /// </param>
+            public static object SubscribeByCpr(this IInternalClient operations, System.Guid subscriptionId, string cpr, CprSubscriptionRequest request = default(CprSubscriptionRequest))
+            {
+                return operations.SubscribeByCprAsync(subscriptionId, cpr, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Subscribes for CPR events by CPR number
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Cpr Number
+            /// </param>
+            /// <param name='request'>
+            /// cpr Subscription Request
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> SubscribeByCprAsync(this IInternalClient operations, System.Guid subscriptionId, string cpr, CprSubscriptionRequest request = default(CprSubscriptionRequest), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.SubscribeByCprWithHttpMessagesAsync(subscriptionId, cpr, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Subscribes for CPR events by PersonId
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// Cpr PersonId
+            /// </param>
+            /// <param name='request'>
+            /// cpr Subscription Request
+            /// </param>
+            public static object SubscribeById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, CprSubscriptionRequest request = default(CprSubscriptionRequest))
+            {
+                return operations.SubscribeByIdAsync(subscriptionId, id, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Subscribes for CPR events by PersonId
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// Cpr PersonId
+            /// </param>
+            /// <param name='request'>
+            /// cpr Subscription Request
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> SubscribeByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, CprSubscriptionRequest request = default(CprSubscriptionRequest), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.SubscribeByIdWithHttpMessagesAsync(subscriptionId, id, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Unsubscribes for CPR events by CPR number
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Cpr Number
+            /// </param>
+            /// <param name='configurationId'>
+            /// Configuration ID
+            /// </param>
+            public static IDictionary<string, string> UnsubscribeByCpr(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
+            {
+                return operations.UnsubscribeByCprAsync(subscriptionId, cpr, configurationId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Unsubscribes for CPR events by CPR number
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Cpr Number
+            /// </param>
+            /// <param name='configurationId'>
+            /// Configuration ID
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<IDictionary<string, string>> UnsubscribeByCprAsync(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.UnsubscribeByCprWithHttpMessagesAsync(subscriptionId, cpr, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Unsubscribes for CPR events by PersonId
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// Cpr PersonId
+            /// </param>
+            /// <param name='configurationId'>
+            /// Configuration ID
+            /// </param>
+            public static IDictionary<string, string> UnsubscribeById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
+            {
+                return operations.UnsubscribeByIdAsync(subscriptionId, id, configurationId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Unsubscribes for CPR events by PersonId
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// Cpr PersonId
+            /// </param>
+            /// <param name='configurationId'>
+            /// Configuration ID
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<IDictionary<string, string>> UnsubscribeByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.UnsubscribeByIdWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Adds new CPR configuration and uploads certificate file to the Azure Key
             /// Vault
             /// </summary>
@@ -194,7 +444,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -217,7 +467,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -248,7 +498,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -273,7 +523,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -297,7 +547,7 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='name'>
             /// </param>
-            public static CprFakeProviderConfiguration CreateFakeProviderConfiguration(this IInternalClient operations, System.Guid subscriptionId, string name)
+            public static FakeProviderConfigurationModel CreateFakeProviderConfiguration(this IInternalClient operations, System.Guid subscriptionId, string name)
             {
                 return operations.CreateFakeProviderConfigurationAsync(subscriptionId, name).GetAwaiter().GetResult();
             }
@@ -312,7 +562,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CprFakeProviderConfiguration> CreateFakeProviderConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, string name, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<FakeProviderConfigurationModel> CreateFakeProviderConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, string name, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.CreateFakeProviderConfigurationWithHttpMessagesAsync(subscriptionId, name, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -329,7 +579,7 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='name'>
             /// </param>
-            public static CprFakeProviderConfiguration UpdateFakeProviderConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name)
+            public static FakeProviderConfigurationModel UpdateFakeProviderConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name)
             {
                 return operations.UpdateFakeProviderConfigurationAsync(subscriptionId, configurationId, name).GetAwaiter().GetResult();
             }
@@ -346,9 +596,43 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CprFakeProviderConfiguration> UpdateFakeProviderConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<FakeProviderConfigurationModel> UpdateFakeProviderConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.UpdateFakeProviderConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, name, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='data'>
+            /// </param>
+            public static FakeProviderConfigurationModel SaveData(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, Stream data = default(Stream))
+            {
+                return operations.SaveDataAsync(subscriptionId, configurationId, data).GetAwaiter().GetResult();
+            }
+
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='data'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<FakeProviderConfigurationModel> SaveDataAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, Stream data = default(Stream), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.SaveDataWithHttpMessagesAsync(subscriptionId, configurationId, data, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -362,7 +646,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -383,7 +667,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -412,7 +696,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>
@@ -435,7 +719,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='name'>
             /// </param>
             /// <param name='environment'>
-            /// Possible values include: 'production', 'test'
+            /// Possible values include: 'Production', 'Test'
             /// </param>
             /// <param name='certificate'>
             /// </param>

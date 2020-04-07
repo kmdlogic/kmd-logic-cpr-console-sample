@@ -114,13 +114,112 @@ namespace Kmd.Logic.Cpr.Client
         /// Get the CPR configurations for the Logic subscription.
         /// </summary>
         /// <returns>The list of CPR configurations.</returns>
-                /// <exception cref="SerializationException">Unable process the service response.</exception>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
         /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
         public async Task<IList<CprProviderConfigurationModel>> GetAllCprConfigurationsAsync()
         {
             var client = this.CreateClient();
 
             return await client.GetAllCprConfigurationsAsync(subscriptionId: this.options.SubscriptionId).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Subscribes for CPR events by CPR number.
+        /// </summary>
+        /// <param name="cpr">The CPR number.</param>
+        /// <returns>The Saved CprPersonId.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
+        public async Task<bool> SubscribeByCprAsync(string cpr)
+        {
+           var client = this.CreateClient();
+
+           using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
+                  subscriptionId: this.options.SubscriptionId,
+                  cpr: cpr,
+                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
+             {
+                return response.Response.IsSuccessStatusCode;
+             }
+        }
+
+         /// <summary>
+        /// Subscribes for CPR events by PersonId.
+        /// </summary>
+        /// <param name="id">The CPR PersonID.</param>
+        /// <returns>The Saved CprPersonId.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR PersonID is null.</exception>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
+        public async Task<bool> SubscribeByIdAsync(Guid id)
+        {
+             var client = this.CreateClient();
+
+             using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
+                  subscriptionId: this.options.SubscriptionId,
+                  id: id,
+                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
+             {
+                return response.Response.IsSuccessStatusCode;
+             }
+        }
+
+         /// <summary>
+        /// UnSubscribe for CPR events by CPR number.
+        /// </summary>
+        /// <param name="cpr">The CPR number.</param>
+        /// <returns>True in case of unsubscribe.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
+        public async Task<bool> UnsubscribeByCprAsync(string cpr)
+        {
+            var client = this.CreateClient();
+
+            using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
+                  subscriptionId: this.options.SubscriptionId,
+                  cpr: cpr,
+                  configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                return response.Response.IsSuccessStatusCode;
+            }
+        }
+
+        /// <summary>
+        /// Unsubscribes for CPR events by PersonId.
+        /// </summary>
+        /// <param name="id">The CPR number.</param>
+        /// <returns>True in case of unsubscribe.</returns>
+        /// <exception cref="ValidationException"> When subscriptionId or CPR number is null.</exception>
+        public async Task<bool> UnsubscribeByIdAsync(Guid id)
+        {
+            var client = this.CreateClient();
+
+            using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
+                   subscriptionId: this.options.SubscriptionId,
+                   id: id,
+                   configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                return response.Response.IsSuccessStatusCode;
+            }
+        }
+
+        /// <summary>
+        /// Gets citizen events for the nominated period.
+        /// </summary>
+        /// <param name="dateFom">Query events from this date and time.</param>
+        /// <param name="dateTo">Query events to this date and time.</param>
+        /// <param name="pageNo">The page number to query, starting at 1.</param>
+        /// <param name="pageSize">The maximum number of results to return.</param>
+        /// <returns>List of citizen records.</returns>
+        public async Task<object> GetAllCprEvents(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
+        {
+            var client = this.CreateClient();
+
+            return await client.GetEventsWithHttpMessagesAsync(
+                subscriptionId: this.options.SubscriptionId,
+                dateFrom: dateFom,
+                dateTo: dateTo,
+                configurationId: this.options.CprConfigurationId,
+                pageNo: pageNo,
+                pageSize: pageSize).ConfigureAwait(false);
         }
 
         private InternalClient CreateClient()

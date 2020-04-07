@@ -1,4 +1,5 @@
-﻿using Kmd.Logic.Identity.Authorization;
+﻿using System;
+using Kmd.Logic.Identity.Authorization;
 
 namespace Kmd.Logic.Cpr.Client.Sample
 {

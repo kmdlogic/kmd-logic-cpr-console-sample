@@ -107,6 +107,26 @@ If not one of the well-described tests, the Fake Provider exhibits the following
 - If the CPR number ends in `000`, `001` or `002` it returns NotFound
 - The Fake provider returns random data, using the CPR number as the seed. This ensures recurring calls return the same response
 
+## CPR Subscription
+
+Whenever there is a change in information about a Citizen the CPR provider will raise events.
+The events raised will include citizens you have no records for.
+You can either:
+a. Call GetAllCprEvents and determine the relevant events yourself
+b. Subscribe for events about specific citizens then call GetSubscribedCprEvents to return just those you are interested in
+ 
+Example -
+ [Datafordeler (Events)](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834#H%C3%A6ndelserp%C3%A5Datafordeleren-Brugsscenarier)
+ 
+- Subscribe to the events by CPR Number or by Person Id
+In order to receive events you must subscribe using the CPR number or CPR Person ID of the individual.
+ 
+- Unsubscribe by CPR Number or by Person Id
+To stop receiving the events you must unsubscribe the previously created subscription using the CPR number or CPR Person ID of the individual.
+ 
+- Get filtered events
+To fetch the events for which you have subscribed, use Get filtered Events along with your SubscriptionId and ConfigurationId and the desired time period.
+
 NOTE: While every attempt is made to keep the generated random data consistent, this is **not guaranteed**. If you need a reliable response, please use a well-known test or request for a suitable one to be added.
 
 When requesting CPR details by id, the same process applies. If it is not one of the well-described test identifiers then the id must be in the format "fa4e2c`<CPR number>`fa4e2c`<CPR number>`". For example, the CPR `0301821005` has a corresponding id of `fa4e2c03-0182-1005-fa4e-2c0301821005`. All other identifiers will return NotFound.
