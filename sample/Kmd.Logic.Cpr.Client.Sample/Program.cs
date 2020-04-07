@@ -105,9 +105,9 @@ namespace Kmd.Logic.Cpr.Client.Sample
                     return;
                 }
 
-                var isSubscribeSuccess = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+                var success = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
-                if (!isSubscribeSuccess)
+                if (!success)
                 {
                     Log.Error("Invalid CPR Number {@CprNumber}", configuration.CprNumber);
                     return;
@@ -115,9 +115,9 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
-                isSubscribeSuccess = await cprClient.SubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
+                success = await cprClient.SubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
 
-                if (!isSubscribeSuccess)
+                if (!success)
                 {
                     Log.Error("Invalid CPR PersonId {personId}", citizen.Id.Value);
                     return;
@@ -125,7 +125,7 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Subscribed successfully for personId {personId}", citizen.Id.Value);
 
-                var success = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+                success = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
                 if (success)
                 {

@@ -206,7 +206,7 @@ namespace Kmd.Logic.Cpr.Client
         /// </summary>
         /// <param name="dateFom">Query events from this date and time.</param>
         /// <param name="dateTo">Query events to this date and time.</param>
-        /// <param name="pageNo">The page number to query.</param>
+        /// <param name="pageNo">The page number to query, starting at 1.</param>
         /// <param name="pageSize">The maximum number of results to return.</param>
         /// <returns>List of citizen records.</returns>
         public async Task<object> GetAllCprEvents(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)

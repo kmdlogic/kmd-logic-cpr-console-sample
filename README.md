@@ -110,6 +110,10 @@ If not one of the well-described tests, the Fake Provider exhibits the following
 ## CPR Subscription
 
 Whenever there is a change in information about a Citizen the CPR provider will raise events.
+The events raised will include citizens you have no records for.
+You can either:
+a. Call GetAllCprEvents and determine the relevant events yourself
+b. Subscribe for events about specific citizens then call GetSubscribedCprEvents to return just those you are interested in
  
 Example -
  [Datafordeler (Events)](https://confluence.datafordeler.dk/pages/viewpage.action?pageId=17137834#H%C3%A6ndelserp%C3%A5Datafordeleren-Brugsscenarier)
