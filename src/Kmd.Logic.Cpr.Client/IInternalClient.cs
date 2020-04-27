@@ -81,7 +81,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<Citizen>> GetByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Gets citizen events for the nominated period
@@ -112,6 +112,36 @@ namespace Kmd.Logic.Cpr.Client
         /// The cancellation token.
         /// </param>
         Task<HttpOperationResponse<object>> GetEventsWithHttpMessagesAsync(System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Gets subscribed citizen events for the nominated period
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// LoGIC subscription ID
+        /// </param>
+        /// <param name='dateFrom'>
+        /// Query events from this date and time
+        /// </param>
+        /// <param name='dateTo'>
+        /// Query events to this date and time
+        /// </param>
+        /// <param name='configurationId'>
+        /// Identifier that represents CPR environment and associated
+        /// configuration which this request will be sent with.
+        /// </param>
+        /// <param name='pageNo'>
+        /// The page number to query
+        /// </param>
+        /// <param name='pageSize'>
+        /// The maximum number of results to return
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<object>> GetSubscribedEventsWithHttpMessagesAsync(System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieves Cpr configuration assigned to the logic subscription
@@ -148,10 +178,10 @@ namespace Kmd.Logic.Cpr.Client
         /// LoGIC subscription ID
         /// </param>
         /// <param name='cpr'>
-        /// Cpr Number
+        /// CPR Number
         /// </param>
         /// <param name='request'>
-        /// cpr Subscription Request
+        /// CPR Subscription Request
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -168,10 +198,10 @@ namespace Kmd.Logic.Cpr.Client
         /// LoGIC subscription ID
         /// </param>
         /// <param name='id'>
-        /// Cpr PersonId
+        /// CPR Person ID
         /// </param>
         /// <param name='request'>
-        /// cpr Subscription Request
+        /// CPR Subscription Request
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -188,10 +218,10 @@ namespace Kmd.Logic.Cpr.Client
         /// LoGIC subscription ID
         /// </param>
         /// <param name='cpr'>
-        /// Cpr Number
+        /// CPR Number
         /// </param>
         /// <param name='configurationId'>
-        /// Configuration ID
+        /// CPR Configuration ID
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -208,10 +238,10 @@ namespace Kmd.Logic.Cpr.Client
         /// LoGIC subscription ID
         /// </param>
         /// <param name='id'>
-        /// Cpr PersonId
+        /// CPR Person ID
         /// </param>
         /// <param name='configurationId'>
-        /// Configuration ID
+        /// CPR Configuration ID
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.

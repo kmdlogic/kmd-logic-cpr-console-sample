@@ -209,11 +209,32 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name="pageNo">The page number to query, starting at 1.</param>
         /// <param name="pageSize">The maximum number of results to return.</param>
         /// <returns>List of citizen records.</returns>
-        public async Task<object> GetAllCprEvents(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
+        public async Task<object> GetAllCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
             var client = this.CreateClient();
 
             return await client.GetEventsWithHttpMessagesAsync(
+                subscriptionId: this.options.SubscriptionId,
+                dateFrom: dateFom,
+                dateTo: dateTo,
+                configurationId: this.options.CprConfigurationId,
+                pageNo: pageNo,
+                pageSize: pageSize).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Gets Subscribed citizen events for the nominated period.
+        /// </summary>
+        /// <param name="dateFom">Query events from this date and time.</param>
+        /// <param name="dateTo">Query events to this date and time.</param>
+        /// <param name="pageNo">The page number to query, starting at 1.</param>
+        /// <param name="pageSize">The maximum number of results to return.</param>
+        /// <returns>List of citizen records.</returns>
+        public async Task<object> GetSubscribedCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
+        {
+            var client = this.CreateClient();
+
+            return await client.GetSubscribedEventsAsync(
                 subscriptionId: this.options.SubscriptionId,
                 dateFrom: dateFom,
                 dateTo: dateTo,
