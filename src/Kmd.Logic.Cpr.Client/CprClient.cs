@@ -229,7 +229,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name="dateTo">Query events to this date and time.</param>
         /// <param name="pageNo">The page number to query, starting at 1.</param>
         /// <param name="pageSize">The maximum number of results to return.</param>
-        /// <returns>List of citizen records.</returns>
+        /// <returns>List of Subscribed citizen records.</returns>
         public async Task<object> GetSubscribedCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
             var client = this.CreateClient();
