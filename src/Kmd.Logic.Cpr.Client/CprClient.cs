@@ -99,13 +99,13 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return response.Body;
+                        return response.Body as Citizen;
 
                     case System.Net.HttpStatusCode.NotFound:
                         return null;
 
                     default:
-                        throw new CprConfigurationException("Invalid configuration provided to access CPR service");
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
                 }
             }
         }

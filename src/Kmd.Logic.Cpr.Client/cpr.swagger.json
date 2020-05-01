@@ -109,6 +109,18 @@
             "schema": {
               "$ref": "#/definitions/Citizen"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "security": [

@@ -139,12 +139,25 @@ namespace Kmd.Logic.Cpr.Client.Sample
                     Log.Information("Unsubscribed successfully for personId {personId}", citizen.Id.Value);
                 }
 
-                var subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
+                int pageNo = 1;
+                int pageSize = 100;
+                var subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, pageNo, pageSize).ConfigureAwait(false);
 
-                if (subscribedCitizenList == null)
+                if (subscribedCitizenList is SubscribedCitizenEvents)
                 {
                     Log.Error("Error in Subscribed retriving citizen list");
                     return;
+                }
+
+                while ((subscribedCitizenList as SubscribedCitizenEvents).ActualCount > 0)
+                {
+                    subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, ++pageNo, pageSize).ConfigureAwait(false);
+
+                    if (subscribedCitizenList is SubscribedCitizenEvents)
+                    {
+                        Log.Error("Error in Subscribed retriving citizen list");
+                        return;
+                    }
                 }
             }
         }

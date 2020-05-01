@@ -82,7 +82,7 @@ namespace Kmd.Logic.Cpr.Client
             /// Identifier that represents CPR environment and associated configuration
             /// which this request will be sent with.
             /// </param>
-            public static Citizen GetById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
+            public static object GetById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
             {
                 return operations.GetByIdAsync(subscriptionId, id, configurationId).GetAwaiter().GetResult();
             }
@@ -106,7 +106,7 @@ namespace Kmd.Logic.Cpr.Client
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<Citizen> GetByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.GetByIdWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
                 {

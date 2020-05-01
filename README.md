@@ -140,4 +140,6 @@ To fetch the details of CPR changes, you may call `GetAllCprEvents` or `GetSubsc
 1. Call `GetAllCprEvents` and determine the applicable events yourself
 2. Use the event subscribe/unsubscribe feature in Logic to specify the citizens you care about and then call `GetSubscribedCprEvents`
 
+`GetSubscribedCprEvents` returns `ActualCount` which indicates total records before filter based on subscription. To get all events keep fetching records until `ActualCount` is zero
+
 On receiving the change notification you will then need to fetch the updated details of the citizen from the register by calling `GetCitizenByIdAsync`.
