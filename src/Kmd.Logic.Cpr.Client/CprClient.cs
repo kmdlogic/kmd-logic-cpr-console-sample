@@ -209,17 +209,30 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name="pageNo">The page number to query, starting at 1.</param>
         /// <param name="pageSize">The maximum number of results to return.</param>
         /// <returns>List of citizen records.</returns>
-        public async Task<object> GetAllCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
+        public async Task<IList<CitizenEvent>> GetAllCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
             var client = this.CreateClient();
 
-            return await client.GetEventsWithHttpMessagesAsync(
+            using (var response = await client.GetEventsWithHttpMessagesAsync(
                 subscriptionId: this.options.SubscriptionId,
                 dateFrom: dateFom,
                 dateTo: dateTo,
                 configurationId: this.options.CprConfigurationId,
                 pageNo: pageNo,
-                pageSize: pageSize).ConfigureAwait(false);
+                pageSize: pageSize).ConfigureAwait(false))
+            {
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return response.Body as IList<CitizenEvent>;
+
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
+
+                    default:
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                }
+            }
         }
 
         /// <summary>
@@ -229,18 +242,31 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name="dateTo">Query events to this date and time.</param>
         /// <param name="pageNo">The page number to query, starting at 1.</param>
         /// <param name="pageSize">The maximum number of results to return.</param>
-        /// <returns>List of Subscribed citizen records.</returns>
-        public async Task<object> GetSubscribedCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
+        /// <returns>Subscribed citizen records.</returns>
+        public async Task<SubscribedCitizenEvents> GetSubscribedCprEventsAsync(DateTime dateFom, DateTime dateTo, int pageNo, int pageSize)
         {
             var client = this.CreateClient();
 
-            return await client.GetSubscribedEventsAsync(
+            using (var response = await client.GetSubscribedEventsWithHttpMessagesAsync(
                 subscriptionId: this.options.SubscriptionId,
                 dateFrom: dateFom,
                 dateTo: dateTo,
                 configurationId: this.options.CprConfigurationId,
                 pageNo: pageNo,
-                pageSize: pageSize).ConfigureAwait(false);
+                pageSize: pageSize).ConfigureAwait(false))
+            {
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return response.Body as SubscribedCitizenEvents;
+
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
+
+                    default:
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                }
+            }
         }
 
         private InternalClient CreateClient()

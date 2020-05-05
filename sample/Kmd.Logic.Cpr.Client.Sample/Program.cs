@@ -143,19 +143,19 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 int pageSize = 100;
                 var subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, pageNo, pageSize).ConfigureAwait(false);
 
-                if (!(subscribedCitizenList is SubscribedCitizenEvents))
+                if (subscribedCitizenList == null)
                 {
-                    Log.Error("Error in Subscribed retriving citizen list");
+                    Log.Error("Error in retriving subscribed citizen list");
                     return;
                 }
 
-                while ((subscribedCitizenList as SubscribedCitizenEvents).ActualCount > 0)
+                while (subscribedCitizenList.ActualCount > 0)
                 {
                     subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, ++pageNo, pageSize).ConfigureAwait(false);
 
-                    if (!(subscribedCitizenList is SubscribedCitizenEvents))
+                    if (subscribedCitizenList == null)
                     {
-                        Log.Error("Error in Subscribed retriving citizen list");
+                        Log.Error("Error in retriving subscribed citizen list");
                         return;
                     }
                 }
