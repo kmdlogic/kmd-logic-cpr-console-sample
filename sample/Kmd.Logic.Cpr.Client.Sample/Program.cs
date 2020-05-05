@@ -97,7 +97,7 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
-                var citizenList = await cprClient.GetAllCprEvents(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
+                var citizenList = await cprClient.GetAllCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
 
                 if (citizenList == null)
                 {
@@ -137,6 +137,27 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 if (success)
                 {
                     Log.Information("Unsubscribed successfully for personId {personId}", citizen.Id.Value);
+                }
+
+                int pageNo = 1;
+                int pageSize = 100;
+                var subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, pageNo, pageSize).ConfigureAwait(false);
+
+                if (subscribedCitizenList == null)
+                {
+                    Log.Error("Error in retriving subscribed citizen list");
+                    return;
+                }
+
+                while (subscribedCitizenList.ActualCount > 0)
+                {
+                    subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, ++pageNo, pageSize).ConfigureAwait(false);
+
+                    if (subscribedCitizenList == null)
+                    {
+                        Log.Error("Error in retriving subscribed citizen list");
+                        return;
+                    }
                 }
             }
         }

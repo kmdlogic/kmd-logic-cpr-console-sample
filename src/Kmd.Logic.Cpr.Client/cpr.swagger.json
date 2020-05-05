@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "1.2.1",
-    "title": "KMD Logic CPR Service Service API"
+    "title": "KMD Logic CPR Service API"
   },
   "paths": {
     "/subscriptions/{subscriptionId}/cpr/by-cpr/{cpr}": {
@@ -109,6 +109,18 @@
             "schema": {
               "$ref": "#/definitions/Citizen"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "security": [
@@ -188,6 +200,89 @@
               "items": {
                 "$ref": "#/definitions/CitizenEvent"
               }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/subscribed-events": {
+      "get": {
+        "tags": [
+          "Cpr"
+        ],
+        "summary": "Gets subscribed citizen events for the nominated period",
+        "operationId": "GetSubscribedEvents",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "dateFrom",
+            "in": "query",
+            "description": "Query events from this date and time",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "dateTo",
+            "in": "query",
+            "description": "Query events to this date and time",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "pageNo",
+            "in": "query",
+            "description": "The page number to query",
+            "type": "integer",
+            "format": "int32",
+            "maximum": 2147483647,
+            "minimum": 1
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "The maximum number of results to return",
+            "type": "integer",
+            "format": "int32",
+            "maximum": 100000,
+            "minimum": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/SubscribedCitizenEvents"
             }
           },
           "400": {
@@ -1115,6 +1210,23 @@
           "description": "The date and time the action occurred",
           "type": "string",
           "readOnly": true
+        }
+      }
+    },
+    "SubscribedCitizenEvents": {
+      "type": "object",
+      "properties": {
+        "events": {
+          "description": "The events filtered by subscription",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CitizenEvent"
+          }
+        },
+        "actualCount": {
+          "format": "int32",
+          "description": "Number of CPR events fetched prior to filtering to just the subscribed citizens",
+          "type": "integer"
         }
       }
     },

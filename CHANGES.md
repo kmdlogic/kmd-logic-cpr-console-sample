@@ -1,3 +1,5 @@
+1.3.0
+Included new method GetSubscribedCprEvents
 1.2.0
 * Updated CprSubscription to subscribe and unsubscribe for CPR events,it includes these methods
  - Subscribe To The Events By CPR number

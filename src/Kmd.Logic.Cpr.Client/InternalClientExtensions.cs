@@ -181,6 +181,72 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Gets subscribed citizen events for the nominated period
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='dateFrom'>
+            /// Query events from this date and time
+            /// </param>
+            /// <param name='dateTo'>
+            /// Query events to this date and time
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='pageNo'>
+            /// The page number to query
+            /// </param>
+            /// <param name='pageSize'>
+            /// The maximum number of results to return
+            /// </param>
+            public static object GetSubscribedEvents(this IInternalClient operations, System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?))
+            {
+                return operations.GetSubscribedEventsAsync(subscriptionId, dateFrom, dateTo, configurationId, pageNo, pageSize).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets subscribed citizen events for the nominated period
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='dateFrom'>
+            /// Query events from this date and time
+            /// </param>
+            /// <param name='dateTo'>
+            /// Query events to this date and time
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='pageNo'>
+            /// The page number to query
+            /// </param>
+            /// <param name='pageSize'>
+            /// The maximum number of results to return
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> GetSubscribedEventsAsync(this IInternalClient operations, System.Guid subscriptionId, System.DateTime dateFrom, System.DateTime dateTo, System.Guid? configurationId = default(System.Guid?), int? pageNo = default(int?), int? pageSize = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetSubscribedEventsWithHttpMessagesAsync(subscriptionId, dateFrom, dateTo, configurationId, pageNo, pageSize, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Retrieves Cpr configuration assigned to the logic subscription
             /// </summary>
             /// <param name='operations'>
@@ -258,10 +324,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='cpr'>
-            /// Cpr Number
+            /// CPR Number
             /// </param>
             /// <param name='request'>
-            /// cpr Subscription Request
+            /// CPR Subscription Request
             /// </param>
             public static object SubscribeByCpr(this IInternalClient operations, System.Guid subscriptionId, string cpr, CprSubscriptionRequest request = default(CprSubscriptionRequest))
             {
@@ -278,10 +344,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='cpr'>
-            /// Cpr Number
+            /// CPR Number
             /// </param>
             /// <param name='request'>
-            /// cpr Subscription Request
+            /// CPR Subscription Request
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -304,10 +370,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='id'>
-            /// Cpr PersonId
+            /// CPR Person ID
             /// </param>
             /// <param name='request'>
-            /// cpr Subscription Request
+            /// CPR Subscription Request
             /// </param>
             public static object SubscribeById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, CprSubscriptionRequest request = default(CprSubscriptionRequest))
             {
@@ -324,10 +390,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='id'>
-            /// Cpr PersonId
+            /// CPR Person ID
             /// </param>
             /// <param name='request'>
-            /// cpr Subscription Request
+            /// CPR Subscription Request
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -350,10 +416,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='cpr'>
-            /// Cpr Number
+            /// CPR Number
             /// </param>
             /// <param name='configurationId'>
-            /// Configuration ID
+            /// CPR Configuration ID
             /// </param>
             public static IDictionary<string, string> UnsubscribeByCpr(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
             {
@@ -370,10 +436,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='cpr'>
-            /// Cpr Number
+            /// CPR Number
             /// </param>
             /// <param name='configurationId'>
-            /// Configuration ID
+            /// CPR Configuration ID
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -396,10 +462,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='id'>
-            /// Cpr PersonId
+            /// CPR Person ID
             /// </param>
             /// <param name='configurationId'>
-            /// Configuration ID
+            /// CPR Configuration ID
             /// </param>
             public static IDictionary<string, string> UnsubscribeById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
             {
@@ -416,10 +482,10 @@ namespace Kmd.Logic.Cpr.Client
             /// LoGIC subscription ID
             /// </param>
             /// <param name='id'>
-            /// Cpr PersonId
+            /// CPR Person ID
             /// </param>
             /// <param name='configurationId'>
-            /// Configuration ID
+            /// CPR Configuration ID
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
