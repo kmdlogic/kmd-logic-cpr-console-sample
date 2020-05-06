@@ -1143,6 +1143,9 @@
       }
     },
     "Citizen": {
+      "required": [
+        "id"
+      ],
       "type": "object",
       "properties": {
         "id": {
@@ -1214,6 +1217,9 @@
       }
     },
     "SubscribedCitizenEvents": {
+      "required": [
+        "actualCount"
+      ],
       "type": "object",
       "properties": {
         "events": {

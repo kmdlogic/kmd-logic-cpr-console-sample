@@ -24,10 +24,10 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the SubscribedCitizenEvents class.
         /// </summary>
-        /// <param name="events">The events filtered by subscription</param>
         /// <param name="actualCount">Number of CPR events fetched prior to
         /// filtering to just the subscribed citizens</param>
-        public SubscribedCitizenEvents(IList<CitizenEvent> events = default(IList<CitizenEvent>), int? actualCount = default(int?))
+        /// <param name="events">The events filtered by subscription</param>
+        public SubscribedCitizenEvents(int actualCount, IList<CitizenEvent> events = default(IList<CitizenEvent>))
         {
             Events = events;
             ActualCount = actualCount;
@@ -50,7 +50,16 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// just the subscribed citizens
         /// </summary>
         [JsonProperty(PropertyName = "actualCount")]
-        public int? ActualCount { get; set; }
+        public int ActualCount { get; set; }
 
+        /// <summary>
+        /// Validate the object.
+        /// </summary>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown if validation fails
+        /// </exception>
+        public virtual void Validate()
+        {
+        }
     }
 }
