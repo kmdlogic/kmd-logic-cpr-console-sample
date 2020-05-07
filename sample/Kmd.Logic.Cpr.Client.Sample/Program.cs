@@ -115,15 +115,15 @@ namespace Kmd.Logic.Cpr.Client.Sample
 
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
-                success = await cprClient.SubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
+                success = await cprClient.SubscribeByIdAsync(citizen.Id).ConfigureAwait(false);
 
                 if (!success)
                 {
-                    Log.Error("Invalid CPR PersonId {personId}", citizen.Id.Value);
+                    Log.Error("Invalid CPR PersonId {personId}", citizen.Id);
                     return;
                 }
 
-                Log.Information("Subscribed successfully for personId {personId}", citizen.Id.Value);
+                Log.Information("Subscribed successfully for personId {personId}", citizen.Id);
 
                 success = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
 
@@ -132,11 +132,11 @@ namespace Kmd.Logic.Cpr.Client.Sample
                     Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
                 }
 
-                success = await cprClient.UnsubscribeByIdAsync(citizen.Id.Value).ConfigureAwait(false);
+                success = await cprClient.UnsubscribeByIdAsync(citizen.Id).ConfigureAwait(false);
 
                 if (success)
                 {
-                    Log.Information("Unsubscribed successfully for personId {personId}", citizen.Id.Value);
+                    Log.Information("Unsubscribed successfully for personId {personId}", citizen.Id);
                 }
 
                 int pageNo = 1;
