@@ -24,7 +24,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the Citizen class.
         /// </summary>
-        public Citizen(System.Guid id, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), bool? nameAndAddressProtection = default(bool?), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
+        public Citizen(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
         {
             Id = id;
             FirstName = firstName;
@@ -88,7 +88,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "nameAndAddressProtection")]
-        public bool? NameAndAddressProtection { get; set; }
+        public bool NameAndAddressProtection { get; set; }
 
         /// <summary>
         /// </summary>

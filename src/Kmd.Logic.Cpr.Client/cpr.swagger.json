@@ -1144,7 +1144,8 @@
     },
     "Citizen": {
       "required": [
-        "id"
+        "id",
+        "nameAndAddressProtection"
       ],
       "type": "object",
       "properties": {
