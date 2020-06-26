@@ -1,8 +1,13 @@
+1.4.0
+* New methods to provide detailed cpr
+ - Citizen details by cpr
+ - Citizen details by Cpr id
+
 1.3.1
-Updated Id in Citizen respnse class and ActualCount in SubscribedCitizenEvents response class with required field attributes
+* Updated Id in Citizen respnse class and ActualCount in SubscribedCitizenEvents response class with required field attributes
 
 1.3.0
-Included new method GetSubscribedCprEvents
+* Included new method GetSubscribedCprEvents
 
 1.2.0
 * Updated CprSubscription to subscribe and unsubscribe for CPR events,it includes these methods
