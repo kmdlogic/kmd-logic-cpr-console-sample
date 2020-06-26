@@ -63,6 +63,27 @@ namespace Kmd.Logic.Cpr.Client
         Task<HttpOperationResponse<object>> GetByCprWithHttpMessagesAsync(System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
+        /// Gets detailed citizen data by CPR
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// LoGIC subscription ID
+        /// </param>
+        /// <param name='cpr'>
+        /// Personal identification number of danish citizen
+        /// </param>
+        /// <param name='configurationId'>
+        /// Identifier that represents CPR environment and associated
+        /// configuration which this request will be sent with.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<object>> GetCprDetailsByCprWithHttpMessagesAsync(System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
         /// Gets citizen data by ID
         /// </summary>
         /// <param name='subscriptionId'>
@@ -82,6 +103,27 @@ namespace Kmd.Logic.Cpr.Client
         /// The cancellation token.
         /// </param>
         Task<HttpOperationResponse<object>> GetByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Gets detailed citizen data by ID
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// LoGIC subscription ID
+        /// </param>
+        /// <param name='id'>
+        /// ID of danish citizen
+        /// </param>
+        /// <param name='configurationId'>
+        /// Identifier that represents CPR environment and associated
+        /// configuration which this request will be sent with.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<object>> GetCprDetailsByIdWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Gets citizen events for the nominated period

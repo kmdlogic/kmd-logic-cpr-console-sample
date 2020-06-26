@@ -44,7 +44,69 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Citizen"
+              "$ref": "#/definitions/CitizenResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/by-cpr-detailed/{cpr}": {
+      "get": {
+        "tags": [
+          "Cpr"
+        ],
+        "summary": "Gets detailed citizen data by CPR",
+        "operationId": "GetCprDetailsByCpr",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "cpr",
+            "in": "path",
+            "description": "Personal identification number of danish citizen",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CitizenDetailedResponse"
             }
           },
           "400": {
@@ -107,7 +169,70 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Citizen"
+              "$ref": "#/definitions/CitizenResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/by-id-detailed/{id}": {
+      "get": {
+        "tags": [
+          "Cpr"
+        ],
+        "summary": "Gets detailed citizen data by ID",
+        "operationId": "GetCprDetailsById",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of danish citizen",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CitizenDetailedResponse"
             }
           },
           "400": {
@@ -1142,7 +1267,7 @@
         }
       }
     },
-    "Citizen": {
+    "CitizenResponse": {
       "required": [
         "id",
         "nameAndAddressProtection"
@@ -1193,6 +1318,72 @@
           "type": "array",
           "items": {
             "type": "string"
+          }
+        }
+      }
+    },
+    "Citizenship": {
+      "type": "object",
+      "properties": {
+        "countryName": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      }
+    },
+    "CitizenDetailedResponse": {
+      "required": [
+        "id",
+        "nameAndAddressProtection"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "cpr": {
+          "type": "string"
+        },
+        "maritalStatus": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "parents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Parent"
+          }
+        },
+        "legalGuardians": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LegalGuardian"
+          }
+        },
+        "nameAndAddressProtection": {
+          "type": "boolean"
+        },
+        "addresses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "citizenships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Citizenship"
           }
         }
       }
@@ -1328,10 +1519,6 @@
     "ServicePlatformProviderConfiguration": {
       "type": "object",
       "properties": {
-        "municipalityCvr": {
-          "type": "string",
-          "readOnly": true
-        },
         "id": {
           "format": "uuid",
           "type": "string"
@@ -1352,6 +1539,9 @@
             "Production",
             "Test"
           ]
+        },
+        "municipalityCvr": {
+          "type": "string"
         }
       }
     }

@@ -56,7 +56,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
         /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
-        public async Task<Citizen> GetCitizenByCprAsync(string cpr)
+        public async Task<CitizenResponse> GetCitizenByCprAsync(string cpr)
         {
             var client = this.CreateClient();
 
@@ -68,7 +68,39 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return (Citizen)response.Body;
+                        return (CitizenResponse)response.Body;
+
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
+
+                    default:
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get more details of a citizen from the CPR register.
+        /// </summary>
+        /// <param name="cpr">The CPR number.</param>
+        /// <returns>The citizen details or null if the CPR number isn't valid.</returns>
+        /// <exception cref="ValidationException">Missing cpr number.</exception>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
+        /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
+        /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
+        public async Task<CitizenDetailedResponse> GetCitizenDetailsByCprAsync(string cpr)
+        {
+            var client = this.CreateClient();
+
+            using (var response = await client.GetCprDetailsByCprWithHttpMessagesAsync(
+                                subscriptionId: this.options.SubscriptionId,
+                                cpr: cpr,
+                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return (CitizenDetailedResponse)response.Body;
 
                     case System.Net.HttpStatusCode.NotFound:
                         return null;
@@ -87,7 +119,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
         /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
-        public async Task<Citizen> GetCitizenByIdAsync(Guid id)
+        public async Task<CitizenResponse> GetCitizenByIdAsync(Guid id)
         {
             var client = this.CreateClient();
 
@@ -99,7 +131,38 @@ namespace Kmd.Logic.Cpr.Client
                 switch (response.Response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.OK:
-                        return response.Body as Citizen;
+                        return response.Body as CitizenResponse;
+
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
+
+                    default:
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get more details of a citizen from the CPR register by their identifier.
+        /// </summary>
+        /// <param name="id">The citizen identifier.</param>
+        /// <returns>The citizen details or null if the identifier isn't valid.</returns>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
+        /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
+        /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
+        public async Task<CitizenDetailedResponse> GetCitizenDetailsByIdAsync(Guid id)
+        {
+            var client = this.CreateClient();
+
+            using (var response = await client.GetCprDetailsByIdWithHttpMessagesAsync(
+                                subscriptionId: this.options.SubscriptionId,
+                                id: id,
+                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+            {
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return response.Body as CitizenDetailedResponse;
 
                     case System.Net.HttpStatusCode.NotFound:
                         return null;
