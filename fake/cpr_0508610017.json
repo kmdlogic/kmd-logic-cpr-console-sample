@@ -39,8 +39,17 @@
     }
   ],
   "Citizenships": [
-    "Danmark",
-    "Tyskland,Forb.Rep",
-    "Tyskland,Forb.Rep"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Tyskland,Forb.Rep",
+      "CountryCode": "49"
+    },
+    {
+      "CountryName": "Tyskland,Forb.Rep",
+      "CountryCode": "49"
+    }
   ]
 }

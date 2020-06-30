@@ -39,7 +39,13 @@
     }
   ],
   "Citizenships": [
-    "Sverige",
-    "Danmark"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Sverige",
+      "CountryCode": "46"
+    }
   ]
 }

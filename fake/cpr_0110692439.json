@@ -30,7 +30,10 @@
           "RoadAddressingName": "Skolevænget"
         }
     ],
-    "Citizenships": [
-        "Danmark"
-    ]
+  "Citizenships": [
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
+  ]
 }

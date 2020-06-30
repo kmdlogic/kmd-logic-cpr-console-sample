@@ -25,6 +25,9 @@
     }
   ],
   "Citizenships": [
-    "Frankrig"
+    {
+      "CountryName": "Frankrig",
+      "CountryCode": "33"
+    }
   ]
 }

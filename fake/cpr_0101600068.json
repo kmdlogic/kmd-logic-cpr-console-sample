@@ -25,6 +25,9 @@
     }
   ],
   "Citizenships": [
-    "Sverige"
+    {
+      "CountryName": "Sverige",
+      "CountryCode": "46"
+    }  
   ]
 }

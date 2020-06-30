@@ -137,8 +137,17 @@
     }
   ],
   "Citizenships": [
-    "Schweiz",
-    "Tyskland,Forb.Rep",
-    "Danmark"
+    {
+      "CountryName": "Schweiz",
+      "CountryCode": "41"
+    },
+    {
+      "CountryName": "Tyskland,Forb.Rep",
+      "CountryCode": "49"
+    },
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
   ]
 }

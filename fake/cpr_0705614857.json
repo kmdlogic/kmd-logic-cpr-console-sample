@@ -53,6 +53,9 @@
     }
   ],
   "Citizenships": [
-    "Norge"
+    {
+      "CountryName": "Norge",
+      "CountryCode": "47"
+    }
   ]
 }

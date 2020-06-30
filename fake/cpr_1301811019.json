@@ -25,6 +25,9 @@
     }
   ],
   "Citizenships": [
-    "Norge"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
   ]
 }
