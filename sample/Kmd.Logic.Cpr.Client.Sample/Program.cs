@@ -83,7 +83,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 else
                 {
                     cprProvider = configs.FirstOrDefault(x => x.Id == configuration.Cpr.CprConfigurationId);
-
                     if (cprProvider == null)
                     {
                         Log.Error("Invalid CPR configuration id {Id}", configuration.Cpr.CprConfigurationId);
@@ -94,15 +93,12 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 Log.Information("Fetching {Cpr} using configuration {Name}", configuration.CprNumber, cprProvider.Name);
 
                 var citizen = await cprClient.GetCitizenByCprAsync(configuration.CprNumber).ConfigureAwait(false);
-
                 Log.Information("Citizen data: {@Citizen}", citizen);
 
                 var detailedCitizen = await cprClient.GetCitizenDetailsByCprAsync(configuration.CprNumber).ConfigureAwait(false);
-
                 Log.Information("Detailed citizen data: {@Citizen}", detailedCitizen);
 
                 var citizenList = await cprClient.GetAllCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
-
                 if (citizenList == null)
                 {
                     Log.Error("Error in retriving citizen list");
@@ -110,7 +106,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 }
 
                 var success = await cprClient.SubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
-
                 if (!success)
                 {
                     Log.Error("Invalid CPR Number {@CprNumber}", configuration.CprNumber);
@@ -120,7 +115,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 Log.Information("Subscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
 
                 success = await cprClient.SubscribeByIdAsync(citizen.Id).ConfigureAwait(false);
-
                 if (!success)
                 {
                     Log.Error("Invalid CPR PersonId {personId}", citizen.Id);
@@ -130,7 +124,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 Log.Information("Subscribed successfully for personId {personId}", citizen.Id);
 
                 success = await cprClient.UnsubscribeByCprAsync(configuration.CprNumber).ConfigureAwait(false);
-
                 if (success)
                 {
                     Log.Information("Unsubscribed successfully for CprNumber {CprNumber}", configuration.CprNumber);
@@ -146,7 +139,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 int pageNo = 1;
                 int pageSize = 100;
                 var subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, pageNo, pageSize).ConfigureAwait(false);
-
                 if (subscribedCitizenList == null)
                 {
                     Log.Error("Error in retriving subscribed citizen list");
@@ -156,7 +148,6 @@ namespace Kmd.Logic.Cpr.Client.Sample
                 while (subscribedCitizenList.ActualCount > 0)
                 {
                     subscribedCitizenList = await cprClient.GetSubscribedCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, ++pageNo, pageSize).ConfigureAwait(false);
-
                     if (subscribedCitizenList == null)
                     {
                         Log.Error("Error in retriving subscribed citizen list");
