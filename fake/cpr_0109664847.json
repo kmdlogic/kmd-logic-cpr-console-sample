@@ -39,7 +39,13 @@
     }
   ],
   "Citizenships": [
-    "Danmark",
-    "Nepal"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Nepal",
+      "CountryCode": "977"
+    }
   ]
 }

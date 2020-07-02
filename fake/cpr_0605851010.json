@@ -31,6 +31,9 @@
     }
   ],
   "Citizenships": [
-    "Danmark"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
   ]
 }

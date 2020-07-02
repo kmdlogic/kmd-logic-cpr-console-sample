@@ -39,6 +39,9 @@
     }
   ],
   "Citizenships": [
-    "Tyskland,Forb.Rep"
+    {
+      "CountryName": "Tyskland,Forb.Rep",
+      "CountryCode": "49"
+    }
   ]
 }

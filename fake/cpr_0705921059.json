@@ -56,10 +56,25 @@
     }
   ],
   "Citizenships": [
-    "Danmark",
-    "Sverige",
-    "Danmark",
-    "Sverige",
-    "Sverige"
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Sverige",
+      "CountryCode": "46"
+    },
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Sverige",
+      "CountryCode": "46"
+    },
+    {
+      "CountryName": "Sverige",
+      "CountryCode": "46"
+    }
   ]
 }

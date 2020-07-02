@@ -26,14 +26,14 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         /// <param name="environment">Possible values include: 'Production',
         /// 'Test'</param>
-        public ServicePlatformProviderConfiguration(string municipalityCvr = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string))
+        public ServicePlatformProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string municipalityCvr = default(string))
         {
-            MunicipalityCvr = municipalityCvr;
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
             CertificateFileName = certificateFileName;
             Environment = environment;
+            MunicipalityCvr = municipalityCvr;
             CustomInit();
         }
 
@@ -41,11 +41,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "municipalityCvr")]
-        public string MunicipalityCvr { get; private set; }
 
         /// <summary>
         /// </summary>
@@ -72,6 +67,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "municipalityCvr")]
+        public string MunicipalityCvr { get; set; }
 
     }
 }

@@ -193,10 +193,25 @@
     }
   ],
   "Citizenships": [
-    "Norge",
-    "Frankrig",
-    "Norge",
-    "Frankrig",
-    "Danmark"
+    {
+      "CountryName": "Norge",
+      "CountryCode": "47"
+    },
+    {
+      "CountryName": "Frankrig",
+      "CountryCode": "33"
+    },
+    {
+      "CountryName": "Norge",
+      "CountryCode": "47"
+    },
+    {
+      "CountryName": "Frankrig",
+      "CountryCode": "33"
+    },
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
   ]
 }

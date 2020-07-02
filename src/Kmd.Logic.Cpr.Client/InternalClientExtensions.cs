@@ -67,6 +67,54 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Gets detailed citizen data by CPR
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Personal identification number of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            public static object GetCprDetailsByCpr(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
+            {
+                return operations.GetCprDetailsByCprAsync(subscriptionId, cpr, configurationId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets detailed citizen data by CPR
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Personal identification number of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> GetCprDetailsByCprAsync(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetCprDetailsByCprWithHttpMessagesAsync(subscriptionId, cpr, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Gets citizen data by ID
             /// </summary>
             /// <param name='operations'>
@@ -109,6 +157,54 @@ namespace Kmd.Logic.Cpr.Client
             public static async Task<object> GetByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.GetByIdWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Gets detailed citizen data by ID
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// ID of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            public static object GetCprDetailsById(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?))
+            {
+                return operations.GetCprDetailsByIdAsync(subscriptionId, id, configurationId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets detailed citizen data by ID
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='id'>
+            /// ID of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> GetCprDetailsByIdAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid id, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetCprDetailsByIdWithHttpMessagesAsync(subscriptionId, id, configurationId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

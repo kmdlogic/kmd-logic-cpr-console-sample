@@ -39,6 +39,9 @@
     }
   ],
   "Citizenships": [
-    "Argentina"
+    {
+      "CountryName": "Argentina",
+      "CountryCode": "54"
+    }
   ]
 }

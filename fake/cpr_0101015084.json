@@ -30,13 +30,14 @@
             "RoadAddressingName": "A Pedersens Blvd"
         }
     ],
-    "Citizenships": [
-        "Indien",
-        "Danmark",
-        "Laos",
-        "Danmark",
-        "Indien",
-        "Danmark",
-        "Danmark"
-    ]
+  "Citizenships": [
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    },
+    {
+      "CountryName": "Indien",
+      "CountryCode": "91"
+    }
+  ]
 }

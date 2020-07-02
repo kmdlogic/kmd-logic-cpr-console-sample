@@ -11,20 +11,20 @@ namespace Kmd.Logic.Cpr.Client.Models
     using System.Collections.Generic;
     using System.Linq;
 
-    public partial class Citizen
+    public partial class CitizenDetailedResponse
     {
         /// <summary>
-        /// Initializes a new instance of the Citizen class.
+        /// Initializes a new instance of the CitizenDetailedResponse class.
         /// </summary>
-        public Citizen()
+        public CitizenDetailedResponse()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the Citizen class.
+        /// Initializes a new instance of the CitizenDetailedResponse class.
         /// </summary>
-        public Citizen(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
+        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>))
         {
             Id = id;
             FirstName = firstName;
@@ -98,7 +98,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "citizenships")]
-        public IList<string> Citizenships { get; set; }
+        public IList<Citizenship> Citizenships { get; set; }
 
         /// <summary>
         /// Validate the object.

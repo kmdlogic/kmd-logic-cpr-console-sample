@@ -53,6 +53,9 @@
     }
   ],
   "Citizenships": [
-    "Tyrkiet"
+    {
+      "CountryName": "Tyrkiet",
+      "CountryCode": "90"
+    }
   ]
 }

@@ -25,6 +25,9 @@
     }
   ],
   "Citizenships": [
-    "Italien"
+    {
+      "CountryName": "Italien",
+      "CountryCode": "39"
+    }
   ]
 }
