@@ -5,6 +5,18 @@
   "Cpr": "0702614074",
   "MaritalStatus": "Married",
   "Status": "Disappeared",
+  "AddressingName": "Tove Andreasen",
+  "Position": "Landmand",
+  "Sex": "Woman",
+  "DateOfBirth": "1970-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0851",
+  "BirthRegistrationLocationName": "Aalborg",
+  "SupplementalBirthRegistartionPlace": "Aalborg",
+  "FromMarriedDate": "1995-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "1980-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Søgade"
+      "RoadAddressingName": "Søgade",
+      "MovedTo": "1970-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "1193831415"
     }
   ]
 }

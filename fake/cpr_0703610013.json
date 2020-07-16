@@ -5,6 +5,18 @@
   "Cpr": "0703610013",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Sven Holst",
+  "Position": "kunstner",
+  "Sex": "Man",
+  "DateOfBirth": "1975-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": "2010-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2009-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": false,
   "Parents": [
     {
       "Id": "30b6fc08-1a32-4af5-8ae5-79a578367473",
@@ -32,7 +44,11 @@
       "PostDistrict": "København NV",
       "PostCode": "2400",
       "DoorNo": "th",
-      "RoadAddressingName": "Sadelmagervej"
+      "RoadAddressingName": "Sadelmagervej",
+      "MovedTo": "1975-01-01T12:00:00.000000+01:00",
+      "MovedAway": "2005-01-01T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -46,13 +62,22 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "th",
-      "RoadAddressingName": "Jellingvej"
+      "RoadAddressingName": "Jellingvej",
+      "MovedTo": "2005-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "8030571667"
     }
   ]
 }

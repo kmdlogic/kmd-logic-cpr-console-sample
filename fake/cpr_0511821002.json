@@ -5,6 +5,18 @@
   "Cpr": "0511821002",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Kamilla",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "2002-11-11T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0217",
+  "BirthRegistrationLocationName": "Helsingør",
+  "SupplementalBirthRegistartionPlace": "Helsingør",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": null,
+  "StatusDate": "2007-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Hornbæk",
       "PostCode": "3100",
       "DoorNo": null,
-      "RoadAddressingName": "Gillelejevej"
+      "RoadAddressingName": "Gillelejevej",
+      "MovedTo": "2002-11-11T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Frankrig",
       "CountryCode": "33"
     }
-  ]
+  ],
+  "Children": []
 }

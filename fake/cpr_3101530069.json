@@ -5,6 +5,18 @@
   "Cpr": "3101530069",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Andersen",
+  "Position": "Politibetjent",
+  "Sex": "Man",
+  "DateOfBirth": "1985-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": false,
+  "StatusDate": "2000-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "Odense C",
       "PostCode": "5000",
       "DoorNo": "th",
-      "RoadAddressingName": "Opus Bp Allé"
+      "RoadAddressingName": "Opus Bp Allé",
+      "MovedTo": "1998-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0101015087"
     }
   ]
 }

@@ -5,6 +5,18 @@
   "Cpr": "0811811068",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Tina Mikkelsen",
+  "Position": "Lærer",
+  "Sex": "Woman",
+  "DateOfBirth": "1990-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": false,
+  "BirthRegistrationLocationCode": "0217",
+  "BirthRegistrationLocationName": "Helsingør",
+  "SupplementalBirthRegistartionPlace": "Helsingør",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2010-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": false,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Helsingør",
       "PostCode": "3000",
       "DoorNo": null,
-      "RoadAddressingName": "Hornbækvej"
+      "RoadAddressingName": "Hornbækvej",
+      "MovedTo": "1093-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

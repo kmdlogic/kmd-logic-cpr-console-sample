@@ -5,6 +5,18 @@
   "Cpr": "2507847776",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Olsen",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "1999-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": null,
+  "StatusDate": "2005-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Valby",
       "PostCode": "2500",
       "DoorNo": "tv",
-      "RoadAddressingName": "Allegade"
+      "RoadAddressingName": "Allegade",
+      "MovedTo": "2019-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Hillerød",
       "PostCode": "3400",
       "DoorNo": "tv",
-      "RoadAddressingName": "Grusgraven"
+      "RoadAddressingName": "Grusgraven",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2005-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -43,5 +63,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

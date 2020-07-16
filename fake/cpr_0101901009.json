@@ -5,6 +5,18 @@
   "Cpr": "0101901009",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Mogens",
+  "Position": null,
+  "Sex": "Man",
+  "DateOfBirth": "1972-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": null,
+  "StatusDate": "2000-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "6e426083-198b-47cf-adfd-87d5c8feff02",
@@ -27,13 +39,18 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "0001",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2000-06-11T13:00:04.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Tyskland,Forb.Rep",
       "CountryCode": "49"
-    }  
-  ]
+    }
+  ],
+  "Children": []
 }

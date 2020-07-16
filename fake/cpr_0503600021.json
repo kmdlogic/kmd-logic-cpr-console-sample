@@ -5,6 +5,18 @@
   "Cpr": "0503600021",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
+  "AddressingName": null,
+  "Position": "bankmand",
+  "Sex": "Man",
+  "DateOfBirth": "1974-05-05T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": null,
+  "BirthRegistrationLocationName": null,
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2004-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Kvistgård",
       "PostCode": "3490",
       "DoorNo": null,
-      "RoadAddressingName": "Helsingørsvej"
+      "RoadAddressingName": "Helsingørsvej",
+      "MovedTo": "1974-05-05T12:00:00.000000+01:00",
+      "MovedAway": "1976-05-05T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Kvistgård",
       "PostCode": "3490",
       "DoorNo": null,
-      "RoadAddressingName": "Helsingørsvej"
+      "RoadAddressingName": "Helsingørsvej",
+      "MovedTo": "1976-05-05T12:00:00.000000+01:00",
+      "MovedAway": "1995-05-05T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -49,7 +69,11 @@
       "PostDistrict": "Kvistgård",
       "PostCode": "3490",
       "DoorNo": null,
-      "RoadAddressingName": "Helsingørsvej"
+      "RoadAddressingName": "Helsingørsvej",
+      "MovedTo": "1995-05-05T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -57,5 +81,6 @@
       "CountryName": "Tyrkiet",
       "CountryCode": "90"
     }
-  ]
+  ],
+  "Children": []
 }

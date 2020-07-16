@@ -5,6 +5,18 @@
   "Cpr": "0707614307",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Anders Holm",
+  "Position": "Politibetjent",
+  "Sex": "Man",
+  "DateOfBirth": "1950-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": "1970-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": false,
+  "StatusDate": "1990-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2015-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

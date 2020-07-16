@@ -5,6 +5,18 @@
   "Cpr": "0307711001",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Sørensen",
+  "Position": "Ingeniør",
+  "Sex": "Man",
+  "DateOfBirth": "1992-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0217",
+  "BirthRegistrationLocationName": "Helsingør",
+  "SupplementalBirthRegistartionPlace": "Helsingør",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": null,
+  "StatusDate": "2009-07-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Hornbæk",
       "PostCode": "3100",
       "DoorNo": null,
-      "RoadAddressingName": "Gillelejevej"
+      "RoadAddressingName": "Gillelejevej",
+      "MovedTo": "1992-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Frankrig",
       "CountryCode": "33"
     }
-  ]
+  ],
+  "Children": []
 }

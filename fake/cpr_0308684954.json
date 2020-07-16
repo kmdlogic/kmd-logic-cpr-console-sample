@@ -5,6 +5,18 @@
   "Cpr": "0308684954",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Kristensen",
+  "Position": "tedner",
+  "Sex": "Woman",
+  "DateOfBirth": "1980-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0573",
+  "BirthRegistrationLocationName": "Varde",
+  "SupplementalBirthRegistartionPlace": "Varde",
+  "FromMarriedDate": "2005-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2005-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": true,
@@ -21,7 +33,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "1980-01-01T12:00:00.000000+01:00",
+      "MovedAway": "2001-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,13 +51,22 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "0002",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2001-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Sverige",
       "CountryCode": "46"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0512801089"
     }
   ]
 }

@@ -22,7 +22,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the Address class.
         /// </summary>
-        public Address(string buildingNo = default(string), string city = default(string), string municipalityCode = default(string), string municipalityName = default(string), string roadCode = default(string), string darAddress = default(string), string floor = default(string), string houseNo = default(string), string postDistrict = default(string), string postCode = default(string), string doorNo = default(string), string roadAddressingName = default(string))
+        public Address(string buildingNo = default(string), string city = default(string), string municipalityCode = default(string), string municipalityName = default(string), string roadCode = default(string), string darAddress = default(string), string floor = default(string), string houseNo = default(string), string postDistrict = default(string), string postCode = default(string), string doorNo = default(string), string roadAddressingName = default(string), bool? isCurrent = default(bool?), System.DateTime? movedTo = default(System.DateTime?), System.DateTime? movedAway = default(System.DateTime?), bool? vacatingDateUncertainityMarking = default(bool?))
         {
             BuildingNo = buildingNo;
             City = city;
@@ -36,6 +36,10 @@ namespace Kmd.Logic.Cpr.Client.Models
             PostCode = postCode;
             DoorNo = doorNo;
             RoadAddressingName = roadAddressingName;
+            IsCurrent = isCurrent;
+            MovedTo = movedTo;
+            MovedAway = movedAway;
+            VacatingDateUncertainityMarking = vacatingDateUncertainityMarking;
             CustomInit();
         }
 
@@ -103,6 +107,26 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "roadAddressingName")]
         public string RoadAddressingName { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "isCurrent")]
+        public bool? IsCurrent { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "movedTo")]
+        public System.DateTime? MovedTo { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "movedAway")]
+        public System.DateTime? MovedAway { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "vacatingDateUncertainityMarking")]
+        public bool? VacatingDateUncertainityMarking { get; set; }
 
     }
 }

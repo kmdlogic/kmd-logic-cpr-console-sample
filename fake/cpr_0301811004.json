@@ -5,6 +5,18 @@
   "Cpr": "0301811004",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Hansen",
+  "Position": "Tømrer",
+  "Sex": "Woman",
+  "DateOfBirth": "1975-11-11T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0217",
+  "BirthRegistrationLocationName": "Helsingør",
+  "SupplementalBirthRegistartionPlace": "Helsingør",
+  "FromMarriedDate": "1990-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2018-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "Helsingør",
       "PostCode": "3000",
       "DoorNo": null,
-      "RoadAddressingName": "Hillerødvej"
+      "RoadAddressingName": "Hillerødvej",
+      "MovedTo": "2001-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0701590058"
     }
   ]
 }

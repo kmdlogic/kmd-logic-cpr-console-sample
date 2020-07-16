@@ -5,6 +5,18 @@
   "Cpr": "0705614857",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Tage Olsen",
+  "Position": "studerende",
+  "Sex": "Man",
+  "DateOfBirth": "1991-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": false,
+  "BirthRegistrationLocationCode": "47",
+  "BirthRegistrationLocationName": "Norge",
+  "SupplementalBirthRegistartionPlace": "Norge",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2010-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": false,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Ribe",
       "PostCode": "6760",
       "DoorNo": null,
-      "RoadAddressingName": "Hovedgaden"
+      "RoadAddressingName": "Hovedgaden",
+      "MovedTo": "1992-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2000-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Ribe",
       "PostCode": "6760",
       "DoorNo": null,
-      "RoadAddressingName": "Hovedgaden"
+      "RoadAddressingName": "Hovedgaden",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2006-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -49,7 +69,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2006-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -57,5 +81,6 @@
       "CountryName": "Norge",
       "CountryCode": "47"
     }
-  ]
+  ],
+  "Children": []
 }

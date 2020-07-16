@@ -5,6 +5,18 @@
   "Cpr": "0706610049",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Gert Svensson",
+  "Position": "Tømrer",
+  "Sex": "Man",
+  "DateOfBirth": "1992-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": "2017-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2016-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2006-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "0002",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2006-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -43,5 +63,6 @@
       "CountryName": "Sverige",
       "CountryCode": "46"
     }
-  ]
+  ],
+  "Children": []
 }

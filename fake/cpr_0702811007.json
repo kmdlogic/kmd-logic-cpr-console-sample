@@ -5,6 +5,18 @@
   "Cpr": "0702811007",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Søren Hansen",
+  "Position": "bankmand",
+  "Sex": "Man",
+  "DateOfBirth": "1985-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking ": true,
+  "StatusDate": "2005-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": false,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "København S",
       "PostCode": "2300",
       "DoorNo": null,
-      "RoadAddressingName": "Agerlandsvej"
+      "RoadAddressingName": "Agerlandsvej",
+      "MovedTo": "1998-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }
