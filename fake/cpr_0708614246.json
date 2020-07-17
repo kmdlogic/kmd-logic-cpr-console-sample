@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "Aalborg",
   "SupplementalBirthRegistartionPlace": "test",
   "FromMarriedDate": "2017-01-01T12:00:00.000000+01:00",
-  "FromMarriedUncertainityMarking ": true,
+  "FromMarriedUncertainityMarking": true,
   "StatusDate": "2012-01-01T12:00:00.000000+01:00",
   "StatusDateUncertainityMarking": false,
   "Parents": [],

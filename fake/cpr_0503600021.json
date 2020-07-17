@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": null,
   "SupplementalBirthRegistartionPlace": null,
   "FromMarriedDate": null,
-  "FromMarriedUncertainityMarking ": true,
+  "FromMarriedUncertainityMarking": true,
   "StatusDate": "2004-06-11T13:00:04.000000+01:00",
   "StatusDateUncertainityMarking": true,
   "Parents": [],

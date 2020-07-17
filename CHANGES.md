@@ -1,6 +1,7 @@
 1.4.1
-*Updated new properties in CPR detailed response , properties include  Addressing name, Position, Sex, Date Of Birth,Date of birth uncertainitymarking,
-Birth registration locationcode, Birth registration locationName, Supplemental birth registartion place, From marrieddate, From married uncertainitymarking, Status date, Status date uncertainitymarking, Children and in address new properties include Moved to, Moved away, Is current.
+* Added new properties in CPR detailed response and Address 
+ - Properties included in CPR detailed response are Addressing name, Position, Sex, Date Of Birth,Date of birth uncertainitymarking,Birth registration locationcode, Birth registration locationName, Supplemental birth registartion place, From marrieddate, From married uncertainitymarking, Status date, Status date uncertainitymarking, Children
+ - Properties included in Address are Moved to, Moved away, Is current.
 
 1.4.0
 * New methods to provide detailed cpr

@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "Danmark",
   "SupplementalBirthRegistartionPlace": "Danmark",
   "FromMarriedDate": "1995-04-01T10:00:00.000000+01:00",
-  "FromMarriedUncertainityMarking ": true,
+  "FromMarriedUncertainityMarking": true,
   "StatusDate": null,
   "StatusDateUncertainityMarking": true,
   "Parents": [],

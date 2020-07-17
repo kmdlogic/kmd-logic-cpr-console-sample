@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "København",
   "SupplementalBirthRegistartionPlace": "København",
   "FromMarriedDate": null,
-  "FromMarriedUncertainityMarking ": null,
+  "FromMarriedUncertainityMarking": null,
   "StatusDate": "2010-11-11T12:00:04.000000+01:00",
   "StatusDateUncertainityMarking": true,
   "Parents": [],

@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "Aalborg",
   "SupplementalBirthRegistartionPlace": "Aalborg",
   "FromMarriedDate": "1876-01-01T12:00:00.000000+01:00",
-  "FromMarriedUncertainityMarking ": false,
+  "FromMarriedUncertainityMarking": false,
   "StatusDate": "1880-01-01T12:00:00.000000+01:00",
   "StatusDateUncertainityMarking": true,
   "Parents": [],

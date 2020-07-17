@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "Roskilde",
   "SupplementalBirthRegistartionPlace": "Roskilde",
   "FromMarriedDate": null,
-  "FromMarriedUncertainityMarking ": true,
+  "FromMarriedUncertainityMarking": true,
   "StatusDate": null,
   "StatusDateUncertainityMarking": true,
   "Parents": [],

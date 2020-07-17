@@ -14,7 +14,7 @@
   "BirthRegistrationLocationName": "Odense",
   "SupplementalBirthRegistartionPlace": "Odense",
   "FromMarriedDate": null,
-  "FromMarriedUncertainityMarking ": null,
+  "FromMarriedUncertainityMarking": null,
   "StatusDate": "2010-06-11T12:00:04.000000+01:00",
   "StatusDateUncertainityMarking": true,
   "Parents": [],
