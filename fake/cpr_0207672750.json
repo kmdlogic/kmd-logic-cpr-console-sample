@@ -5,6 +5,18 @@
   "Cpr": "0207672750",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Lise",
+  "Position": "Politibetjent",
+  "Sex": "Woman",
+  "DateOfBirth": "1985-11-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0101",
+  "BirthRegistrationLocationName": "København",
+  "SupplementalBirthRegistartionPlace": "København",
+  "FromMarriedDate": "2000-06-11T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2000-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": true,
@@ -21,13 +33,22 @@
       "PostDistrict": "Odense SØ",
       "PostCode": "5220",
       "DoorNo": "tv",
-      "RoadAddressingName": "Opus Bp Allé"
+      "RoadAddressingName": "Opus Bp Allé",
+      "MovedTo": "1985-11-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0508610017"
     }
   ]
 }

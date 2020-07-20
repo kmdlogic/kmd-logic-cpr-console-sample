@@ -1,39 +1,60 @@
 {
-    "Id": "3dbc27e2-2d40-4a65-9ef0-7cda74934a3b",
-    "FirstName": "Tim Test",
-    "LastName": "Nielsen",
-    "Cpr": "1211025995",
-    "MaritalStatus": "Married",
-    "Status": "Departed",
-    "Parents": [
-        {
-            "Id": "540e0344-fb99-488d-a743-22057316c419",
-            "Cpr": "1502881015",
-            "Relation": "FatherOrCousin"
-        }
-    ],
-    "LegalGuardians": [],
-    "NameAndAddressProtection": false,
-    "Addresses": [
-        {
-          "BuildingNo": null,
-          "City": "Kongens Lyngby",
-          "MunicipalityCode": "0718",
-          "MunicipalityName": "Lyngby-Taarbæk",
-          "RoadCode": "0534",
-          "DarAddress": null,
-          "Floor": "2",
-          "HouseNo": "63",
-          "PostDistrict": "Kongens Lyngby",
-          "PostCode": "2800",
-          "DoorNo": "tv",
-          "RoadAddressingName": "Lyngbygårdsvej"
-        }
-    ],
-    "Citizenships": [
-      {
-        "CountryName": "Danmark",
-        "CountryCode": "45"
-      }
-    ]
+  "Id": "3dbc27e2-2d40-4a65-9ef0-7cda74934a3b",
+  "FirstName": "Tim Test",
+  "LastName": "Nielsen",
+  "Cpr": "1211025995",
+  "MaritalStatus": "Married",
+  "Status": "Departed",
+  "AddressingName": "Nielsen",
+  "Position": "kunstner",
+  "Sex": "Man",
+  "DateOfBirth": "1989-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": "2017-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2000-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
+  "Parents": [
+    {
+      "Id": "540e0344-fb99-488d-a743-22057316c419",
+      "Cpr": "1502881015",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Kongens Lyngby",
+      "MunicipalityCode": "0718",
+      "MunicipalityName": "Lyngby-Taarbæk",
+      "RoadCode": "0534",
+      "DarAddress": null,
+      "Floor": "2",
+      "HouseNo": "63",
+      "PostDistrict": "Kongens Lyngby",
+      "PostCode": "2800",
+      "DoorNo": "tv",
+      "RoadAddressingName": "Lyngbygårdsvej",
+      "MovedTo": "1996-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
+    }
+  ],
+  "Citizenships": [
+    {
+      "CountryName": "Danmark",
+      "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0101015084"
+    }
+  ]
 }

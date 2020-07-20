@@ -5,6 +5,18 @@
   "Cpr": "0112947728",
   "MaritalStatus": "Widow",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "TutTuttersen",
+  "Position": "kunstner",
+  "Sex": "Woman",
+  "DateOfBirth": "1972-10-04T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0173",
+  "BirthRegistrationLocationName": "Lyngby-Taarbæk",
+  "SupplementalBirthRegistartionPlace": "Lyngby",
+  "FromMarriedDate": "1994-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2003-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "Hillerød",
       "PostCode": "3400",
       "DoorNo": "th",
-      "RoadAddressingName": "C.V.Jørgensens Alle"
+      "RoadAddressingName": "C.V.Jørgensens Alle",
+      "MovedTo": "1976-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "05056941008"
     }
   ]
 }

@@ -5,6 +5,18 @@
   "Cpr": "0303811001",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Peter",
+  "Position": "studerende",
+  "Sex": "Man",
+  "DateOfBirth": "2004-04-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0461",
+  "BirthRegistrationLocationName": "Odense",
+  "SupplementalBirthRegistartionPlace": "Odense",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2010-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Odense N",
       "PostCode": "5270",
       "DoorNo": null,
-      "RoadAddressingName": "Odensevej"
+      "RoadAddressingName": "Odensevej",
+      "MovedTo": "2004-04-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

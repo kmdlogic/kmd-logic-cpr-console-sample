@@ -5,6 +5,18 @@
   "Cpr": "1808821008",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Nielsen",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "1978-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2000-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Hornbæk",
       "PostCode": "3100",
       "DoorNo": null,
-      "RoadAddressingName": "Gillelejevej"
+      "RoadAddressingName": "Gillelejevej",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,11 @@
       "CountryName": "Frankrig",
       "CountryCode": "33"
     }
+  ],
+  "Children": [
+    {
+      "Cpr": "0101085084"
+    }
   ]
+
 }

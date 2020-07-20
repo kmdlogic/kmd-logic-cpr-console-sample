@@ -5,6 +5,18 @@
   "Cpr": "0501771007",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Pedersen",
+  "Position": "kunstner",
+  "Sex": "Man",
+  "DateOfBirth": "1978-03-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0101",
+  "BirthRegistrationLocationName": "København",
+  "SupplementalBirthRegistartionPlace": "København",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2010-11-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "København S",
       "PostCode": "2300",
       "DoorNo": null,
-      "RoadAddressingName": "Agerlandsvej"
+      "RoadAddressingName": "Agerlandsvej",
+      "MovedTo": "1978-03-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

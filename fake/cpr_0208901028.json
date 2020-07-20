@@ -5,6 +5,18 @@
   "Cpr": "0208901028",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Mia",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "2000-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2005-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
@@ -43,7 +55,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2000-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -51,5 +67,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

@@ -5,6 +5,18 @@
   "Cpr": "0308811018",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmarkHighwayCode",
+  "AddressingName": "Pia",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "2002-11-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0217",
+  "BirthRegistrationLocationName": "Helsingør",
+  "SupplementalBirthRegistartionPlace": "Helsingør",
+  "FromMarriedDate": "2005-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2009-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Ukendt",
       "PostCode": "9999",
       "DoorNo": null,
-      "RoadAddressingName": "Uden Fast Bopæl"
+      "RoadAddressingName": "Uden Fast Bopæl",
+      "MovedTo": "2002-11-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Italien",
       "CountryCode": "39"
     }
-  ]
+  ],
+  "Children": []
 }

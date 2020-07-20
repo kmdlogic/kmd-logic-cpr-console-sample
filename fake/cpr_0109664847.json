@@ -8,6 +8,18 @@
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
+  "AddressingName": "Karl Peter Billeskov",
+  "Position": null,
+  "Sex": "Man",
+  "DateOfBirth": "1994-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0925",
+  "BirthRegistrationLocationName": "Manitsoq-Sukkertop",
+  "SupplementalBirthRegistartionPlace": "Manitsoq",
+  "FromMarriedDate": "2019-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2015-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Addresses": [
     {
       "BuildingNo": "0015",
@@ -21,7 +33,11 @@
       "PostDistrict": "Sukkertoppen",
       "PostCode": "3912",
       "DoorNo": null,
-      "RoadAddressingName": "Rypevej"
+      "RoadAddressingName": "Rypevej",
+      "MovedTo": "1994-01-01T12:00:00.000000+01:00",
+      "MovedAway": "2000-01-01T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Sorø",
       "PostCode": "4180",
       "DoorNo": null,
-      "RoadAddressingName": "Fasanvænget"
+      "RoadAddressingName": "Fasanvænget",
+      "MovedTo": "2004-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -47,5 +67,6 @@
       "CountryName": "Nepal",
       "CountryCode": "977"
     }
-  ]
+  ],
+  "Children": []
 }

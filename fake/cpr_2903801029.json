@@ -5,6 +5,18 @@
   "Cpr": "2903801029",
   "MaritalStatus": "Single",
   "Status": "Departed",
+  "AddressingName": "Andersen",
+  "Position": "Ingeniør",
+  "Sex": "Man",
+  "DateOfBirth": "1989-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2000-08-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "København Ø",
       "PostCode": "2100",
       "DoorNo": "th",
-      "RoadAddressingName": "Bechgaardsgade"
+      "RoadAddressingName": "Bechgaardsgade",
+      "MovedTo": "1996-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0103015184"
     }
   ]
 }

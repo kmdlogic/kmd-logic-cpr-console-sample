@@ -5,6 +5,18 @@
   "Cpr": "0506941008",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Susan",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "2010-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0573",
+  "BirthRegistrationLocationName": "Varde",
+  "SupplementalBirthRegistartionPlace": "Varde",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2010-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "5ff198e8-18d3-4c31-aac2-645d9cea1103",
@@ -38,7 +50,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2010-01-01T12:00:00.000000+01:00",
+      "MovedAway": "2014-01-01T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -52,7 +68,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "0002",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2014-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -60,5 +80,6 @@
       "CountryName": "Sverige",
       "CountryCode": "46"
     }
-  ]
+  ],
+  "Children": []
 }

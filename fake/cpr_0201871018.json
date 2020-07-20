@@ -5,6 +5,18 @@
   "Cpr": "0201871018",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Hansen",
+  "Position": "studerende",
+  "Sex": "Woman",
+  "DateOfBirth": "1995-04-11T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0573",
+  "BirthRegistrationLocationName": "Varde",
+  "SupplementalBirthRegistartionPlace": "Varde",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2010-11-11T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
@@ -43,7 +55,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "1995-04-11T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -51,5 +67,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

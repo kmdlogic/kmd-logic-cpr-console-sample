@@ -5,6 +5,18 @@
   "Cpr": "0707614285",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Jens Mortensen",
+  "Position": "kunstner",
+  "Sex": "Man",
+  "DateOfBirth": "1989-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": "2011-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2000-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "844bd74b-1826-49be-b23f-deec4351f45e",
@@ -32,7 +44,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2011-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2002-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -46,7 +62,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "mf",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2012-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2015-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -60,13 +80,25 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "th",
-      "RoadAddressingName": "Svinget"
+      "RoadAddressingName": "Svinget",
+      "MovedTo": "2015-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0560241707"
+    },
+    {
+      "Cpr": "6035695552"
     }
   ]
 }

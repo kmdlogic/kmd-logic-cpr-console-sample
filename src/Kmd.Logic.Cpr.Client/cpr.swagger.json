@@ -1264,6 +1264,20 @@
         },
         "roadAddressingName": {
           "type": "string"
+        },
+        "isCurrent": {
+          "type": "boolean"
+        },
+        "movedTo": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "movedAway": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "vacatingDateUncertainityMarking": {
+          "type": "boolean"
         }
       }
     },
@@ -1333,6 +1347,14 @@
         }
       }
     },
+    "Children": {
+      "type": "object",
+      "properties": {
+        "cpr": {
+          "type": "string"
+        }
+      }
+    },
     "CitizenDetailedResponse": {
       "required": [
         "id",
@@ -1355,6 +1377,13 @@
         },
         "maritalStatus": {
           "type": "string"
+        },
+        "fromMarriedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "fromMarriedUncertainityMarking": {
+          "type": "boolean"
         },
         "status": {
           "type": "string"
@@ -1384,6 +1413,44 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Citizenship"
+          }
+        },
+        "addressingName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "dateOfBirthUncertainityMarking": {
+          "type": "boolean"
+        },
+        "birthRegistrationLocationCode": {
+          "type": "string"
+        },
+        "birthRegistrationLocationName": {
+          "type": "string"
+        },
+        "supplementalBirthRegistartionPlace": {
+          "type": "string"
+        },
+        "sex": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "statusDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "statusDateUncertainityMarking": {
+          "type": "boolean"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Children"
           }
         }
       }

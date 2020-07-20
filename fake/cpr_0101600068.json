@@ -5,11 +5,24 @@
   "Cpr": "0101600068",
   "MaritalStatus": "Divorced",
   "Status": "Departed",
+  "AddressingName": null,
+  "Position": "tedner",
+  "Sex": "Man",
+  "DateOfBirth": "1969-05-03T10:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": "1995-04-01T10:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": null,
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
   "Addresses": [
     {
+
       "BuildingNo": null,
       "City": null,
       "MunicipalityCode": "0573",
@@ -21,13 +34,22 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2001-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Sverige",
       "CountryCode": "46"
-    }  
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0101015084"
+    }
   ]
 }

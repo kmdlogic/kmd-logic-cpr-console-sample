@@ -5,6 +5,18 @@
   "Cpr": "0508610017",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Carsten",
+  "Position": "kunstner",
+  "Sex": "Man",
+  "DateOfBirth": "1995-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": null,
+  "StatusDate": "2000-06-11T12:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "1995-01-01T12:00:00.000000+01:00",
+      "MovedAway": "1999-01-01T12:00:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "0001",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "1999-01-01T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -51,5 +71,6 @@
       "CountryName": "Tyskland,Forb.Rep",
       "CountryCode": "49"
     }
-  ]
+  ],
+  "Children": []
 }

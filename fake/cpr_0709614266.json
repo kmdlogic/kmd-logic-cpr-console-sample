@@ -5,6 +5,18 @@
   "Cpr": "0709614266",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Elisabeth Ærenskov-Rasmussen",
+  "Position": "Tømrer",
+  "Sex": "Woman",
+  "DateOfBirth": "1983-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0751",
+  "BirthRegistrationLocationName": "Århus",
+  "SupplementalBirthRegistartionPlace": "Århus",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": false,
+  "StatusDate": "2005-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Århus C",
       "PostCode": "8000",
       "DoorNo": "mf",
-      "RoadAddressingName": "Byvænget"
+      "RoadAddressingName": "Byvænget",
+      "MovedTo": "1983-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

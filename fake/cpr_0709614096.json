@@ -5,6 +5,18 @@
   "Cpr": "0709614096",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Bettina Christiansen",
+  "Position": "Landmand",
+  "Sex": "Woman",
+  "DateOfBirth": "1992-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0851",
+  "BirthRegistrationLocationName": "Aalborg",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2016-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Svinget"
+      "RoadAddressingName": "Svinget",
+      "MovedTo": "1992-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

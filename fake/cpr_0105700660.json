@@ -5,6 +5,18 @@
   "Cpr": "0105700660",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",
+  "AddressingName": null,
+  "Position": "bankmand",
+  "Sex": "Woman",
+  "DateOfBirth": "1974-05-05T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": null,
+  "BirthRegistrationLocationName": null,
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": "1990-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2004-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": true,
@@ -21,13 +33,25 @@
       "PostDistrict": "Odense SØ",
       "PostCode": "5220",
       "DoorNo": "tv",
-      "RoadAddressingName": "Opus Bp Allé"
+      "RoadAddressingName": "Opus Bp Allé",
+      "MovedTo": "1994-06-11T13:00:04.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "051771007"
+    },
+    {
+      "Cpr": "0701614054"
     }
   ]
 }

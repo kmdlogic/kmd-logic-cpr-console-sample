@@ -5,6 +5,18 @@
   "Cpr": "0707614293",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Lars Henriksen",
+  "Position": "studerende",
+  "Sex": "Man",
+  "DateOfBirth": "1950-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0851",
+  "BirthRegistrationLocationName": "Aalborg",
+  "SupplementalBirthRegistartionPlace": "Aalborg",
+  "FromMarriedDate": "1972-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "1999-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "adbe7e74-04a4-4caa-a6fe-85c95bc04a68",
@@ -32,7 +44,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "th",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2006-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -46,7 +62,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Søgade"
+      "RoadAddressingName": "Søgade",
+      "MovedTo": "2006-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2016-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -60,13 +80,22 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Svinget"
+      "RoadAddressingName": "Svinget",
+      "MovedTo": "2016-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "5032753407"
     }
   ]
 }

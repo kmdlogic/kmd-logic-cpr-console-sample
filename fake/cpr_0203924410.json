@@ -1,39 +1,63 @@
 {
-    "Id": "46c5a50f-bdd2-4164-a46d-c2a2ec551400",
-    "FirstName": "Anne Demo",
-    "LastName": "Nielsen",
-    "Cpr": "0203924410",
-    "MaritalStatus": "Married",
-    "Status": "Departed",
-    "Parents": [
-        {
-            "Id": "540e0344-fb99-488d-a743-22057316c419",
-            "Cpr": "1502881015",
-            "Relation": "FatherOrCousin"
-        }
-    ],
-    "LegalGuardians": [],
-    "NameAndAddressProtection": false,
-    "Addresses": [
-        {
-          "BuildingNo": null,
-          "City": "Kongens Lyngby",
-          "MunicipalityCode": "0173",
-          "MunicipalityName": "Lyngby-Taarbæk",
-          "RoadCode": "0189",
-          "DarAddress": null,
-          "Floor": null,
-          "HouseNo": "3",
-          "PostDistrict": "Kongens Lyngby",
-          "PostCode": "2800",
-          "DoorNo": null,
-          "RoadAddressingName": "Ellehøjvej"
-        }
-    ],
+  "Id": "46c5a50f-bdd2-4164-a46d-c2a2ec551400",
+  "FirstName": "Anne Demo",
+  "LastName": "Nielsen",
+  "Cpr": "0203924410",
+  "MaritalStatus": "Married",
+  "Status": "Departed",
+  "AddressingName": "DemoNielsen",
+  "Position": "tedner",
+  "Sex": "Woman",
+  "DateOfBirth": "1945-11-10T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0173",
+  "BirthRegistrationLocationName": "Lyngby-Taarbæk",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": "1965-10-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2000-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
+  "Parents": [
+    {
+      "Id": "540e0344-fb99-488d-a743-22057316c419",
+      "Cpr": "1502881015",
+      "Relation": "FatherOrCousin"
+    }
+  ],
+  "LegalGuardians": [],
+  "NameAndAddressProtection": false,
+  "Addresses": [
+    {
+      "BuildingNo": null,
+      "City": "Kongens Lyngby",
+      "MunicipalityCode": "0173",
+      "MunicipalityName": "Lyngby-Taarbæk",
+      "RoadCode": "0189",
+      "DarAddress": null,
+      "Floor": null,
+      "HouseNo": "3",
+      "PostDistrict": "Kongens Lyngby",
+      "PostCode": "2800",
+      "DoorNo": null,
+      "RoadAddressingName": "Ellehøjvej",
+      "MovedTo": "1995-04-11T12:00:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
+    }
+  ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0112947728"
+    },
+    {
+      "Cpr": "0511821002"
     }
   ]
 }

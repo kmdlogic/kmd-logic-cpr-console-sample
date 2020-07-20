@@ -5,6 +5,18 @@
   "Cpr": "0712610018",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Henriksen",
+  "Position": "Ingeniø",
+  "Sex": "Man",
+  "DateOfBirth": "1979-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": "2000-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2001-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "689e6fea-3c77-4e20-a642-f32704eb986f",
@@ -32,13 +44,22 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "th",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "1990-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0101015080"
     }
   ]
 }

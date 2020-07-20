@@ -24,19 +24,32 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenDetailedResponse class.
         /// </summary>
-        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>))
+        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), System.DateTime? fromMarriedDate = default(System.DateTime?), bool? fromMarriedUncertainityMarking = default(bool?), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>), string addressingName = default(string), System.DateTime? dateOfBirth = default(System.DateTime?), bool? dateOfBirthUncertainityMarking = default(bool?), string birthRegistrationLocationCode = default(string), string birthRegistrationLocationName = default(string), string supplementalBirthRegistartionPlace = default(string), string sex = default(string), string position = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), IList<Children> children = default(IList<Children>))
         {
             Id = id;
             FirstName = firstName;
             LastName = lastName;
             Cpr = cpr;
             MaritalStatus = maritalStatus;
+            FromMarriedDate = fromMarriedDate;
+            FromMarriedUncertainityMarking = fromMarriedUncertainityMarking;
             Status = status;
             Parents = parents;
             LegalGuardians = legalGuardians;
             NameAndAddressProtection = nameAndAddressProtection;
             Addresses = addresses;
             Citizenships = citizenships;
+            AddressingName = addressingName;
+            DateOfBirth = dateOfBirth;
+            DateOfBirthUncertainityMarking = dateOfBirthUncertainityMarking;
+            BirthRegistrationLocationCode = birthRegistrationLocationCode;
+            BirthRegistrationLocationName = birthRegistrationLocationName;
+            SupplementalBirthRegistartionPlace = supplementalBirthRegistartionPlace;
+            Sex = sex;
+            Position = position;
+            StatusDate = statusDate;
+            StatusDateUncertainityMarking = statusDateUncertainityMarking;
+            Children = children;
             CustomInit();
         }
 
@@ -72,6 +85,16 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
+        [JsonProperty(PropertyName = "fromMarriedDate")]
+        public System.DateTime? FromMarriedDate { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "fromMarriedUncertainityMarking")]
+        public bool? FromMarriedUncertainityMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
         [JsonProperty(PropertyName = "status")]
         public string Status { get; set; }
 
@@ -99,6 +122,61 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "citizenships")]
         public IList<Citizenship> Citizenships { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "addressingName")]
+        public string AddressingName { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "dateOfBirth")]
+        public System.DateTime? DateOfBirth { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "dateOfBirthUncertainityMarking")]
+        public bool? DateOfBirthUncertainityMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "birthRegistrationLocationCode")]
+        public string BirthRegistrationLocationCode { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "birthRegistrationLocationName")]
+        public string BirthRegistrationLocationName { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "supplementalBirthRegistartionPlace")]
+        public string SupplementalBirthRegistartionPlace { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "sex")]
+        public string Sex { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "position")]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "statusDate")]
+        public System.DateTime? StatusDate { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "statusDateUncertainityMarking")]
+        public bool? StatusDateUncertainityMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "children")]
+        public IList<Children> Children { get; set; }
 
         /// <summary>
         /// Validate the object.

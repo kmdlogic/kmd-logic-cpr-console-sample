@@ -5,6 +5,18 @@
   "Cpr": "0709614029",
   "MaritalStatus": "Married",
   "Status": "Departed",
+  "AddressingName": "Adam Jakobsen",
+  "Position": "Ingeniør",
+  "Sex": "Man",
+  "DateOfBirth": "1990-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": false,
+  "BirthRegistrationLocationCode": "0751",
+  "BirthRegistrationLocationName": "Århus",
+  "SupplementalBirthRegistartionPlace": "Århus",
+  "FromMarriedDate": "2005-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": false,
+  "StatusDate": "2000-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": false,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,13 +33,22 @@
       "PostDistrict": "Århus C",
       "PostCode": "8000",
       "DoorNo": null,
-      "RoadAddressingName": "Nørrevej"
+      "RoadAddressingName": "Nørrevej",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "0416527901"
     }
   ]
 }

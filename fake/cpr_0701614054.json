@@ -5,6 +5,18 @@
   "Cpr": "0701614054",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Pernille Hagensen Nvnkor",
+  "Position": "Lærer",
+  "Sex": "Woman",
+  "DateOfBirth": "1965-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Denmark",
+  "SupplementalBirthRegistartionPlace": "Denmark",
+  "FromMarriedDate": "1985-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "1995-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": null,
-      "RoadAddressingName": "Vestergade"
+      "RoadAddressingName": "Vestergade",
+      "MovedTo": "1972-01-01T17:12:00.000000+01:00",
+      "MovedAway": "1985-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -35,7 +51,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "1985-01-01T17:12:00.000000+01:00",
+      "MovedAway": "1995-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -49,7 +69,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "1996-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2000-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -63,7 +87,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2000-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2013-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -77,7 +105,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2013-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2015-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -91,7 +123,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2015-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2016-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -105,7 +141,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2016-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2018-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -119,7 +159,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2018-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2019-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -133,7 +177,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": null,
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2019-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -148,6 +196,11 @@
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "1302407152"
     }
   ]
 }

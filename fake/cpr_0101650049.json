@@ -5,6 +5,18 @@
   "Cpr": "0101650049",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": null,
+  "Position": null,
+  "Sex": "Woman",
+  "DateOfBirth": "2000-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "0265",
+  "BirthRegistrationLocationName": "Roskilde",
+  "SupplementalBirthRegistartionPlace": "Roskilde",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": null,
+  "StatusDateUncertainityMarking": true,
   "Parents": [],
   "LegalGuardians": [],
   "NameAndAddressProtection": false,
@@ -21,7 +33,11 @@
       "PostDistrict": "Roskilde",
       "PostCode": "4000",
       "DoorNo": null,
-      "RoadAddressingName": "Apotekerstræde"
+      "RoadAddressingName": "Apotekerstræde",
+      "MovedTo": "2001-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -29,5 +45,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

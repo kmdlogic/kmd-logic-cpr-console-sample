@@ -5,6 +5,18 @@
   "Cpr": "0706970010",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Astrid Andersen",
+  "Position": "bankmand",
+  "Sex": "Man",
+  "DateOfBirth": "1970-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "1998-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "f47a4f90-cc4c-4f3d-9680-918a69a2dc10",
@@ -43,13 +55,12 @@
       "PostDistrict": "København V",
       "PostCode": "1654",
       "DoorNo": null,
-      "RoadAddressingName": "Abel Catrines Gade"
+      "RoadAddressingName": "Abel Catrines Gade",
+      "MovedTo": "2012-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
-  "Citizenships": [
-    {
-      "CountryName": "Danmark",
-      "CountryCode": "45"
-    }
-  ]
+  "Citizenships": []
 }

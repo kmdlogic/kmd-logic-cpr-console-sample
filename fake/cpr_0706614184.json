@@ -5,6 +5,18 @@
   "Cpr": "0706614184",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Anne Mortensen",
+  "Position": "Tømrer",
+  "Sex": "Man",
+  "DateOfBirth": "1992-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": null,
+  "FromMarriedDate": "2017-01-01T12:00:00.000000+01:00",
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2016-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "10ca9a5e-7c7e-4518-8c98-b07c5de32abb",
@@ -32,13 +44,22 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "1995-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
     {
       "CountryName": "Danmark",
       "CountryCode": "45"
+    }
+  ],
+  "Children": [
+    {
+      "Cpr": "2941214000"
     }
   ]
 }

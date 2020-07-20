@@ -5,6 +5,18 @@
   "Cpr": "0705901007",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Peter Petersen",
+  "Position": "tedner",
+  "Sex": "Man",
+  "DateOfBirth": "1992-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": false,
+  "BirthRegistrationLocationCode": "45",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": false,
+  "StatusDate": "2011-01-01T12:00:00.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "cef111de-e0f4-479a-a300-70648ed0ae81",
@@ -43,7 +55,11 @@
       "PostDistrict": "Roskilde",
       "PostCode": "4000",
       "DoorNo": null,
-      "RoadAddressingName": "Apotekerstræde"
+      "RoadAddressingName": "Apotekerstræde",
+      "MovedTo": "1993-01-01T17:12:00.000000+01:00",
+      "MovedAway": "2017-01-01T17:12:00.000000+01:00",
+      "Iscurrent": false,
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -57,7 +73,11 @@
       "PostDistrict": "Varde",
       "PostCode": "6800",
       "DoorNo": "th",
-      "RoadAddressingName": "Boulevarden"
+      "RoadAddressingName": "Boulevarden",
+      "MovedTo": "2017-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
@@ -65,5 +85,6 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Children": []
 }

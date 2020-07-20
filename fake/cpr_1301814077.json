@@ -5,6 +5,18 @@
   "Cpr": "1301814077",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
+  "AddressingName": "Mortensen",
+  "Position": "Landmand",
+  "Sex": "Man",
+  "DateOfBirth": "1978-01-01T12:00:00.000000+01:00",
+  "DateOfBirthUncertainityMarking": true,
+  "BirthRegistrationLocationCode": "95",
+  "BirthRegistrationLocationName": "Danmark",
+  "SupplementalBirthRegistartionPlace": "Danmark",
+  "FromMarriedDate": null,
+  "FromMarriedUncertainityMarking": true,
+  "StatusDate": "2009-06-11T13:00:04.000000+01:00",
+  "StatusDateUncertainityMarking": true,
   "Parents": [
     {
       "Id": "7ea95f31-3a10-4f0f-8ad7-770030bf447b",
@@ -32,7 +44,11 @@
       "PostDistrict": "Aalborg",
       "PostCode": "9000",
       "DoorNo": "tv",
-      "RoadAddressingName": "Industrivænget"
+      "RoadAddressingName": "Industrivænget",
+      "MovedTo": "2018-01-01T17:12:00.000000+01:00",
+      "MovedAway": null,
+      "Iscurrent": true,
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -40,5 +56,7 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
+  ],
+  "Children": [
   ]
 }

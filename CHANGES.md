@@ -1,10 +1,15 @@
+1.4.1
+* Added new properties in CPR detailed response and Address 
+ - Properties included in CPR detailed response are Addressing name, Position, Sex, Date Of Birth,Date of birth uncertainitymarking,Birth registration locationcode, Birth registration locationName, Supplemental birth registartion place, From marrieddate, From married uncertainitymarking, Status date, Status date uncertainitymarking, Children
+ - Properties included in Address are Moved to, Moved away, Is current.
+
 1.4.0
 * New methods to provide detailed cpr
  - Citizen details by cpr
  - Citizen details by Cpr id
 
 1.3.1
-* Updated Id in Citizen respnse class and ActualCount in SubscribedCitizenEvents response class with required field attributes
+* Updated Id in Citizen response class and ActualCount in SubscribedCitizenEvents response class with required field attributes
 
 1.3.0
 * Included new method GetSubscribedCprEvents
