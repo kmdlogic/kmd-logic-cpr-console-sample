@@ -43,7 +43,8 @@
       "MovedTo": "1995-04-11T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": null
     }
   ],
   "Citizenships": [
