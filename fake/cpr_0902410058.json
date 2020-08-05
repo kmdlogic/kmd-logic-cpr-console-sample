@@ -49,7 +49,8 @@
       "MovedTo": "2000-01-01T17:12:00.000000+01:00",
       "MovedAway": "2004-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -67,7 +68,8 @@
       "MovedTo": "2004-01-01T17:12:00.000000+01:00",
       "MovedAway": "2009-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -85,7 +87,8 @@
       "MovedTo": "2009-01-01T17:12:00.000000+01:00",
       "MovedAway": "2015-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -103,7 +106,8 @@
       "MovedTo": "2015-01-01T17:12:00.000000+01:00",
       "MovedAway": "2016-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -121,7 +125,8 @@
       "MovedTo": "2016-01-01T17:12:00.000000+01:00",
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -139,7 +144,8 @@
       "MovedTo": "2017-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     }
   ],
   "Citizenships": [
