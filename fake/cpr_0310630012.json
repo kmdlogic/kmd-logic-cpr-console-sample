@@ -37,8 +37,7 @@
       "MovedTo": "1995-01-01T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Hoffmann"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

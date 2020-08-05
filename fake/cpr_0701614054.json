@@ -37,8 +37,7 @@
       "MovedTo": "1972-01-01T17:12:00.000000+01:00",
       "MovedAway": "1985-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Jensen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -56,8 +55,7 @@
       "MovedTo": "1985-01-01T17:12:00.000000+01:00",
       "MovedAway": "1995-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": null
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -75,8 +73,7 @@
       "MovedTo": "1996-01-01T17:12:00.000000+01:00",
       "MovedAway": "2000-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": null
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -94,8 +91,7 @@
       "MovedTo": "2000-01-01T17:12:00.000000+01:00",
       "MovedAway": "2013-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Sloth"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -113,8 +109,7 @@
       "MovedTo": "2013-01-01T17:12:00.000000+01:00",
       "MovedAway": "2015-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": null
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -132,8 +127,7 @@
       "MovedTo": "2015-01-01T17:12:00.000000+01:00",
       "MovedAway": "2016-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Graversen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -151,8 +145,7 @@
       "MovedTo": "2016-01-01T17:12:00.000000+01:00",
       "MovedAway": "2018-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Villadsen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -170,8 +163,7 @@
       "MovedTo": "2018-01-01T17:12:00.000000+01:00",
       "MovedAway": "2019-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Erichsen"
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -189,8 +181,7 @@
       "MovedTo": "2019-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Albertsen"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

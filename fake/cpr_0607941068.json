@@ -59,8 +59,7 @@
       "MovedTo": "2005-01-01T12:00:00.000000+01:00",
       "MovedAway": "2015-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Markussen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -78,8 +77,7 @@
       "MovedTo": "2015-01-01T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Ebbesen"
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [

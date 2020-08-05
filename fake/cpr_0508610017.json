@@ -37,8 +37,7 @@
       "MovedTo": "1995-01-01T12:00:00.000000+01:00",
       "MovedAway": "1999-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Eskildsen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -56,8 +55,7 @@
       "MovedTo": "1999-01-01T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Høj"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

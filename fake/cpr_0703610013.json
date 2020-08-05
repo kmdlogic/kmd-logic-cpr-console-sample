@@ -48,8 +48,7 @@
       "MovedTo": "1975-01-01T12:00:00.000000+01:00",
       "MovedAway": "2005-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": null
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -67,8 +66,7 @@
       "MovedTo": "2005-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Paulsen"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

@@ -43,8 +43,7 @@
       "MovedTo": "2000-06-11T13:00:04.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Buhl"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

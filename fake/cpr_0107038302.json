@@ -59,8 +59,7 @@
       "MovedTo": "1996-10-04T12:00:00.000000+01:00",
       "MovedAway": "1998-10-04T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Johannessen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -78,8 +77,7 @@
       "MovedTo": "1998-10-04T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Mortensen"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [
