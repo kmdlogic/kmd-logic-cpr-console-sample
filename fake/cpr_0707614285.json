@@ -48,7 +48,8 @@
       "MovedTo": "2011-01-01T17:12:00.000000+01:00",
       "MovedAway": "2002-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Erichsen"
     },
     {
       "BuildingNo": null,
@@ -66,7 +67,8 @@
       "MovedTo": "2012-01-01T17:12:00.000000+01:00",
       "MovedAway": "2015-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Holm"
     },
     {
       "BuildingNo": null,
@@ -84,7 +86,8 @@
       "MovedTo": "2015-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Madsen"
     }
   ],
   "Citizenships": [

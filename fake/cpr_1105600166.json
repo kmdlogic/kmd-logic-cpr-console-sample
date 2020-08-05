@@ -37,7 +37,8 @@
       "MovedTo": "2018-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -55,7 +56,8 @@
       "MovedTo": "1998-01-01T17:12:00.000000+01:00",
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     }
   ],
   "Citizenships": [

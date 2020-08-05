@@ -1278,6 +1278,9 @@
         },
         "vacatingDateUncertainityMarking": {
           "type": "boolean"
+        },
+        "careOfAddress": {
+          "type": "string"
         }
       }
     },

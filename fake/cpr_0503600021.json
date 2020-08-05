@@ -37,7 +37,8 @@
       "MovedTo": "1974-05-05T12:00:00.000000+01:00",
       "MovedAway": "1976-05-05T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": "Jacobsen"
     },
     {
       "BuildingNo": null,
@@ -55,7 +56,8 @@
       "MovedTo": "1976-05-05T12:00:00.000000+01:00",
       "MovedAway": "1995-05-05T12:00:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": "Olsson"
     },
     {
       "BuildingNo": null,
@@ -73,7 +75,8 @@
       "MovedTo": "1995-05-05T12:00:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Dalgaard"
     }
   ],
   "Citizenships": [

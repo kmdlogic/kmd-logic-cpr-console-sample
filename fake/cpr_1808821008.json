@@ -37,7 +37,8 @@
       "MovedTo": "2000-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Ebbesen"
     }
   ],
   "Citizenships": [
@@ -51,5 +52,4 @@
       "Cpr": "0101085084"
     }
   ]
-
 }

@@ -59,7 +59,8 @@
       "MovedTo": "2000-01-01T17:12:00.000000+01:00",
       "MovedAway": "2010-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": "Bentsen"
     },
     {
       "BuildingNo": null,
@@ -77,7 +78,8 @@
       "MovedTo": "2010-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": null
     }
   ],
   "Citizenships": [
