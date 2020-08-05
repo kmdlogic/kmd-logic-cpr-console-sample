@@ -1,3 +1,6 @@
+1.4.2
+* Added care of address property in response
+
 1.4.1
 * Added new properties in CPR detailed response and Address 
  - Properties included in CPR detailed response are Addressing name, Position, Sex, Date Of Birth,Date of birth uncertainitymarking,Birth registration locationcode, Birth registration locationName, Supplemental birth registartion place, From marrieddate, From married uncertainitymarking, Status date, Status date uncertainitymarking, Children

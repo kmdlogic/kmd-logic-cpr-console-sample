@@ -54,7 +54,8 @@
       "MovedTo": "1995-01-01T12:00:00.000000+01:00",
       "MovedAway": "2001-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true
+      "VacatingDateUncertainityMarking": true,
+      "CareOfAddress": null
     },
     {
       "BuildingNo": null,
@@ -72,7 +73,8 @@
       "MovedTo": "2001-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": null
     }
   ],
   "Citizenships": [

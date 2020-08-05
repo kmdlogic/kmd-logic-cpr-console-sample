@@ -48,7 +48,8 @@
       "MovedTo": "1995-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false
+      "VacatingDateUncertainityMarking": false,
+      "CareOfAddress": "Johannsen"
     }
   ],
   "Citizenships": [
