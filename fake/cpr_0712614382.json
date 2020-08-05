@@ -48,8 +48,7 @@
       "MovedTo": "1990-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Kristensen"
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [

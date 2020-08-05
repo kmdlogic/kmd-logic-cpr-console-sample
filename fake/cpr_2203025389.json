@@ -59,8 +59,7 @@
       "MovedTo": "2019-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Olesen"
+      "VacatingDateUncertainityMarking": false
     },
     {
       "BuildingNo": null,
@@ -78,8 +77,7 @@
       "MovedTo": "2000-01-01T17:12:00.000000+01:00",
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Møller"
+      "VacatingDateUncertainityMarking": false
     }
   ],
   "Citizenships": [

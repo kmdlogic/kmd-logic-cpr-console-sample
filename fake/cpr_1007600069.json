@@ -37,8 +37,7 @@
       "MovedTo": "1991-01-01T17:12:00.000000+01:00",
       "MovedAway": "1994-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Krogh"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -56,8 +55,7 @@
       "MovedTo": "1994-01-01T17:12:00.000000+01:00",
       "MovedAway": "1996-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Kjørgaard"
+      "VacatingDateUncertainityMarking": true
     },
     {
 
@@ -76,8 +74,7 @@
       "MovedTo": "1996-01-01T17:12:00.000000+01:00",
       "MovedAway": "1998-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Fischer"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -95,8 +92,7 @@
       "MovedTo": "1998-01-01T17:12:00.000000+01:00",
       "MovedAway": "2000-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Thøgersen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -114,8 +110,7 @@
       "MovedTo": "2001-01-01T17:12:00.000000+01:00",
       "MovedAway": "2003-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Thøgersen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -133,8 +128,7 @@
       "MovedTo": "2004-01-01T17:12:00.000000+01:00",
       "MovedAway": "2006-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Bak"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -152,8 +146,7 @@
       "MovedTo": "2007-01-01T17:12:00.000000+01:00",
       "MovedAway": "2008-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Erichsen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -171,8 +164,7 @@
       "MovedTo": "2008-01-01T17:12:00.000000+01:00",
       "MovedAway": "2009-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Lind"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -190,8 +182,7 @@
       "MovedTo": "2009-01-01T17:12:00.000000+01:00",
       "MovedAway": "2010-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Knudsen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -209,8 +200,7 @@
       "MovedTo": "2011-01-01T17:12:00.000000+01:00",
       "MovedAway": "2012-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Bonde"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -228,8 +218,7 @@
       "MovedTo": "2012-01-01T17:12:00.000000+01:00",
       "MovedAway": "2014-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Svensson"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -247,8 +236,7 @@
       "MovedTo": "2014-01-01T17:12:00.000000+01:00",
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Povlsen"
+      "VacatingDateUncertainityMarking": true
     },
     {
       "BuildingNo": null,
@@ -266,8 +254,7 @@
       "MovedTo": "2017-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Vinther"
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [

@@ -48,8 +48,7 @@
       "MovedTo": "2018-01-01T17:12:00.000000+01:00",
       "MovedAway": null,
       "Iscurrent": true,
-      "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Johannsen"
+      "VacatingDateUncertainityMarking": true
     }
   ],
   "Citizenships": [
@@ -58,5 +57,6 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [
+  ]
 }
