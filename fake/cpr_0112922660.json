@@ -2,6 +2,7 @@
   "Id": "844b2fb6-4bff-4339-b3ab-9b87d1cbdb00",
   "FirstName": "Anne Test",
   "LastName": "Nielsen",
+  "MiddleName": "Jakobsen",
   "Cpr": "0112922660",
   "MaritalStatus": "Married",
   "Status": "Departed",

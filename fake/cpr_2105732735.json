@@ -2,6 +2,7 @@
   "Id": "2e55d9dd-3bd1-4221-bbeb-5a9ee5741eba",
   "FirstName": "Hans",
   "LastName": "Larsen",
+  "MiddleName": "Bang",
   "Cpr": "2105732735",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",

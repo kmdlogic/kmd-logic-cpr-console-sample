@@ -2,6 +2,7 @@
   "Id": "f47a4f90-cc4c-4f3d-9680-918a69a2dc10",
   "FirstName": "Jan",
   "LastName": "Andersen",
+  "MiddleName": "Christoffersen",
   "Cpr": "0710610029",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",

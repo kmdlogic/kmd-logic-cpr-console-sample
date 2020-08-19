@@ -2,6 +2,7 @@
   "Id": "a6e51398-de6f-4950-88e2-1fc7991b7204",
   "FirstName": "Peter",
   "LastName": "Hansen",
+  "MiddleName": "Nguyen",
   "Cpr": "0707650079",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",

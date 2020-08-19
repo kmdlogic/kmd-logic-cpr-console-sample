@@ -2,6 +2,7 @@
   "Id": "f10b4054-49a8-47ad-9428-5c4a3c40561e",
   "FirstName": "Mia",
   "LastName": "Svensson",
+  "MiddleName": null,
   "Cpr": "0605901018",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",

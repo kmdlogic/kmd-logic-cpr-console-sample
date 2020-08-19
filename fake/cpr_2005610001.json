@@ -2,6 +2,7 @@
   "Id": "4683a0f6-edc1-4428-b0be-ce7f513d0bac",
   "FirstName": "Jens",
   "LastName": "Petersen",
+  "MiddleName": "Marcussen",
   "Cpr": "2005610001",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",

@@ -24,11 +24,12 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenResponse class.
         /// </summary>
-        public CitizenResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
+        public CitizenResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
         {
             Id = id;
             FirstName = firstName;
             LastName = lastName;
+            MiddleName = middleName;
             Cpr = cpr;
             MaritalStatus = maritalStatus;
             Status = status;
@@ -59,6 +60,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "lastName")]
         public string LastName { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "middleName")]
+        public string MiddleName { get; set; }
 
         /// <summary>
         /// </summary>
