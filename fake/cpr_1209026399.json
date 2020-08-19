@@ -2,6 +2,7 @@
   "Id": "fdf7ea99-6966-4f2a-994d-0e161d255356",
   "FirstName": "Tim Demo",
   "LastName": "Nielsen",
+  "MiddleName": "Christensen",
   "Cpr": "1209026399",
   "MaritalStatus": "Married",
   "Status": "Departed",

@@ -2,6 +2,7 @@
   "Id": "ed0c51ce-2cea-45ac-bdf8-6442e35518a6",
   "FirstName": "Peter",
   "LastName": "Madsen",
+  "MiddleName": null,
   "Cpr": "0303811001",
   "MaritalStatus": "Single",
   "Status": "Departed",

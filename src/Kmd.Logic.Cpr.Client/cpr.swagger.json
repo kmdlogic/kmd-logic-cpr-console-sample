@@ -1301,6 +1301,9 @@
         "lastName": {
           "type": "string"
         },
+        "middleName": {
+          "type": "string"
+        },
         "cpr": {
           "type": "string"
         },
@@ -1373,6 +1376,9 @@
           "type": "string"
         },
         "lastName": {
+          "type": "string"
+        },
+        "middleName": {
           "type": "string"
         },
         "cpr": {

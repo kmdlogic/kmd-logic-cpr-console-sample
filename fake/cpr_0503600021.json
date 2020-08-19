@@ -2,6 +2,7 @@
   "Id": "6122c957-3f95-44a7-aed1-16ed1e5f0e3e",
   "FirstName": "Hans",
   "LastName": "Hansen",
+  "MiddleName": null,
   "Cpr": "0503600021",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",

@@ -2,6 +2,7 @@
   "Id": "03e997d1-8e29-4a03-b078-38c92ab81ffc",
   "FirstName": "Bodil",
   "LastName": "Jensen",
+  "MiddleName": null,
   "Cpr": "0512801048",
   "MaritalStatus": "Single",
   "Status": "Departed",

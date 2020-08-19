@@ -2,6 +2,7 @@
   "Id": "bc62ce0f-92fd-4320-abb0-a242346cd6cd",
   "FirstName": "Pernille",
   "LastName": "Andersen",
+  "MiddleName":null,
   "Cpr": "0706015000",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",

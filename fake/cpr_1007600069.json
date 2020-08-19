@@ -2,6 +2,7 @@
   "Id": "11b14853-3742-414b-87e8-a11299fab0bb",
   "FirstName": "Jack",
   "LastName": "Hansen",
+  "MiddleName": null,
   "Cpr": "1007600069",
   "MaritalStatus": "Married",
   "Status": "Departed",

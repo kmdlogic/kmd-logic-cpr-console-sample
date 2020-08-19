@@ -1,3 +1,6 @@
+1.4.3
+* Added middle name property in response
+
 1.4.2
 * Added care of address property in response
 
