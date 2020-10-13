@@ -3,6 +3,9 @@
   "FirstName": "Mona",
   "LastName": "Hansen",
   "MiddleName": "Kragh",
+  "FirstNameMarking": "Mon",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Kra",
   "Cpr": "0701650018",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "1612357078"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0193847710",
+    "FirstName": "Elliot",
+    "LastName": "Povlsen"
+  }
 }

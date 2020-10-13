@@ -3,6 +3,9 @@
   "FirstName": "Monika",
   "LastName": "Eliasen",
   "MiddleName": "Jensen",
+  "FirstNameMarking": "Mon",
+  "LastNameMarking": "Eli",
+  "MiddleNameMarking": "Jen",
   "Cpr": "0708614246",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -55,5 +58,10 @@
     {
       "Cpr": "3158000700"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0150564910",
+    "FirstName": "Alfred",
+    "LastName": "Felix"
+  }
 }

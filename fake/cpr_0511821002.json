@@ -3,6 +3,9 @@
   "FirstName": "Kamilla",
   "LastName": "Petersen",
   "MiddleName": "Mathiesen",
+  "FirstNameMarking": "Kam",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "Mat",
   "Cpr": "0511821002",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "33"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

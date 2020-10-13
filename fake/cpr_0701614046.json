@@ -3,6 +3,9 @@
   "FirstName": "Hanne Frederikke Sofie",
   "LastName": "Larsen",
   "MiddleName": "Søgaard",
+  "FirstNameMarking": "Han",
+  "LastNameMarking": "Lar",
+  "MiddleNameMarking": "Søg",
   "Cpr": "0701614046",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0982135705"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0193849710",
+    "FirstName": "Hjorth",
+    "LastName": "Andersen"
+  }
 }

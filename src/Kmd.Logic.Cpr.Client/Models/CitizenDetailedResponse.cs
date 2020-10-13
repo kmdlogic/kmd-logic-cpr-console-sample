@@ -24,7 +24,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenDetailedResponse class.
         /// </summary>
-        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), System.DateTime? fromMarriedDate = default(System.DateTime?), bool? fromMarriedUncertainityMarking = default(bool?), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>), string addressingName = default(string), System.DateTime? dateOfBirth = default(System.DateTime?), bool? dateOfBirthUncertainityMarking = default(bool?), string birthRegistrationLocationCode = default(string), string birthRegistrationLocationName = default(string), string supplementalBirthRegistartionPlace = default(string), string sex = default(string), string position = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), IList<Children> children = default(IList<Children>))
+        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), System.DateTime? fromMarriedDate = default(System.DateTime?), bool? fromMarriedUncertainityMarking = default(bool?), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>), string addressingName = default(string), System.DateTime? dateOfBirth = default(System.DateTime?), bool? dateOfBirthUncertainityMarking = default(bool?), string birthRegistrationLocationCode = default(string), string birthRegistrationLocationName = default(string), string supplementalBirthRegistartionPlace = default(string), string sex = default(string), string position = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), IList<Children> children = default(IList<Children>), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string), SpouseDetails spouse = default(SpouseDetails))
         {
             Id = id;
             FirstName = firstName;
@@ -51,6 +51,10 @@ namespace Kmd.Logic.Cpr.Client.Models
             StatusDate = statusDate;
             StatusDateUncertainityMarking = statusDateUncertainityMarking;
             Children = children;
+            FirstNameMarking = firstNameMarking;
+            MiddleNameMarking = middleNameMarking;
+            LastNameMarking = lastNameMarking;
+            Spouse = spouse;
             CustomInit();
         }
 
@@ -183,6 +187,26 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "children")]
         public IList<Children> Children { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "firstNameMarking")]
+        public string FirstNameMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "middleNameMarking")]
+        public string MiddleNameMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "lastNameMarking")]
+        public string LastNameMarking { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "spouse")]
+        public SpouseDetails Spouse { get; set; }
 
         /// <summary>
         /// Validate the object.

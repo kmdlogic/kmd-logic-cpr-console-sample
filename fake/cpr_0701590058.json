@@ -3,6 +3,9 @@
   "FirstName": "Mette",
   "LastName": "Lassen",
   "MiddleName": "Jensen",
+  "FirstNameMarking": "Met",
+  "LastNameMarking": "Las",
+  "MiddleNameMarking": "Jen",
   "Cpr": "0701590058",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

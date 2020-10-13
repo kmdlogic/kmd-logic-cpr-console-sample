@@ -2,7 +2,10 @@
   "Id": "bc62ce0f-92fd-4320-abb0-a242346cd6cd",
   "FirstName": "Pernille",
   "LastName": "Andersen",
-  "MiddleName":null,
+  "MiddleName": null,
+  "FirstNameMarking": "Per",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "",
   "Cpr": "0706015000",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -70,5 +73,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

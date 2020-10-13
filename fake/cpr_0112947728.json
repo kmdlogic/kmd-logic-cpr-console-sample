@@ -3,6 +3,9 @@
   "FirstName": "Lissen Viola",
   "LastName": "Larsson",
   "MiddleName": "Bak",
+  "FirstNameMarking": "Lis",
+  "LastNameMarking": "Lar",
+  "MiddleNameMarking": "Bak",
   "Cpr": "0112947728",
   "MaritalStatus": "Widow",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "05056941008"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112347710",
+    "FirstName": "William",
+    "LastName": "Nielsen"
+  }
 }

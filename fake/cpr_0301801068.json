@@ -3,6 +3,9 @@
   "FirstName": "Tina",
   "LastName": "Hansen",
   "MiddleName": "Thorup",
+  "FirstNameMarking": "Tin",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Tho",
   "Cpr": "0301801068",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -67,5 +70,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "011284910",
+    "FirstName": "Hjorth",
+    "LastName": "Sørensen"
+  }
 }

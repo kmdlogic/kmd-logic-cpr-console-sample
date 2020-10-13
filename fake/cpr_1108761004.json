@@ -3,6 +3,9 @@
   "FirstName": "Michael",
   "LastName": "Jensen",
   "MiddleName": "Knudsen",
+  "FirstNameMarking": "Mic",
+  "LastNameMarking": "Jen",
+  "MiddleNameMarking": "Knu",
   "Cpr": "1108761004",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -49,5 +52,10 @@
     }
   ],
   "Children": [
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

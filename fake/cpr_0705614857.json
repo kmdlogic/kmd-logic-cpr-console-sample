@@ -3,6 +3,9 @@
   "FirstName": "Tage",
   "LastName": "Olsen",
   "MiddleName": "Dam",
+  "FirstNameMarking": "Tag",
+  "LastNameMarking": "Ols",
+  "MiddleNameMarking": "Dam",
   "Cpr": "0705614857",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -86,5 +89,10 @@
       "CountryCode": "47"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

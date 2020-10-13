@@ -3,6 +3,9 @@
   "FirstName": "Gert",
   "LastName": "Svensson",
   "MiddleName": "Jensen",
+  "FirstNameMarking": "Ger",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Jen",
   "Cpr": "0706610049",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -67,5 +70,10 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0192699710",
+    "FirstName": "Nora",
+    "LastName": "Povlsen"
+  }
 }

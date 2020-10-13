@@ -3,6 +3,9 @@
   "FirstName": "Jørgen",
   "LastName": "Laustsen",
   "MiddleName": "Lauritzen",
+  "FirstNameMarking": "Jør",
+  "LastNameMarking": "Lau",
+  "MiddleNameMarking": "Lau",
   "Cpr": "1510950069",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -67,5 +70,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

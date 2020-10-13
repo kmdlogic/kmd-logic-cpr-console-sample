@@ -3,6 +3,9 @@
   "FirstName": "Sofia",
   "LastName": "Gomez",
   "MiddleName": "Sloth",
+  "FirstNameMarking": "Sof",
+  "LastNameMarking": "Gom",
+  "MiddleNameMarking": "Slo",
   "Cpr": "1105600166",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
     {
       "Cpr": "0101015080"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0351161923",
+    "FirstName": "Carl",
+    "LastName": "Larsen"
+  }
 }

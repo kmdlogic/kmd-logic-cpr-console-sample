@@ -3,6 +3,9 @@
   "FirstName": "Kaj",
   "LastName": "Olesen",
   "MiddleName": "OliverBjerreEnevoldsen",
+  "FirstNameMarking": "Kaj",
+  "LastNameMarking": "Ole",
+  "MiddleNameMarking": "Oli",
   "Cpr": "1503580019",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -85,5 +88,10 @@
       "CountryName": "Danmark",
       "CountryCode": "45"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

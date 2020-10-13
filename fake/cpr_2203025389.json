@@ -3,6 +3,9 @@
   "FirstName": "Kristian",
   "LastName": "Larsen",
   "MiddleName": "Ottosen",
+  "FirstNameMarking": "Kri",
+  "LastNameMarking": "Lar",
+  "MiddleNameMarking": "Otto",
   "Cpr": "2203025389",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -89,5 +92,10 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

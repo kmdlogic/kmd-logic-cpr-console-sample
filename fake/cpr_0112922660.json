@@ -3,6 +3,9 @@
   "FirstName": "Anne Test",
   "LastName": "Nielsen",
   "MiddleName": "Jakobsen",
+  "FirstNameMarking": "Ann",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Jak",
   "Cpr": "0112922660",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -54,5 +57,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0112647710",
+    "FirstName": "Agnes",
+    "LastName": "Nielsen"
+  }
 }

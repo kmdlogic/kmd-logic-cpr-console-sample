@@ -3,6 +3,9 @@
   "FirstName": "Anne Demo",
   "LastName": "Nielsen",
   "MiddleName": "Thorup",
+  "FirstNameMarking": "Ann",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Tho",
   "Cpr": "0203924410",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -61,5 +64,10 @@
     {
       "Cpr": "0511821002"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112847910",
+    "FirstName": "Alfred",
+    "LastName": "Nielsen"
+  }
 }

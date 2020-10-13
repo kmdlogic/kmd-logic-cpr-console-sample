@@ -3,6 +3,9 @@
   "FirstName": "Bettina",
   "LastName": "Christiansen",
   "MiddleName": "Henriksen",
+  "FirstNameMarking": "Bet",
+  "LastNameMarking": "Chr",
+  "MiddleNameMarking": "Hen",
   "Cpr": "0709614096",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

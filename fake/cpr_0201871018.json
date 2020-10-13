@@ -3,6 +3,9 @@
   "FirstName": "Lisa",
   "LastName": "Hansen",
   "MiddleName": "Kristoffersen",
+  "FirstNameMarking": "Lis",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Kri",
   "Cpr": "0201871018",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -70,5 +73,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

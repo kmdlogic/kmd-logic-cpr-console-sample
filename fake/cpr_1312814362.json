@@ -3,6 +3,9 @@
   "FirstName": "Janne",
   "LastName": "Mortensen",
   "MiddleName": "IsabellaDalgaard",
+  "FirstNameMarking": "Jan",
+  "LastNameMarking": "Mor",
+  "MiddleNameMarking": "Isa",
   "Cpr": "1312814362",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -59,5 +62,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

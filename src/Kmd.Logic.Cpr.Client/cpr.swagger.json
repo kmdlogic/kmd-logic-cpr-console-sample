@@ -1284,6 +1284,20 @@
         }
       }
     },
+    "SpouseDetails": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "cpr": {
+          "type": "string"
+        }
+      }
+    },
     "CitizenResponse": {
       "required": [
         "id",
@@ -1302,6 +1316,15 @@
           "type": "string"
         },
         "middleName": {
+          "type": "string"
+        },
+        "firstNameMarking": {
+          "type": "string"
+        },
+        "middleNameMarking": {
+          "type": "string"
+        },
+        "lastNameMarking": {
           "type": "string"
         },
         "cpr": {
@@ -1339,6 +1362,9 @@
           "items": {
             "type": "string"
           }
+        },
+        "spouse": {
+          "$ref": "#/definitions/SpouseDetails"
         }
       }
     },
@@ -1461,6 +1487,18 @@
           "items": {
             "$ref": "#/definitions/Children"
           }
+        },
+        "firstNameMarking": {
+          "type": "string"
+        },
+        "middleNameMarking": {
+          "type": "string"
+        },
+        "lastNameMarking": {
+          "type": "string"
+        },
+        "spouse": {
+          "$ref": "#/definitions/SpouseDetails"
         }
       }
     },

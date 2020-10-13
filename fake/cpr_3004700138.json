@@ -3,6 +3,9 @@
   "FirstName": "Britt",
   "LastName": "Madsen",
   "MiddleName": "Schou",
+  "FirstNameMarking": "Bri",
+  "LastNameMarking": "Mad",
+  "MiddleNameMarking": "Sch",
   "Cpr": "3004700138",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0101015084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Tim Demo",
   "LastName": "Nielsen",
   "MiddleName": "Christensen",
+  "FirstNameMarking": "Tim",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Chr",
   "Cpr": "1209026399",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -58,5 +61,10 @@
     {
       "Cpr": "0101015084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0351181983",
+    "FirstName": "Josefine",
+    "LastName": "Larsen"
+  }
 }

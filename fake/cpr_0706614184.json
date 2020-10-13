@@ -3,6 +3,9 @@
   "FirstName": "Anne",
   "LastName": "Mortensen",
   "MiddleName": "Graversen",
+  "FirstNameMarking": "Ann",
+  "LastNameMarking": "Mor",
+  "MiddleNameMarking": "Gra",
   "Cpr": "0706614184",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -63,5 +66,10 @@
     {
       "Cpr": "2941214000"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0192699790",
+    "FirstName": "Isabella",
+    "LastName": "Andersen"
+  }
 }

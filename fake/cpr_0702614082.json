@@ -3,6 +3,9 @@
   "FirstName": "Heidi",
   "LastName": "Dahl-Eriksen",
   "MiddleName": "Nielsen",
+  "FirstNameMarking": "Hei",
+  "LastNameMarking": "Dah",
+  "MiddleNameMarking": "Nie",
   "Cpr": "0702614082",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -55,5 +58,10 @@
     {
       "Cpr": "4673962913"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0192897710",
+    "FirstName": "Malthe",
+    "LastName": "Enevoldsen"
+  }
 }

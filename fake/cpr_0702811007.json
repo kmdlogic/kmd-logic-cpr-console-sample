@@ -3,6 +3,9 @@
   "FirstName": "Søren",
   "LastName": "Hansen",
   "MiddleName": "Fisker",
+  "FirstNameMarking": "Sør",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Fis",
   "Cpr": "0702811007",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

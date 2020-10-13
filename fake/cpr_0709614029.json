@@ -3,6 +3,9 @@
   "FirstName": "Adam",
   "LastName": "Jakobsen",
   "MiddleName": "Aagaard",
+  "FirstNameMarking": "Ada",
+  "LastNameMarking": "Jak",
+  "MiddleNameMarking": "Aag",
   "Cpr": "0709614029",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0416527901"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0150561920",
+    "FirstName": "Ida",
+    "LastName": "Andersen"
+  }
 }

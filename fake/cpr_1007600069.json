@@ -3,6 +3,9 @@
   "FirstName": "Jack",
   "LastName": "Hansen",
   "MiddleName": null,
+  "FirstNameMarking": "Jac",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "",
   "Cpr": "1007600069",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -297,5 +300,10 @@
     {
       "Cpr": "0101015084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0151161923",
+    "FirstName": "Alma",
+    "LastName": "Anton"
+  }
 }

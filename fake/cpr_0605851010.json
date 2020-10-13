@@ -3,6 +3,9 @@
   "FirstName": "Pia",
   "LastName": "Petersen",
   "MiddleName": null,
+  "FirstNameMarking": "Pia",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "",
   "Cpr": "0605851010",
   "MaritalStatus": "Death",
   "Status": "Death",
@@ -58,5 +61,10 @@
     {
       "Cpr": "6076200592"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

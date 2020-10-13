@@ -3,6 +3,9 @@
   "FirstName": "Karl Peter",
   "LastName": "Billeskov",
   "MiddleName": "Thorup",
+  "FirstNameMarking": "Kar",
+  "LastNameMarking": "Bill",
+  "MiddleNameMarking": "Tho",
   "Cpr": "0109664847",
   "MaritalStatus": "Married",
   "Status": "ResidenceInGreenland",
@@ -71,5 +74,10 @@
       "CountryCode": "977"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0112848710",
+    "FirstName": "Sofia",
+    "LastName": "Billeskov"
+  }
 }

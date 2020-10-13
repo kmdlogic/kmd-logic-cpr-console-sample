@@ -3,6 +3,9 @@
   "FirstName": "Lene",
   "LastName": "Andersen",
   "MiddleName": "IsabellaDalgaard",
+  "FirstNameMarking": "Len",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Isa",
   "Cpr": "2905650028",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0101075084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Karen",
   "LastName": "Svensson",
   "MiddleName": "Ahmed",
+  "FirstNameMarking": "Kar",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Ahm",
   "Cpr": "0801931006",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -54,5 +57,10 @@
       "CountryCode": "49"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

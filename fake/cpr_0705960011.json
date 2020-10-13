@@ -3,6 +3,9 @@
   "FirstName": "Mads",
   "LastName": "Petersen",
   "MiddleName": "Jacobsen",
+  "FirstNameMarking": "Mad",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "Jac",
   "Cpr": "0705960011",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -89,5 +92,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

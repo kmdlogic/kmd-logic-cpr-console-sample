@@ -3,6 +3,9 @@
   "FirstName": "Pia",
   "LastName": "Hansen",
   "MiddleName": "Hoffmann",
+  "FirstNameMarking": "Pia",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Hof",
   "Cpr": "0308811018",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmarkHighwayCode",
@@ -48,5 +51,10 @@
       "CountryCode": "39"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

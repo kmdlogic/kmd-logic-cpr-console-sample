@@ -3,6 +3,9 @@
   "FirstName": "Jakob",
   "LastName": "Sørensen",
   "MiddleName": "Thorup",
+  "FirstNameMarking": "Jak",
+  "LastNameMarking": "Sør",
+  "MiddleNameMarking": "Tho",
   "Cpr": "0307711001",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "33"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

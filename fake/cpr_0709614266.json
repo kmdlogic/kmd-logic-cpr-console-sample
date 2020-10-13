@@ -3,6 +3,9 @@
   "FirstName": "Elisabeth",
   "LastName": "Ærenskov-Rasmussen",
   "MiddleName": "Ahmed",
+  "FirstNameMarking": "Eli",
+  "LastNameMarking": "Ære",
+  "MiddleNameMarking": "Ahm",
   "Cpr": "0709614266",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

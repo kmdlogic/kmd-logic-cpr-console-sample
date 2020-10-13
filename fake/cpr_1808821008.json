@@ -3,6 +3,9 @@
   "FirstName": "Maria",
   "LastName": "Nielsen",
   "MiddleName": "Thorsen",
+  "FirstNameMarking": "Mar",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Tho",
   "Cpr": "1808821008",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0101085084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

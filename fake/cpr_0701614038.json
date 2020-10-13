@@ -3,6 +3,9 @@
   "FirstName": "Asta",
   "LastName": "Jakobsen",
   "MiddleName": "Danielsen",
+  "FirstNameMarking": "Ast",
+  "LastNameMarking": "Jak",
+  "MiddleNameMarking": "Dan",
   "Cpr": "0701614038",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -93,5 +96,10 @@
     {
       "Cpr": "0185780604"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0183849710",
+    "FirstName": "Felix",
+    "LastName": "Sørensen"
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Kirsten",
   "LastName": "Petersen",
   "MiddleName": "Eriksen",
+  "FirstNameMarking": "Kir",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "Eri",
   "Cpr": "0506650038",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -96,5 +99,10 @@
     {
       "Cpr": "0607941068"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0182849710",
+    "FirstName": "Josefine",
+    "LastName": "Petersen"
+  }
 }

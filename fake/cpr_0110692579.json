@@ -3,6 +3,9 @@
   "FirstName": "Klaus Demo",
   "LastName": "Nielsen",
   "MiddleName": "Buch",
+  "FirstNameMarking": "Kla",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Rav",
   "Cpr": "0110692579",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -58,5 +61,10 @@
     {
       "Cpr": "051182113"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112867790",
+    "FirstName": "Frida",
+    "LastName": "Nielsen"
+  }
 }
