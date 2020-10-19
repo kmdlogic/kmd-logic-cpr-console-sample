@@ -12,7 +12,7 @@
     <VersionPrefix>1.4.4</VersionPrefix>
     <Authors>KMD</Authors>
     <PackageTags>kmd;logic;cpr</PackageTags>
-    <PackageIconUrl>https://console.kmdlogic.io/favicon-32x32.png</PackageIconUrl>
+    <PackageIcon>favicon-32x32.png</PackageIcon>
     <PackageProjectUrl>https://github.com/kmdlogic/kmd-logic-cpr-client</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/kmdlogic/kmd-logic-cpr-client</RepositoryUrl>
