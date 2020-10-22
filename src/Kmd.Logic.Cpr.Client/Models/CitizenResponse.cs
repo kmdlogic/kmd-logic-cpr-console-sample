@@ -24,15 +24,12 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenResponse class.
         /// </summary>
-        public CitizenResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>), SpouseDetails spouse = default(SpouseDetails))
+        public CitizenResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<string> citizenships = default(IList<string>))
         {
             Id = id;
             FirstName = firstName;
             LastName = lastName;
             MiddleName = middleName;
-            FirstNameMarking = firstNameMarking;
-            MiddleNameMarking = middleNameMarking;
-            LastNameMarking = lastNameMarking;
             Cpr = cpr;
             MaritalStatus = maritalStatus;
             Status = status;
@@ -41,7 +38,6 @@ namespace Kmd.Logic.Cpr.Client.Models
             NameAndAddressProtection = nameAndAddressProtection;
             Addresses = addresses;
             Citizenships = citizenships;
-            Spouse = spouse;
             CustomInit();
         }
 
@@ -69,21 +65,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "middleName")]
         public string MiddleName { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "firstNameMarking")]
-        public string FirstNameMarking { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "middleNameMarking")]
-        public string MiddleNameMarking { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "lastNameMarking")]
-        public string LastNameMarking { get; set; }
 
         /// <summary>
         /// </summary>
@@ -124,11 +105,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "citizenships")]
         public IList<string> Citizenships { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "spouse")]
-        public SpouseDetails Spouse { get; set; }
 
         /// <summary>
         /// Validate the object.
