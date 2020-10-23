@@ -3,6 +3,9 @@
   "FirstName": "Michael",
   "LastName": "Pedersen",
   "MiddleName": "Eriksen",
+  "FirstNameMarking": "Mic",
+  "LastNameMarking": "Ped",
+  "MiddleNameMarking": "Eri",
   "Cpr": "0501771007",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

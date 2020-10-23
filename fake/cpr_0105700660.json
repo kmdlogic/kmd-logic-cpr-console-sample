@@ -3,6 +3,9 @@
   "FirstName": "Lise",
   "LastName": "Overgaard",
   "MiddleName": "Andersen",
+  "FirstNameMarking": "Lis",
+  "LastNameMarking": "Ove",
+  "MiddleNameMarking": "And",
   "Cpr": "0105700660",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",
@@ -55,5 +58,10 @@
     {
       "Cpr": "0701614054"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112849710",
+    "FirstName": "Emma",
+    "LastName": "Overgaard"
+  }
 }

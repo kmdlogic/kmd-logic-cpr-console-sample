@@ -3,6 +3,9 @@
   "FirstName": "Gitte",
   "LastName": "Nielsen",
   "MiddleName": "Johansson",
+  "FirstNameMarking": "Git",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Joh",
   "Cpr": "1802741002",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0192564910",
+    "FirstName": "Freja",
+    "LastName": "Elliot"
+  }
 }

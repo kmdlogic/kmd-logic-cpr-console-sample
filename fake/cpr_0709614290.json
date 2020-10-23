@@ -3,6 +3,9 @@
   "FirstName": "Grethe",
   "LastName": "Roland",
   "MiddleName": "Bjerre",
+  "FirstNameMarking": "Gre",
+  "LastNameMarking": "Rol",
+  "MiddleNameMarking": "Bje",
   "Cpr": "0709614290",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -63,6 +66,10 @@
     {
       "Cpr": "0101017084"
     }
-  ]
-
+  ],
+  "Spouse": {
+    "Cpr": "0151561920",
+    "FirstName": "Clara",
+    "LastName": "Andersen"
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Hans",
   "LastName": "Larsen",
   "MiddleName": "Therkildsen",
+  "FirstNameMarking": "Han",
+  "LastNameMarking": "Lar",
+  "MiddleNameMarking": "The",
   "Cpr": "3012680049",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -90,5 +93,10 @@
     {
       "Cpr": "0101215084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0197569910",
+    "FirstName": "Clara",
+    "LastName": "Sørensen"
+  }
 }

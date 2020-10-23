@@ -3,6 +3,9 @@
   "FirstName": "Tusnilda Kamma",
   "LastName": "Olsen",
   "MiddleName": "Mogensen",
+  "FirstNameMarking": "Tus",
+  "LastNameMarking": "Ols",
+  "MiddleNameMarking": "Mog",
   "Cpr": "2507847776",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -67,5 +70,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Lise",
   "LastName": "Overgaard",
   "MiddleName": null,
+  "FirstNameMarking": "Lis",
+  "LastNameMarking": "Ove",
+  "MiddleNameMarking": "",
   "Cpr": "0303704728",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0182847710",
+    "FirstName": "Christen",
+    "LastName": "Andersen"
+  }
 }

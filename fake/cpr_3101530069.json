@@ -3,6 +3,9 @@
   "FirstName": "Hans",
   "LastName": "Andersen",
   "MiddleName": "Mølgaard",
+  "FirstNameMarking": "Han",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Møl",
   "Cpr": "3101530069",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0101015087"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

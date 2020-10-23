@@ -3,6 +3,9 @@
   "FirstName": "Vinnie",
   "LastName": "Madsen",
   "MiddleName": "Pedersen",
+  "FirstNameMarking": "Vin",
+  "LastNameMarking": "Ped",
+  "MiddleNameMarking": "Mad",
   "Cpr": "0101600068",
   "MaritalStatus": "Divorced",
   "Status": "Departed",
@@ -52,5 +55,11 @@
     {
       "Cpr": "0101015084"
     }
-  ]
+  ],
+    "Spouse" :
+    {
+      "Cpr": "0112847710",
+      "FirstName": "Emma",
+      "LastName": "Madsen"
+    }
 }

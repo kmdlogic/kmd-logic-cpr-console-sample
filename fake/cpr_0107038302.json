@@ -3,6 +3,9 @@
   "FirstName": "Mia",
   "LastName": "Kristensen",
   "MiddleName": "Villadsen",
+  "FirstNameMarking": "Mia",
+  "LastNameMarking": "Kri",
+  "MiddleNameMarking": "Vill",
   "Cpr": "0107038302",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -89,5 +92,10 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Tut",
   "LastName": "Tuttersen",
   "MiddleName": "Nielsen",
+  "FirstNameMarking": "Tut",
+  "LastNameMarking": "Tut",
+  "MiddleNameMarking": "Nie",
   "Cpr": "0101015084",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -62,5 +65,10 @@
     {
       "Cpr": "0112847728"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112847720",
+    "FirstName": "Malthe",
+    "LastName": "Tuttersen"
+  }
 }

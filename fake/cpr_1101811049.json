@@ -3,6 +3,9 @@
   "FirstName": "Andreas",
   "LastName": "Andersen",
   "MiddleName": "Kristensen",
+  "FirstNameMarking": "And",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Kri",
   "Cpr": "1101811049",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0101015084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

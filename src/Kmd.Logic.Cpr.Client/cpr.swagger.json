@@ -1361,6 +1361,20 @@
         }
       }
     },
+    "SpouseDetails": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "cpr": {
+          "type": "string"
+        }
+      }
+    },
     "CitizenDetailedResponse": {
       "required": [
         "id",
@@ -1461,6 +1475,18 @@
           "items": {
             "$ref": "#/definitions/Children"
           }
+        },
+        "firstNameMarking": {
+          "type": "string"
+        },
+        "middleNameMarking": {
+          "type": "string"
+        },
+        "lastNameMarking": {
+          "type": "string"
+        },
+        "spouse": {
+          "$ref": "#/definitions/SpouseDetails"
         }
       }
     },

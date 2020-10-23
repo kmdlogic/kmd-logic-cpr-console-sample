@@ -3,6 +3,9 @@
   "FirstName": "Pernille",
   "LastName": "Hagensen Nvnkor",
   "MiddleName": "Aagaard",
+  "FirstNameMarking": "Per",
+  "LastNameMarking": "Hag",
+  "MiddleNameMarking": "Aag",
   "Cpr": "0701614054",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
@@ -212,5 +215,10 @@
     {
       "Cpr": "1302407152"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

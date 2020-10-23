@@ -3,6 +3,9 @@
   "FirstName": "Bent",
   "LastName": "Thorsen",
   "MiddleName": "Westergaard",
+  "FirstNameMarking": "Ben",
+  "LastNameMarking": "Tho",
+  "MiddleNameMarking": "Wes",
   "Cpr": "2009693133",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
     {
       "Cpr": "0101015089"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0198564910",
+    "FirstName": "Lørke",
+    "LastName": "Enevoldsen"
+  }
 }

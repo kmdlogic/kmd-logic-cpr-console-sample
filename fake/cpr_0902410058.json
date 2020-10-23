@@ -3,6 +3,9 @@
   "FirstName": "Hilda",
   "LastName": "Holst",
   "MiddleName": "Madsen",
+  "FirstNameMarking": "Hil",
+  "LastNameMarking": "Hol",
+  "MiddleNameMarking": "Mad",
   "Cpr": "0902410058",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
@@ -155,5 +158,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

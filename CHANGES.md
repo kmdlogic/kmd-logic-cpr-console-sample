@@ -1,3 +1,6 @@
+1.4.4
+Spouse and Namemarking properties are updated in citizen detailed response.
+
 1.4.3
 * Added middle name property in response
 

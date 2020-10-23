@@ -3,6 +3,9 @@
   "FirstName": "Mona",
   "LastName": "Hansen",
   "MiddleName": "Bonde",
+  "FirstNameMarking": "Mon",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Bon",
   "Cpr": "0705650012",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

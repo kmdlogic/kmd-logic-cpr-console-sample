@@ -3,6 +3,9 @@
   "FirstName": "Maria",
   "LastName": "Bendtsen",
   "MiddleName": "Marcussen",
+  "FirstNameMarking": "Mar",
+  "LastNameMarking": "Ben",
+  "MiddleNameMarking": "Mar",
   "Cpr": "1811781068",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

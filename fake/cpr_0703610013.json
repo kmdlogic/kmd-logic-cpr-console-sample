@@ -3,6 +3,9 @@
   "FirstName": "Sven",
   "LastName": "Holst",
   "MiddleName": "Hjorth",
+  "FirstNameMarking": "Sve",
+  "LastNameMarking": "Hol",
+  "MiddleNameMarking": "Hjo",
   "Cpr": "0703610013",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -82,5 +85,10 @@
     {
       "Cpr": "8030571667"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0192899710",
+    "FirstName": "Alma",
+    "LastName": "Enevoldsen"
+  }
 }

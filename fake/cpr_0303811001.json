@@ -3,6 +3,9 @@
   "FirstName": "Peter",
   "LastName": "Madsen",
   "MiddleName": null,
+  "FirstNameMarking": "Pet",
+  "LastNameMarking": "Mad",
+  "MiddleNameMarking": "",
   "Cpr": "0303811001",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0182847710",
+    "FirstName": "Christen",
+    "LastName": "Andersen"
+  }
 }

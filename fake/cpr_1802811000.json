@@ -3,6 +3,9 @@
   "FirstName": "Tanja",
   "LastName": "Poulsen",
   "MiddleName": "Johansson",
+  "FirstNameMarking": "Tan",
+  "LastNameMarking": "Pou",
+  "MiddleNameMarking": "Joh",
   "Cpr": "1802811000",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

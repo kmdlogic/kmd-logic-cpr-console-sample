@@ -3,6 +3,9 @@
   "FirstName": "Anja",
   "LastName": "Christensen",
   "MiddleName": "Bang",
+  "FirstNameMarking": "Anj",
+  "LastNameMarking": "Chr",
+  "MiddleNameMarking": "Ban",
   "Cpr": "2010880004",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

@@ -3,6 +3,9 @@
   "FirstName": "Hans",
   "LastName": "Larsen",
   "MiddleName": "NoraFrost",
+  "FirstNameMarking": "Han",
+  "LastNameMarking": "Lar",
+  "MiddleNameMarking": "Nor",
   "Cpr": "1310732601",
   "MaritalStatus": "Divorced",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
     {
       "Cpr": "0101017084"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

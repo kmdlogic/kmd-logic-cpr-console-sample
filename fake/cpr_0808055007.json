@@ -3,6 +3,9 @@
   "FirstName": "Martin",
   "LastName": "Hansen",
   "MiddleName": "LilyHougaard",
+  "FirstNameMarking": "Mar",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Lil",
   "Cpr": "0808055007",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -70,5 +73,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

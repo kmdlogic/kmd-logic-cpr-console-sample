@@ -3,6 +3,9 @@
   "FirstName": "Christian",
   "LastName": "Svanholm-Nielsen",
   "MiddleName": "Juhl",
+  "FirstNameMarking": "Chr",
+  "LastNameMarking": "Sva",
+  "MiddleNameMarking": "Juh",
   "Cpr": "0708614319",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
     {
       "Cpr": "0199114490"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0150564920",
+    "FirstName": "Emma",
+    "LastName": "Sørensen"
+  }
 }

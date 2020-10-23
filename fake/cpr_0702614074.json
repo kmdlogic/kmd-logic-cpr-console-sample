@@ -3,6 +3,9 @@
   "FirstName": "Tove",
   "LastName": "Andreasen",
   "MiddleName": "Møller",
+  "FirstNameMarking": "Tov",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Møl",
   "Cpr": "0702614074",
   "MaritalStatus": "Married",
   "Status": "Disappeared",
@@ -52,5 +55,10 @@
     {
       "Cpr": "1193831415"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0193897710",
+    "FirstName": "Anton",
+    "LastName": "Christensen"
+  }
 }

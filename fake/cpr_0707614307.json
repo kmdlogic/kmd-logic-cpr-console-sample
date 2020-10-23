@@ -3,6 +3,9 @@
   "FirstName": "Anders",
   "LastName": "Holm",
   "MiddleName": "Overgaard",
+  "FirstNameMarking": "And",
+  "LastNameMarking": "Hol",
+  "MiddleNameMarking": "Ove",
   "Cpr": "0707614307",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0197399710",
+    "FirstName": "Luna",
+    "LastName": "Valdemar"
+  }
 }

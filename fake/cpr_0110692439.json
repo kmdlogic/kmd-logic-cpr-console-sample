@@ -3,6 +3,9 @@
   "FirstName": "Klaus Test",
   "LastName": "Nielsen",
   "MiddleName": "Ravn",
+  "FirstNameMarking": "Kla",
+  "LastNameMarking": "Nie",
+  "MiddleNameMarking": "Rav",
   "Cpr": "0110692439",
   "MaritalStatus": "Married",
   "Status": "Departed",
@@ -67,5 +70,10 @@
     {
       "Cpr": "030771101"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0112847790",
+    "FirstName": "Freja",
+    "LastName": "Nielsen"
+  }
 }

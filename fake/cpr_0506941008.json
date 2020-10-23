@@ -3,6 +3,9 @@
   "FirstName": "Susan",
   "LastName": "Svensson",
   "MiddleName": "Klausen",
+  "FirstNameMarking": "Sus",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Kla",
   "Cpr": "0506941008",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -84,5 +87,10 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

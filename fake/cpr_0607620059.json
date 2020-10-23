@@ -3,6 +3,9 @@
   "FirstName": "Mads",
   "LastName": "Petersen",
   "MiddleName": "Jacobsen",
+  "FirstNameMarking": "Mad",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "Jac",
   "Cpr": "0607620059",
   "MaritalStatus": "Death",
   "Status": "Death",
@@ -77,5 +80,10 @@
     {
       "Cpr": "0511821002"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

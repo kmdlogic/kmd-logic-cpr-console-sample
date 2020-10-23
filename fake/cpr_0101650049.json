@@ -3,6 +3,9 @@
   "FirstName": "Jørgen",
   "LastName": "Jensen",
   "MiddleName": "Christensen",
+  "FirstNameMarking": "Jør",
+  "LastNameMarking": "Jen",
+  "MiddleNameMarking": "Chr",
   "Cpr": "0101650049",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "0112846710",
+    "FirstName": "Emma",
+    "LastName": "Jensen"
+  }
 }

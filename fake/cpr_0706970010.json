@@ -3,6 +3,9 @@
   "FirstName": "Astrid",
   "LastName": "Andersen",
   "MiddleName": "Damgaard",
+  "FirstNameMarking": "Ast",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Dam",
   "Cpr": "0706970010",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -64,5 +67,10 @@
       "CareOfAddress": "Winther"
     }
   ],
-  "Citizenships": []
+  "Citizenships": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

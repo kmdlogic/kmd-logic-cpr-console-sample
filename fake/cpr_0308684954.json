@@ -3,6 +3,9 @@
   "FirstName": "Nina",
   "LastName": "Kristensen",
   "MiddleName": "Andersen",
+  "FirstNameMarking": "Nin",
+  "LastNameMarking": "Kri",
+  "MiddleNameMarking": "And",
   "Cpr": "0308684954",
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
@@ -71,5 +74,10 @@
     {
       "Cpr": "0512801089"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "0182849710",
+    "FirstName": "Malthe",
+    "LastName": "Andersson"
+  }
 }

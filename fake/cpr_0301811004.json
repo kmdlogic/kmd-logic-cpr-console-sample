@@ -3,6 +3,9 @@
   "FirstName": "Tina",
   "LastName": "Hansen",
   "MiddleName": "Thorup",
+  "FirstNameMarking": "Tin",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Tho ",
   "Cpr": "0301811004",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -52,5 +55,10 @@
     {
       "Cpr": "0701590058"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

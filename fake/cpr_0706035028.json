@@ -3,6 +3,9 @@
   "FirstName": "Anne",
   "LastName": "Andersen",
   "MiddleName": "Albertsen",
+  "FirstNameMarking": "Ann",
+  "LastNameMarking": "And",
+  "MiddleNameMarking": "Alb",
   "Cpr": "0706035028",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -89,5 +92,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

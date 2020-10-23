@@ -3,6 +3,9 @@
   "FirstName": "Tina",
   "LastName": "Mikkelsen",
   "MiddleName": "Enevoldsen",
+  "FirstNameMarking": "Tin",
+  "LastNameMarking": "Mik",
+  "MiddleNameMarking": "Ene",
   "Cpr": "0811811068",
   "MaritalStatus": "Single",
   "Status": "Departed",
@@ -48,5 +51,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

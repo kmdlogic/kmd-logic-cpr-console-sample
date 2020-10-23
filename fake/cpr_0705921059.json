@@ -3,6 +3,9 @@
   "FirstName": "Gert",
   "LastName": "Svensson",
   "MiddleName": "Vilhelmsen",
+  "FirstNameMarking": "Ger",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Vil",
   "Cpr": "0705921059",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -100,5 +103,11 @@
       "CountryCode": "46"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
+
 }

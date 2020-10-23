@@ -3,6 +3,9 @@
   "FirstName": "Mogens",
   "LastName": "Svensson",
   "MiddleName": "Davidsen",
+  "FirstNameMarking": "Mog",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Dav",
   "Cpr": "0101901009",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -54,5 +57,10 @@
       "CountryCode": "49"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

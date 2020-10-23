@@ -3,6 +3,9 @@
   "FirstName": "Carsten",
   "LastName": "Hansen",
   "MiddleName": "Vilhelmsen",
+  "FirstNameMarking": "Car",
+  "LastNameMarking": "Han",
+  "MiddleNameMarking": "Vil",
   "Cpr": "0808055015",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -70,5 +73,10 @@
       "CountryCode": "45"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

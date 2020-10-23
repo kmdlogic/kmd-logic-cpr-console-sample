@@ -3,6 +3,9 @@
   "FirstName": "Pernille",
   "LastName": "Petersen",
   "MiddleName": "Riis",
+  "FirstNameMarking": "Per",
+  "LastNameMarking": "Pet",
+  "MiddleNameMarking": "Rii",
   "Cpr": "2509045006",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -58,5 +61,10 @@
     {
       "Cpr": "0101015074"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

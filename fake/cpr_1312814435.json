@@ -3,6 +3,9 @@
   "FirstName": "Niels",
   "LastName": "Holm",
   "MiddleName": "Thøgersen",
+  "FirstNameMarking": "Nie",
+  "LastNameMarking": "Hol",
+  "MiddleNameMarking": "Thø",
   "Cpr": "1312814435",
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
@@ -82,5 +85,10 @@
     {
       "Cpr": "0101015004"
     }
-  ]
+  ],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }

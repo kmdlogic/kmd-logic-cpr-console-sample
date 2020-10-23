@@ -3,6 +3,9 @@
   "FirstName": "Carsten",
   "LastName": "Svensson",
   "MiddleName": "Laugesen",
+  "FirstNameMarking": "Car",
+  "LastNameMarking": "Sve",
+  "MiddleNameMarking": "Lau",
   "Cpr": "0508610017",
   "MaritalStatus": "RegisteredPartnership",
   "Status": "ResidenceInDenmark",
@@ -75,5 +78,10 @@
       "CountryCode": "49"
     }
   ],
-  "Children": []
+  "Children": [],
+  "Spouse": {
+    "Cpr": "",
+    "FirstName": "",
+    "LastName": ""
+  }
 }
