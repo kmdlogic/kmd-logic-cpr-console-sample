@@ -26,7 +26,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         /// <param name="environment">Possible values include: 'Production',
         /// 'Test'</param>
-        public ServicePlatformProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string municipalityCvr = default(string))
+        public ServicePlatformProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string municipalityCvr = default(string), System.Guid? serviceAgreementUuid = default(System.Guid?), System.Guid? userSystemUuid = default(System.Guid?), System.Guid? userUuid = default(System.Guid?))
         {
             Id = id;
             SubscriptionId = subscriptionId;
@@ -34,6 +34,9 @@ namespace Kmd.Logic.Cpr.Client.Models
             CertificateFileName = certificateFileName;
             Environment = environment;
             MunicipalityCvr = municipalityCvr;
+            ServiceAgreementUuid = serviceAgreementUuid;
+            UserSystemUuid = userSystemUuid;
+            UserUuid = userUuid;
             CustomInit();
         }
 
@@ -72,6 +75,21 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "municipalityCvr")]
         public string MunicipalityCvr { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "serviceAgreementUuid")]
+        public System.Guid? ServiceAgreementUuid { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "userSystemUuid")]
+        public System.Guid? UserSystemUuid { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "userUuid")]
+        public System.Guid? UserUuid { get; set; }
 
     }
 }

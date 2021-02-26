@@ -392,7 +392,13 @@ namespace Kmd.Logic.Cpr.Client
         /// </param>
         /// <param name='certificatePassword'>
         /// </param>
-        /// <param name='municipalityCvr'>
+        /// <param name='serviceAgreementUuid'>
+        /// </param>
+        /// <param name='userSystemUuid'>
+        /// </param>
+        /// <param name='userUuid'>
+        /// All supported UserUuids can be fetched using '/municipalities'
+        /// endpoint.
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -400,7 +406,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> CreateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> CreateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <param name='subscriptionId'>
         /// </param>
@@ -415,7 +421,13 @@ namespace Kmd.Logic.Cpr.Client
         /// </param>
         /// <param name='certificatePassword'>
         /// </param>
-        /// <param name='municipalityCvr'>
+        /// <param name='serviceAgreementUuid'>
+        /// </param>
+        /// <param name='userSystemUuid'>
+        /// </param>
+        /// <param name='userUuid'>
+        /// All supported UserUuids can be fetched using '/municipalities'
+        /// endpoint.
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -423,7 +435,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> UpdateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> UpdateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
     }
 }
