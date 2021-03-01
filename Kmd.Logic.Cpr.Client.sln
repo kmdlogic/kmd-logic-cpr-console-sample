@@ -13,17 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kmd.Logic.Cpr.Client.Sample
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{B1DE939A-4D71-4150-B411-8BB10AE73A3B}"
 	ProjectSection(SolutionItems) = preProject
-		appveyor.yml = appveyor.yml
-		build.ps1 = build.ps1
-		build.sh = build.sh
 		CHANGES.md = CHANGES.md
 		Directory.Build.props = Directory.Build.props
 		favicon-32x32.png = favicon-32x32.png
+		.github\workflows\github-ci.yml = .github\workflows\github-ci.yml
 		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
-		setup.ps1 = setup.ps1
-		setup.sh = setup.sh
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fake", "fake", "{81F92C9E-877B-401E-8162-10C88119D55E}"
