@@ -1,23 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Kmd.Logic.Cpr.Events.Receiver.Controllers
 {
+#pragma warning disable SA1402 // File may only contain a single type
     [ApiController]
     [Route("[controller]")]
     public class ExperianEventController : ControllerBase
-    {   
+    {
         [HttpPost]
         public ActionResult Post(ExperianEvent experianEvent)
-        {   
-            Log.Information(JsonConvert.SerializeObject(experianEvent));            
-            return Ok();
+        {
+            Log.Information("Event received: {@Event}", experianEvent);
+            return this.Ok();
         }
     }
 
@@ -89,4 +85,5 @@ namespace Kmd.Logic.Cpr.Events.Receiver.Controllers
     {
         public string Code { get; set; }
     }
+#pragma warning restore SA1402 // File may only contain a single type
 }
