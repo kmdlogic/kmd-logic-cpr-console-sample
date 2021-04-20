@@ -143,6 +143,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fake", "fake", "{81F92C9E-8
 		fake\cpr_3101921068.json = fake\cpr_3101921068.json
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kmd.Logic.Cpr.Events.Receiver", "sample\Kmd.Logic.Cpr.Events.Receiver\Kmd.Logic.Cpr.Events.Receiver.csproj", "{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{AD0F7BA5-A090-4025-92BA-645095B75B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0F7BA5-A090-4025-92BA-645095B75B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0F7BA5-A090-4025-92BA-645095B75B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +170,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B7D824BD-27A8-44AB-99B3-104CBBC1B3E0} = {F6DAFB03-D211-4EEC-A7E6-0CBF99361FC4}
 		{AD0F7BA5-A090-4025-92BA-645095B75B26} = {B3A856D9-AB49-4DAB-8A53-5B4461B2735C}
+		{DB0B44FF-2787-47B5-83F2-8D58FFB0E7C3} = {B3A856D9-AB49-4DAB-8A53-5B4461B2735C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CC79F7D-6B66-467E-B4C9-939A7D88E2BA}
