@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Kmd.Logic.Cpr.Client.Models;
@@ -18,14 +17,13 @@ namespace Kmd.Logic.Cpr.Client
     /// - Have a client credential issued for the Logic platform
     /// - Create a CPR configuration for the distribution service being used.
     /// </remarks>
-    [SuppressMessage("Design", "CA1001:Types that own disposable fields should be disposable", Justification = "HttpClient is not owned by this class.")]
-    public sealed class CprClient
+    public sealed class CprClient : IDisposable
     {
-        private readonly HttpClient httpClient;
-        private readonly CprOptions options;
-        private readonly ITokenProviderFactory tokenProviderFactory;
+        private readonly HttpClient _httpClient;
+        private readonly CprOptions _options;
+        private readonly ITokenProviderFactory _tokenProviderFactory;
 
-        private InternalClient internalClient;
+        private InternalClient _internalClient;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CprClient"/> class.
@@ -35,9 +33,9 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name="options">The required configuration options.</param>
         public CprClient(HttpClient httpClient, ITokenProviderFactory tokenProviderFactory, CprOptions options)
         {
-            this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-            this.options = options ?? throw new ArgumentNullException(nameof(options));
-            this.tokenProviderFactory = tokenProviderFactory ?? throw new ArgumentNullException(nameof(tokenProviderFactory));
+            this._httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+            this._options = options ?? throw new ArgumentNullException(nameof(options));
+            this._tokenProviderFactory = tokenProviderFactory ?? throw new ArgumentNullException(nameof(tokenProviderFactory));
         }
 
         /// <summary>
@@ -54,9 +52,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetByCprWithHttpMessagesAsync(
-                                subscriptionId: this.options.SubscriptionId,
+                                subscriptionId: this._options.SubscriptionId,
                                 cpr: cpr,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                                configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 switch (response.Response.StatusCode)
                 {
@@ -86,9 +84,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetCprDetailsByCprWithHttpMessagesAsync(
-                                subscriptionId: this.options.SubscriptionId,
+                                subscriptionId: this._options.SubscriptionId,
                                 cpr: cpr,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                                configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 switch (response.Response.StatusCode)
                 {
@@ -117,9 +115,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetByIdWithHttpMessagesAsync(
-                                subscriptionId: this.options.SubscriptionId,
+                                subscriptionId: this._options.SubscriptionId,
                                 id: id,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                                configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 switch (response.Response.StatusCode)
                 {
@@ -148,9 +146,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetCprDetailsByIdWithHttpMessagesAsync(
-                                subscriptionId: this.options.SubscriptionId,
+                                subscriptionId: this._options.SubscriptionId,
                                 id: id,
-                                configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                                configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 switch (response.Response.StatusCode)
                 {
@@ -176,7 +174,7 @@ namespace Kmd.Logic.Cpr.Client
         {
             var client = this.CreateClient();
 
-            return await client.GetAllCprConfigurationsAsync(subscriptionId: this.options.SubscriptionId).ConfigureAwait(false);
+            return await client.GetAllCprConfigurationsAsync(subscriptionId: this._options.SubscriptionId).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -191,9 +189,9 @@ namespace Kmd.Logic.Cpr.Client
            var client = this.CreateClient();
 
            using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
-                  subscriptionId: this.options.SubscriptionId,
+                  subscriptionId: this._options.SubscriptionId,
                   cpr: cpr,
-                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
+                  request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
              {
                 return response.Response.IsSuccessStatusCode;
              }
@@ -211,9 +209,9 @@ namespace Kmd.Logic.Cpr.Client
              var client = this.CreateClient();
 
              using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
-                  subscriptionId: this.options.SubscriptionId,
+                  subscriptionId: this._options.SubscriptionId,
                   id: id,
-                  request: new CprSubscriptionRequest(this.options.CprConfigurationId)).ConfigureAwait(false))
+                  request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
              {
                 return response.Response.IsSuccessStatusCode;
              }
@@ -230,9 +228,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.UnsubscribeByCprWithHttpMessagesAsync(
-                  subscriptionId: this.options.SubscriptionId,
+                  subscriptionId: this._options.SubscriptionId,
                   cpr: cpr,
-                  configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                  configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 return response.Response.IsSuccessStatusCode;
             }
@@ -249,9 +247,9 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.UnsubscribeByIdWithHttpMessagesAsync(
-                   subscriptionId: this.options.SubscriptionId,
+                   subscriptionId: this._options.SubscriptionId,
                    id: id,
-                   configurationId: this.options.CprConfigurationId).ConfigureAwait(false))
+                   configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
             {
                 return response.Response.IsSuccessStatusCode;
             }
@@ -270,10 +268,10 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetEventsWithHttpMessagesAsync(
-                subscriptionId: this.options.SubscriptionId,
+                subscriptionId: this._options.SubscriptionId,
                 dateFrom: dateFom,
                 dateTo: dateTo,
-                configurationId: this.options.CprConfigurationId,
+                configurationId: this._options.CprConfigurationId,
                 pageNo: pageNo,
                 pageSize: pageSize).ConfigureAwait(false))
             {
@@ -304,10 +302,10 @@ namespace Kmd.Logic.Cpr.Client
             var client = this.CreateClient();
 
             using (var response = await client.GetSubscribedEventsWithHttpMessagesAsync(
-                subscriptionId: this.options.SubscriptionId,
+                subscriptionId: this._options.SubscriptionId,
                 dateFrom: dateFom,
                 dateTo: dateTo,
-                configurationId: this.options.CprConfigurationId,
+                configurationId: this._options.CprConfigurationId,
                 pageNo: pageNo,
                 pageSize: pageSize).ConfigureAwait(false))
             {
@@ -325,21 +323,33 @@ namespace Kmd.Logic.Cpr.Client
             }
         }
 
-        private InternalClient CreateClient()
+        internal CprOptions GetOptions()
         {
-            if (this.internalClient != null)
+            return this._options;
+        }
+
+        internal InternalClient CreateClient()
+        {
+            if (this._internalClient != null)
             {
-                return this.internalClient;
+                return this._internalClient;
             }
 
-            var tokenProvider = this.tokenProviderFactory.GetProvider(this.httpClient);
+            var tokenProvider = this._tokenProviderFactory.GetProvider(this._httpClient);
 
-            this.internalClient = new InternalClient(new TokenCredentials(tokenProvider))
+            this._internalClient = new InternalClient(new TokenCredentials(tokenProvider))
             {
-                BaseUri = this.options.CprServiceUri,
+                BaseUri = this._options.CprServiceUri,
             };
 
-            return this.internalClient;
+            return this._internalClient;
+        }
+
+        public void Dispose()
+        {
+            this._httpClient?.Dispose();
+            this._tokenProviderFactory?.Dispose();
+            this._internalClient?.Dispose();
         }
     }
 }
