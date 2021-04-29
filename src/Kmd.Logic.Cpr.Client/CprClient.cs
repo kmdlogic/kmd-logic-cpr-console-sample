@@ -39,6 +39,15 @@ namespace Kmd.Logic.Cpr.Client
         }
 
         /// <summary>
+        /// Change configuration id.
+        /// </summary>
+        /// <param name="configurationId">Id of the configuration to switch to.</param>
+        public void SwitchConfiguration(Guid configurationId)
+        {
+            this._options.CprConfigurationId = configurationId;
+        }
+
+        /// <summary>
         /// Get the details of a citizen from the CPR register.
         /// </summary>
         /// <param name="cpr">The CPR number.</param>

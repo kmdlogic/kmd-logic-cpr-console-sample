@@ -30,9 +30,6 @@ namespace Kmd.Logic.Cpr.Client
                 case System.Net.HttpStatusCode.OK:
                     return response.Body;
 
-                case System.Net.HttpStatusCode.NotFound:
-                    return null;
-
                 default:
                     throw new CprConfigurationException(response.Response?.ReasonPhrase ?? "Provider configuration creation failed");
             }

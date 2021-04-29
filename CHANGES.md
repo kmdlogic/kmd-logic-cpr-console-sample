@@ -1,5 +1,12 @@
+1.4.7
+* Added methods to create providers from code
+* Added switch configuration option to Cpr client
+
+1.4.6
+* Added abstraction for ITokenProviderFactory
+
 1.4.4
-Spouse and Namemarking properties are updated in citizen detailed response.
+* Spouse and Namemarking properties are updated in citizen detailed response.
 
 1.4.3
 * Added middle name property in response
