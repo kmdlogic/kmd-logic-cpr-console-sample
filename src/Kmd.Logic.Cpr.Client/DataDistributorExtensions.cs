@@ -8,14 +8,14 @@ namespace Kmd.Logic.Cpr.Client
     public static class DataDistributorExtensions
     {
         /// <summary>
-        /// Creates Data Distributor provider configuration
+        /// Creates Data Distributor provider configuration.
         /// </summary>
         /// <param name="cprClient">Cpr client.</param>
         /// <param name="name">Name of the configuration.</param>
         /// <param name="environment">Environment to use.</param>
         /// <param name="certificate">Stream with certificate.</param>
         /// <param name="password">Password to the certificate.</param>
-        /// <returns>Configuration.</returns>
+        /// <returns>Created configuration.</returns>
         public static async Task<CprProviderConfiguration> CreateDataDistributorConfiguration(
             this CprClient cprClient,
             string name,
@@ -51,15 +51,15 @@ namespace Kmd.Logic.Cpr.Client
         }
 
         /// <summary>
-        /// Updates Data Distributor provider configuration
+        /// Updates Data Distributor provider configuration.
         /// </summary>
         /// <param name="cprClient">Cpr client.</param>
-        /// <param name="configurationId">Id of the configuration to update</param>
+        /// <param name="configurationId">Id of the configuration to update.</param>
         /// <param name="name">Name of the configuration.</param>
         /// <param name="environment">Environment to use.</param>
         /// <param name="certificate">Stream with certificate.</param>
         /// <param name="password">Password to the certificate.</param>
-        /// <returns>Configuration.</returns>
+        /// <returns>Updated configuration.</returns>
         public static async Task<CprProviderConfiguration> UpdateDataDistributorConfiguration(
             this CprClient cprClient,
             Guid configurationId,

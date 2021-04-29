@@ -7,6 +7,18 @@ namespace Kmd.Logic.Cpr.Client
 {
     public static class ServicePlatformProviderExtensions
     {
+        /// <summary>
+        /// Create Service Platform provider configuration.
+        /// </summary>
+        /// <param name="cprClient">Cpr client.</param>
+        /// <param name="name">Name of the configuration.</param>
+        /// <param name="environment">Environment to use.</param>
+        /// <param name="certificate">Stream with certificate.</param>
+        /// <param name="certificatePassword">Password to the certificate.</param>
+        /// <param name="serviceAgreementUuid">Id of the service agreement.</param>
+        /// <param name="userSystemUuid">Id of the user system.</param>
+        /// <param name="userUuid">Id of the user.</param>
+        /// <returns>Created configuration.</returns>
         public static async Task<ServicePlatformProviderConfiguration> CreateServicePlatformConfiguration(
             this CprClient cprClient,
             string name,
@@ -44,6 +56,19 @@ namespace Kmd.Logic.Cpr.Client
             }
         }
 
+        /// <summary>
+        /// Updates Service Platform provider configuration.
+        /// </summary>
+        /// <param name="cprClient">Cpr client.</param>
+        /// <param name="configurationId">If of the configuration.</param>
+        /// <param name="name">Name of the configuration.</param>
+        /// <param name="environment">Environment to use.</param>
+        /// <param name="certificate">Stream with certificate.</param>
+        /// <param name="certificatePassword">Password to the certificate.</param>
+        /// <param name="serviceAgreementUuid">Id of the service agreement.</param>
+        /// <param name="userSystemUuid">Id of the user system.</param>
+        /// <param name="userUuid">Id of the user.</param>
+        /// <returns>Updated configuration.</returns>
         public static async Task<ServicePlatformProviderConfiguration> UpdateServicePlatformConfiguration(
             this CprClient cprClient,
             Guid configurationId,

@@ -6,6 +6,12 @@ namespace Kmd.Logic.Cpr.Client
 {
     public static class FakeProviderExtensions
     {
+        /// <summary>
+        /// Creates fake provider configuration.
+        /// </summary>
+        /// <param name="cprClient">Cpr client.</param>
+        /// <param name="name">Name of the configuration.</param>
+        /// <returns>Created configuration.</returns>
         public static async Task<FakeProviderConfigurationModel> CreateFakeProviderConfiguration(this CprClient cprClient, string name)
         {
             if (cprClient == null)
@@ -32,6 +38,13 @@ namespace Kmd.Logic.Cpr.Client
             }
         }
 
+        /// <summary>
+        /// Updates fake provider configuration.
+        /// </summary>
+        /// <param name="cprClient">Cpr client.</param>
+        /// <param name="configurationId">Id of the configuration.</param>
+        /// <param name="name">Name of the configuration.</param>
+        /// <returns>Updated configuration.</returns>
         public static async Task<FakeProviderConfigurationModel> UpdateFakeProviderConfiguration(
             this CprClient cprClient,
             Guid configurationId,
