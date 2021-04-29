@@ -900,6 +900,113 @@
         ]
       }
     },
+    "/subscriptions/{subscriptionId}/cpr/configurations/experian": {
+      "post": {
+        "tags": [
+          "ExperianConfiguration"
+        ],
+        "summary": "Adds new CPR Experian configuration",
+        "operationId": "CreateExperianConfiguration",
+        "consumes": [
+          "application/json",
+          "text/json"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ExperianConfigurationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ExperianProviderConfigurationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/subscriptions/{subscriptionId}/cpr/configurations/experian/{configurationId}": {
+      "put": {
+        "tags": [
+          "ExperianConfiguration"
+        ],
+        "summary": "Adds or updates existing Experian configuration",
+        "operationId": "UpdateExperianConfiguration",
+        "consumes": [
+          "application/json",
+          "text/json"
+        ],
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "configurationId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ExperianConfigurationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ExperianProviderConfigurationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
     "/subscriptions/{subscriptionId}/cpr/configurations/fake-provider": {
       "post": {
         "tags": [
@@ -1572,9 +1679,6 @@
         "name": {
           "type": "string"
         },
-        "certificateFileName": {
-          "type": "string"
-        },
         "environment": {
           "type": "string"
         },
@@ -1606,7 +1710,22 @@
         "name": {
           "type": "string"
         },
-        "certificateFileName": {
+        "environment": {
+          "type": "string",
+          "enum": [
+            "Production",
+            "Test"
+          ]
+        }
+      }
+    },
+    "ExperianConfigurationRequest": {
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
           "type": "string"
         },
         "environment": {
@@ -1615,6 +1734,33 @@
             "Production",
             "Test"
           ]
+        },
+        "callbackUri": {
+          "format": "uri",
+          "type": "string"
+        }
+      }
+    },
+    "ExperianProviderConfigurationResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "subscriptionId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string"
+        },
+        "callbackUri": {
+          "format": "uri",
+          "type": "string"
         }
       }
     },
@@ -1633,9 +1779,6 @@
           "type": "string"
         },
         "name": {
-          "type": "string"
-        },
-        "certificateFileName": {
           "type": "string"
         },
         "environment": {
@@ -1660,9 +1803,6 @@
         "name": {
           "type": "string"
         },
-        "certificateFileName": {
-          "type": "string"
-        },
         "environment": {
           "type": "string",
           "enum": [
@@ -1683,6 +1823,9 @@
         },
         "userUuid": {
           "format": "uuid",
+          "type": "string"
+        },
+        "certificateFileName": {
           "type": "string"
         }
       }

@@ -6,30 +6,32 @@
 
 namespace Kmd.Logic.Cpr.Client.Models
 {
+    using Microsoft.Rest;
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class CprProviderConfiguration
+    public partial class ExperianConfigurationRequest
     {
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the ExperianConfigurationRequest
+        /// class.
         /// </summary>
-        public CprProviderConfiguration()
+        public ExperianConfigurationRequest()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the ExperianConfigurationRequest
+        /// class.
         /// </summary>
         /// <param name="environment">Possible values include: 'Production',
         /// 'Test'</param>
-        public CprProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string))
+        public ExperianConfigurationRequest(string name, string environment = default(string), string callbackUri = default(string))
         {
-            Id = id;
-            SubscriptionId = subscriptionId;
             Name = name;
             Environment = environment;
+            CallbackUri = callbackUri;
             CustomInit();
         }
 
@@ -37,16 +39,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "id")]
-        public System.Guid? Id { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "subscriptionId")]
-        public System.Guid? SubscriptionId { get; set; }
 
         /// <summary>
         /// </summary>
@@ -59,5 +51,23 @@ namespace Kmd.Logic.Cpr.Client.Models
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }
 
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "callbackUri")]
+        public string CallbackUri { get; set; }
+
+        /// <summary>
+        /// Validate the object.
+        /// </summary>
+        /// <exception cref="ValidationException">
+        /// Thrown if validation fails
+        /// </exception>
+        public virtual void Validate()
+        {
+            if (Name == null)
+            {
+                throw new ValidationException(ValidationRules.CannotBeNull, "Name");
+            }
+        }
     }
 }

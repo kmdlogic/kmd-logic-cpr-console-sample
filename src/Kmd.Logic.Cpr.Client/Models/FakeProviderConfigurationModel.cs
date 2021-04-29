@@ -24,13 +24,12 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// Initializes a new instance of the FakeProviderConfigurationModel
         /// class.
         /// </summary>
-        public FakeProviderConfigurationModel(string dataFileName = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string provider = default(string))
+        public FakeProviderConfigurationModel(string dataFileName = default(string), System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string), string provider = default(string))
         {
             DataFileName = dataFileName;
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
-            CertificateFileName = certificateFileName;
             Environment = environment;
             Provider = provider;
             CustomInit();
@@ -60,11 +59,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "certificateFileName")]
-        public string CertificateFileName { get; set; }
 
         /// <summary>
         /// </summary>

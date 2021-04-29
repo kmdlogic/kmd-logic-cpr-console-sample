@@ -26,17 +26,17 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         /// <param name="environment">Possible values include: 'Production',
         /// 'Test'</param>
-        public ServicePlatformProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string certificateFileName = default(string), string environment = default(string), string municipalityCvr = default(string), System.Guid? serviceAgreementUuid = default(System.Guid?), System.Guid? userSystemUuid = default(System.Guid?), System.Guid? userUuid = default(System.Guid?))
+        public ServicePlatformProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string), string municipalityCvr = default(string), System.Guid? serviceAgreementUuid = default(System.Guid?), System.Guid? userSystemUuid = default(System.Guid?), System.Guid? userUuid = default(System.Guid?), string certificateFileName = default(string))
         {
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
-            CertificateFileName = certificateFileName;
             Environment = environment;
             MunicipalityCvr = municipalityCvr;
             ServiceAgreementUuid = serviceAgreementUuid;
             UserSystemUuid = userSystemUuid;
             UserUuid = userUuid;
+            CertificateFileName = certificateFileName;
             CustomInit();
         }
 
@@ -59,11 +59,6 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
-
-        /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "certificateFileName")]
-        public string CertificateFileName { get; set; }
 
         /// <summary>
         /// Gets or sets possible values include: 'Production', 'Test'
@@ -90,6 +85,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "userUuid")]
         public System.Guid? UserUuid { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "certificateFileName")]
+        public string CertificateFileName { get; set; }
 
     }
 }

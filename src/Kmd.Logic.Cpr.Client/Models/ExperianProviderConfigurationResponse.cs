@@ -9,27 +9,28 @@ namespace Kmd.Logic.Cpr.Client.Models
     using Newtonsoft.Json;
     using System.Linq;
 
-    public partial class CprProviderConfiguration
+    public partial class ExperianProviderConfigurationResponse
     {
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the
+        /// ExperianProviderConfigurationResponse class.
         /// </summary>
-        public CprProviderConfiguration()
+        public ExperianProviderConfigurationResponse()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the CprProviderConfiguration class.
+        /// Initializes a new instance of the
+        /// ExperianProviderConfigurationResponse class.
         /// </summary>
-        /// <param name="environment">Possible values include: 'Production',
-        /// 'Test'</param>
-        public CprProviderConfiguration(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string))
+        public ExperianProviderConfigurationResponse(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string), string callbackUri = default(string))
         {
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
             Environment = environment;
+            CallbackUri = callbackUri;
             CustomInit();
         }
 
@@ -54,10 +55,14 @@ namespace Kmd.Logic.Cpr.Client.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets possible values include: 'Production', 'Test'
         /// </summary>
         [JsonProperty(PropertyName = "environment")]
         public string Environment { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "callbackUri")]
+        public string CallbackUri { get; set; }
 
     }
 }
