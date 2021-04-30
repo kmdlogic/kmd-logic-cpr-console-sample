@@ -702,6 +702,82 @@ namespace Kmd.Logic.Cpr.Client
                 }
             }
 
+            /// <summary>
+            /// Adds new CPR Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            public static ExperianProviderConfigurationResponse CreateExperianConfiguration(this IInternalClient operations, System.Guid subscriptionId, ExperianConfigurationRequest request)
+            {
+                return operations.CreateExperianConfigurationAsync(subscriptionId, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Adds new CPR Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<ExperianProviderConfigurationResponse> CreateExperianConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, ExperianConfigurationRequest request, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.CreateExperianConfigurationWithHttpMessagesAsync(subscriptionId, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Adds or updates existing Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            public static ExperianProviderConfigurationResponse UpdateExperianConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, ExperianConfigurationRequest request)
+            {
+                return operations.UpdateExperianConfigurationAsync(subscriptionId, configurationId, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Adds or updates existing Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<ExperianProviderConfigurationResponse> UpdateExperianConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, ExperianConfigurationRequest request, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.UpdateExperianConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
