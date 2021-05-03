@@ -19,71 +19,71 @@ namespace Kmd.Logic.Cpr.Events.Receiver.Controllers
 
     public class ExperianEvent
     {
-        public string referenceNumber { get; set; }
+        public string ReferenceNumber { get; set; }
 
-        public string messageId { get; set; }
+        public string MessageId { get; set; }
 
-        public string messageType { get; set; }
+        public string MessageType { get; set; }
 
-        public ExperianPersonData personData { get; set; }
+        public ExperianPersonData PersonData { get; set; }
 
-        public Address address { get; set; }
+        public Address Address { get; set; }
     }
 
     public class ExperianPersonData
     {
-        public string masterCardNumber { get; set; }
+        public string MasterCardNumber { get; set; }
 
-        public NameData nameData { get; set; }
+        public NameData NameData { get; set; }
 
-        public dateTime? dateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
-        public string cprStatus { get; set; }
+        public string CprStatus { get; set; }
 
-        public string creditWarning { get; set; }
+        public string CreditWarning { get; set; }
     }
 
     public class NameData
     {
-        public string firstName { get; set; }
+        public string FirstName { get; set; }
 
-        public string lastName { get; set; }
+        public string LastName { get; set; }
     }
 
     public class Address
     {
-        public PostDistrict postDistrict { get; set; }
+        public PostDistrict PostDistrict { get; set; }
 
-        public Municipality municipality { get; set; }
+        public Municipality Municipality { get; set; }
 
-        public HouseNumber houseNumber { get; set; }
+        public HouseNumber HouseNumber { get; set; }
 
-        public string byName { get; set; }
+        public string ByName { get; set; }
 
-        public string byWay { get; set; }
+        public string ByWay { get; set; }
 
-        public dateTime? date { get; set; }
+        public DateTime? Date { get; set; }
 
-        public string advertisingProtected { get; set; }
+        public string AdvertisingProtected { get; set; }
 
-        public dateTime? advetisingProtectedFrom { get; set; }
+        public DateTime? AdvertisingProtectedFrom { get; set; }
     }
 
     public class HouseNumber
     {
-        public string fromNumber { get; set; }
+        public string FromNumber { get; set; }
     }
 
     public class PostDistrict
     {
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        public string zipCode { get; set; }
+        public string ZipCode { get; set; }
     }
 
     public class Municipality
     {
-        public string code { get; set; }
+        public string Code { get; set; }
     }
 #pragma warning restore SA1402 // File may only contain a single type
 }
