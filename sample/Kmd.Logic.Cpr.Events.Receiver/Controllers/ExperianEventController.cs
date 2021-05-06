@@ -64,9 +64,9 @@ namespace Kmd.Logic.Cpr.Events.Receiver.Controllers
 
         public DateTime? Date { get; set; }
 
-        public string Advertisingprotected { get; set; }
+        public string AdvertisingProtected { get; set; }
 
-        public DateTime? AdvetisingprotectedFrom { get; set; }
+        public DateTime? AdvertisingProtectedFrom { get; set; }
     }
 
     public class HouseNumber
