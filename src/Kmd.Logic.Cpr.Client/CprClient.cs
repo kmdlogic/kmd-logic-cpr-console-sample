@@ -354,7 +354,11 @@ namespace Kmd.Logic.Cpr.Client
             return this._internalClient;
         }
 
-        public async Task<bool> ApprveExperianConfiguration()
+        /// <summary>
+        /// Admin can approve the experian configuration.
+        /// </summary>
+        /// <returns>bool.</returns>
+        public async Task<bool> ApproveExperianConfiguration()
         {
             var client = this.CreateClient();
 
