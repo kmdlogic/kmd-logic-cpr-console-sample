@@ -24,13 +24,14 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// Initializes a new instance of the
         /// ExperianProviderConfigurationResponse class.
         /// </summary>
-        public ExperianProviderConfigurationResponse(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string), string callbackUri = default(string))
+        public ExperianProviderConfigurationResponse(System.Guid? id = default(System.Guid?), System.Guid? subscriptionId = default(System.Guid?), string name = default(string), string environment = default(string), string callbackUrl = default(string), bool? isApproved = default(bool?))
         {
             Id = id;
             SubscriptionId = subscriptionId;
             Name = name;
             Environment = environment;
-            CallbackUri = callbackUri;
+            CallbackUrl = callbackUrl;
+            IsApproved = isApproved;
             CustomInit();
         }
 
@@ -61,8 +62,13 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "callbackUri")]
-        public string CallbackUri { get; set; }
+        [JsonProperty(PropertyName = "callbackUrl")]
+        public string CallbackUrl { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "isApproved")]
+        public bool? IsApproved { get; set; }
 
     }
 }

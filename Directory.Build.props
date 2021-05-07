@@ -9,7 +9,7 @@
 
   <PropertyGroup>
     <Description>A client library for KMD Logic CPR</Description>
-    <VersionPrefix>1.4.7</VersionPrefix>
+    <VersionPrefix>1.4.8</VersionPrefix>
     <Authors>KMD</Authors>
     <PackageTags>kmd;logic;cpr</PackageTags>
     <PackageIcon>favicon-32x32.png</PackageIcon>

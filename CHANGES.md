@@ -1,3 +1,6 @@
+1.4.8
+* Updated callback url for experian provider response 
+
 1.4.7
 * Added methods to create providers from code
 * Added switch configuration option to Cpr client

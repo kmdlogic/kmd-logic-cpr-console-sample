@@ -342,6 +342,23 @@ namespace Kmd.Logic.Cpr.Client
         Task<HttpOperationResponse<CprProviderConfiguration>> UpdateDataDistributorConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
+        /// Admin End point to aprrove the experian provider configurations
+        /// </summary>
+        /// <param name='configurationId'>
+        /// ConfigurationId which needs to be approved
+        /// </param>
+        /// <param name='isApproved'>
+        /// Approve or Reject the provider configuration
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<bool?>> ApproveProviderConfigurationWithHttpMessagesAsync(System.Guid configurationId, bool isApproved, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
         /// Adds new CPR Experian configuration
         /// </summary>
         /// <param name='subscriptionId'>

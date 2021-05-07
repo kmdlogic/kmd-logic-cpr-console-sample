@@ -27,11 +27,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         /// <param name="environment">Possible values include: 'Production',
         /// 'Test'</param>
-        public ExperianConfigurationRequest(string name, string environment = default(string), string callbackUri = default(string))
+        public ExperianConfigurationRequest(string name, string environment = default(string), string callbackUrl = default(string))
         {
             Name = name;
             Environment = environment;
-            CallbackUri = callbackUri;
+            CallbackUrl = callbackUrl;
             CustomInit();
         }
 
@@ -53,8 +53,8 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "callbackUri")]
-        public string CallbackUri { get; set; }
+        [JsonProperty(PropertyName = "callbackUrl")]
+        public string CallbackUrl { get; set; }
 
         /// <summary>
         /// Validate the object.
