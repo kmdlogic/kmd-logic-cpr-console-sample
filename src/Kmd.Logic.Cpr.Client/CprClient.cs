@@ -195,18 +195,18 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         public async Task<bool> SubscribeByCprAsync(string cpr)
         {
-           var client = this.CreateClient();
+            var client = this.CreateClient();
 
-           using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
-                  subscriptionId: this._options.SubscriptionId,
-                  cpr: cpr,
-                  request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
-             {
+            using (var response = await client.SubscribeByCprWithHttpMessagesAsync(
+                   subscriptionId: this._options.SubscriptionId,
+                   cpr: cpr,
+                   request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
+            {
                 return response.Response.IsSuccessStatusCode;
-             }
+            }
         }
 
-         /// <summary>
+        /// <summary>
         /// Subscribes for CPR events by PersonId.
         /// </summary>
         /// <param name="id">The CPR PersonID.</param>
@@ -215,18 +215,18 @@ namespace Kmd.Logic.Cpr.Client
         /// <exception cref="SerializationException">Unable process the service response.</exception>
         public async Task<bool> SubscribeByIdAsync(Guid id)
         {
-             var client = this.CreateClient();
+            var client = this.CreateClient();
 
-             using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
-                  subscriptionId: this._options.SubscriptionId,
-                  id: id,
-                  request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
-             {
+            using (var response = await client.SubscribeByIdWithHttpMessagesAsync(
+                 subscriptionId: this._options.SubscriptionId,
+                 id: id,
+                 request: new CprSubscriptionRequest(this._options.CprConfigurationId)).ConfigureAwait(false))
+            {
                 return response.Response.IsSuccessStatusCode;
-             }
+            }
         }
 
-         /// <summary>
+        /// <summary>
         /// UnSubscribe for CPR events by CPR number.
         /// </summary>
         /// <param name="cpr">The CPR number.</param>
@@ -352,6 +352,16 @@ namespace Kmd.Logic.Cpr.Client
             };
 
             return this._internalClient;
+        }
+
+        public async Task<bool> ApprveExperianConfiguration()
+        {
+            var client = this.CreateClient();
+
+            var response = await client.ApproveProviderConfigurationAsync(
+                                configurationId: this._options.CprConfigurationId,
+                                isApproved: true).ConfigureAwait(false);
+            return response.GetValueOrDefault(false);
         }
 
         public void Dispose()
