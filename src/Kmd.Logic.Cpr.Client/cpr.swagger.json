@@ -900,6 +900,49 @@
         ]
       }
     },
+    "/cpr/admin/configurations/{configurationId}/Aprrove/{isApproved}": {
+      "patch": {
+        "tags": [
+          "ExperianAdminConfiguration"
+        ],
+        "summary": "Admin End point to aprrove the experian provider configurations",
+        "operationId": "ApproveProviderConfiguration",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "configurationId",
+            "in": "path",
+            "description": "ConfigurationId which needs to be approved",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "isApproved",
+            "in": "path",
+            "description": "Approve or Reject the provider configuration",
+            "required": true,
+            "type": "boolean"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
     "/subscriptions/{subscriptionId}/cpr/configurations/experian": {
       "post": {
         "tags": [
@@ -1735,7 +1778,7 @@
             "Test"
           ]
         },
-        "callbackUri": {
+        "callbackUrl": {
           "format": "uri",
           "type": "string"
         }
@@ -1758,9 +1801,12 @@
         "environment": {
           "type": "string"
         },
-        "callbackUri": {
+        "callbackUrl": {
           "format": "uri",
           "type": "string"
+        },
+        "isApproved": {
+          "type": "boolean"
         }
       }
     },

@@ -703,6 +703,46 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Admin End point to aprrove the experian provider configurations
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='configurationId'>
+            /// ConfigurationId which needs to be approved
+            /// </param>
+            /// <param name='isApproved'>
+            /// Approve or Reject the provider configuration
+            /// </param>
+            public static bool? ApproveProviderConfiguration(this IInternalClient operations, System.Guid configurationId, bool isApproved)
+            {
+                return operations.ApproveProviderConfigurationAsync(configurationId, isApproved).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Admin End point to aprrove the experian provider configurations
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='configurationId'>
+            /// ConfigurationId which needs to be approved
+            /// </param>
+            /// <param name='isApproved'>
+            /// Approve or Reject the provider configuration
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<bool?> ApproveProviderConfigurationAsync(this IInternalClient operations, System.Guid configurationId, bool isApproved, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.ApproveProviderConfigurationWithHttpMessagesAsync(configurationId, isApproved, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Adds new CPR Experian configuration
             /// </summary>
             /// <param name='operations'>
