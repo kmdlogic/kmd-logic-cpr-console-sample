@@ -1,0 +1,30 @@
+﻿@inherits LayoutComponentBase
+@using Kmd.Logic.Cpr.Events.Receiver.Services
+@inject EventService eventService
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="rejectEventsSwitch" @onclick="ToggleRejectEventsSwitch" checked="@(eventService.RejectEventsMode)">
+                <label class="custom-control-label" for="rejectEventsSwitch">Reject Event Postings</label>
+            </div>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code {
+
+    private void ToggleRejectEventsSwitch()
+    {
+        eventService.RejectEventsMode = !eventService.RejectEventsMode;
+    }
+}

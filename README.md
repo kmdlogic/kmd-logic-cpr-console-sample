@@ -143,3 +143,20 @@ To fetch the details of CPR changes, you may call `GetAllCprEvents` or `GetSubsc
 `GetSubscribedCprEvents` returns `ActualCount` which indicates total records before filter based on subscription. To get all events keep fetching records until `ActualCount` is zero
 
 On receiving the change notification you will then need to fetch the updated details of the citizen from the register by calling `GetCitizenByIdAsync`.
+
+## The sample Events Receiver Application
+
+The sample folder also includes a web application for receiving Experian events. 
+
+Following is how one may use this application
+
+- Host the application anywhere that can be accessed over the internet.
+- Configure the callbackUri of the Experian configuration(the one that you create with the Logic CPR service). The Url to use would be the FQDN of the hosted application suffixed with _"/events"_. 
+
+  **For e.g.** if the url of the sample application is [https://www.experian-sample-client.com](), then the value you configure as callbackUri would be [https://www.experian-sample-client.com/events]()
+- If configured right, you will be able to see the events in the dashboard of the sample application when the Logic CPR service starts posting them.
+![image](https://user-images.githubusercontent.com/12545474/118655249-faaeb400-b806-11eb-87bc-469c28ce8c07.png)
+
+Note: Optionally you may add the TenantName setting in the appsettings.json to get a personalized experience with the application. For e.g. the above screenshot was taken from an application with the TenantName set as below in the appsettings.json
+![image](https://user-images.githubusercontent.com/12545474/118656331-0ea6e580-b808-11eb-9561-9b6cd26409a9.png)
+

@@ -1,0 +1,90 @@
+﻿@page "/"
+@using Kmd.Logic.Cpr.Events.Receiver.Services
+@using Kmd.Logic.Cpr.Events.Receiver.Models
+@using Microsoft.Extensions.Configuration
+@using Microsoft.AspNetCore.SignalR.Client
+@using Newtonsoft.Json;
+
+@implements IAsyncDisposable
+
+@inject EventService eventService
+@inject IConfiguration configuration
+@inject NavigationManager NavigationManager
+
+<h1>Events</h1>
+
+<p>List of CPR events posted to <strong>@(configuration["TenantName"]??"Event Receiver")</strong>.</p>
+
+@if (cprEvents == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>CPR Number</th>
+                <th>Event Type</th>
+                <th>Received:@(cprEvents.Length)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cprEvent in cprEvents)
+            {
+                <tr>
+                    <td>@cprEvent.Time</td>
+                    <td>@cprEvent.CprEvent.ReferenceNumber</td>
+                    <td>@cprEvent.CprEvent.MessageType</td>
+                    <td>
+                        <button data-toggle="collapse" data-target="#json@(cprEvent.Id)">Json</button>
+
+                        <div id="json@(cprEvent.Id)" class="collapse">
+                            <pre>
+                                @cprEvent.Json
+                            </pre>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-danger" @onclick="ClearEvents">Clear All</button>
+    </div>
+}
+
+@code {
+    private HubConnection hubConnection;
+    private CprEventListViewModel[] cprEvents;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(NavigationManager.ToAbsoluteUri("/cpr-events-hub"))
+            .Build();
+
+        hubConnection.On("RefreshData", async () =>
+        {
+            cprEvents = await eventService.GetEventstAsync();
+            StateHasChanged();
+        });
+
+        cprEvents = await eventService.GetEventstAsync();
+
+        await hubConnection.StartAsync();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await hubConnection.DisposeAsync();
+    }
+
+    private async Task ClearEvents()
+    {
+        eventService.ClearEvents();
+        cprEvents = await eventService.GetEventstAsync();
+        StateHasChanged();
+    }
+}
