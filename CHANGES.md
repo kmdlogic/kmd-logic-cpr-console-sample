@@ -1,3 +1,7 @@
+2.0.0
+* Make client assembly strongly named
+* Make client assembly versioned
+
 1.4.8
 * Updated callback url for experian provider response 
 
